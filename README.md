@@ -20,7 +20,7 @@ Các sản phẩm ở đây **được sinh ra ngay tại GitHub**, chứ không
 
 | # | Sản phẩm | Trạng thái | Ghi chú |
 |---|----------|-----------|---------|
-| 1 | — Sản phẩm đầu tiên — | 💡 Đang xây dựng ý tưởng | Sẽ công bố tại đây |
+| 1 | [001 — Ứng dụng quản lí phòng Tin](001-quan-li-phong-tin/) | ✅ Đã phát hành 12/11/2026 | Quản lí phòng Tin 40 máy: sơ đồ phòng, ghi sự cố, nhật ký tiết dạy, kiểm kê, mượn–trả, checklist mở–đóng phòng, trực nhật, báo cáo. Chạy offline, đồng bộ Google Drive qua Apps Script, có khóa mã PIN |
 
 ## 🔖 Dấu ấn nhà trường
 
