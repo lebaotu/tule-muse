@@ -869,8 +869,8 @@ function json_(obj) {
       </div>
       <div class="card"><h3><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span> Về sản phẩm</h3>
         <p style="margin:0">Sản phẩm <b>001 — Quản lí phòng Tin</b> thuộc nhà sản phẩm <b>tule-muse</b> của thầy Lê Bảo Tú, Trường Tiểu học Huỳnh Ngọc Huệ. Gồm 9 chức năng: Tổng quan, Sơ đồ phòng máy, Nhật ký tiết dạy, Kiểm kê thiết bị, Mượn – trả, Checklist mở – đóng phòng, Trực nhật, Báo cáo và Đồng bộ &amp; Sao lưu. Ứng dụng chạy hoàn toàn không cần mạng tại phòng Tin; đồng bộ giữa các thiết bị thực hiện qua tệp sao lưu (USB / Google Drive).</p>
-        <p style="margin:12px 0 0"><span class="badge b-blue">Phiên bản 1.4</span></p>
-        <p class="small muted" style="margin:8px 0 0">v1.4: Nhật ký tiết dạy bám sát KHDH và Lịch báo giảng — tự điền bài học theo tuần, lịch dạy hôm nay, danh sách lớp thật 3/1–5/6.</p>
+        <p style="margin:12px 0 0"><span class="badge b-blue">Phiên bản 1.4.1</span></p>
+        <p class="small muted" style="margin:8px 0 0">v1.4.1: sửa lại buổi dạy trong thời khóa biểu theo đúng Lịch báo giảng (sáng tối đa 4 tiết, chiều tối đa 3 tiết).</p>
       </div>
     </section>
   </main>
@@ -955,13 +955,16 @@ var PLAN_LESSONS={
 "5":["Bài 1. Em có thể làm gì với máy tính?","Bài 1. Em có thể làm gì với máy tính? (tiếp)","Bài 2. Tìm kiếm thông tin trên website","Bài 2. Tìm kiếm thông tin trên website (tiếp)","Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề","Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề (tiếp)","Bài 4. Cây thư mục","Bài 4. Cây thư mục (tiếp)","Bài 5. Bản quyền nội dung thông tin","Bài 5. Bản quyền nội dung thông tin (tiếp)","Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản","Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản (tiếp)","Bài 7. Thực hành soạn thảo văn bản","Bài 7. Thực hành soạn thảo văn bản (tiếp)","Bài 8A. Làm quen với phần mềm đồ hoạ","Bài 8A. Làm quen với phần mềm đồ hoạ (tiếp)","Ôn tập học kì I","Kiểm tra học kì I","Bài 9A. Sử dụng phần mềm đồ hoạ tạo sản phẩm số","Bài 10. Cấu trúc tuần tự","Bài 10. Cấu trúc tuần tự (tiếp)","Bài 11. Cấu trúc lặp","Bài 11. Cấu trúc lặp (tiếp)","Bài 12. Thực hành sử dụng lệnh lặp","Bài 12. Thực hành sử dụng lệnh lặp (tiếp)","Bài 13. Cấu trúc rẽ nhánh","Bài 13. Cấu trúc rẽ nhánh (tiếp)","Bài 14. Sử dụng biến trong chương trình","Bài 14. Sử dụng biến trong chương trình (tiếp)","Bài 15. Sử dụng biểu thức trong chương trình","Bài 15. Sử dụng biểu thức trong chương trình (tiếp)","Bài 16. Từ kịch bản đến chương trình","Bài 16. Từ kịch bản đến chương trình (tiếp)","Ôn tập","Kiểm tra học kì II"]
 };
 var PLAN_EXTRA_3=["Bài 12: Tìm hiểu về thế giới tự nhiên (tự chọn)"];
-/* Thoi khoa bieu co dinh hang tuan (khoa = thu theo getDay: 1=Thu 2 ... 5=Thu 6) */
+/* Thoi khoa bieu co dinh hang tuan (khoa = thu theo getDay: 1=Thu 2 ... 5=Thu 6).
+   v1.4.1: da doi chieu lai tung o theo Lich bao giang tuan 10 — moi ngay gom
+   khoi SANG toi da 4 tiet va khoi CHIEU toi da 3 tiet; dong dau tien cua moi
+   khoi buoi mang nhan buoi do. Thu 4 va Thu 5 chi co tiet Tin buoi chieu. */
 var TIMETABLE={
-1:[{c:"4/4",s:"Sáng",p:1},{c:"3/5",s:"Sáng",p:2},{c:"3/2",s:"Chiều",p:2},{c:"3/7",s:"Chiều",p:3}],
-2:[{c:"4/3",s:"Sáng",p:1},{c:"5/4",s:"Sáng",p:2},{c:"3/1",s:"Sáng",p:3},{c:"3/6",s:"Sáng",p:4},{c:"4/1",s:"Chiều",p:2},{c:"4/2",s:"Chiều",p:3}],
-3:[{c:"3/4",s:"Sáng",p:1},{c:"4/8",s:"Chiều",p:2},{c:"3/3",s:"Chiều",p:3}],
-4:[{c:"5/5",s:"Sáng",p:1},{c:"5/6",s:"Chiều",p:2},{c:"5/3",s:"Chiều",p:3}],
-5:[{c:"4/7",s:"Sáng",p:1},{c:"4/6",s:"Sáng",p:2},{c:"4/5",s:"Sáng",p:3},{c:"5/1",s:"Chiều",p:2},{c:"5/2",s:"Chiều",p:3}]
+1:[{c:"3/5",s:"Sáng",p:2},{c:"4/4",s:"Chiều",p:1},{c:"3/2",s:"Chiều",p:2},{c:"3/7",s:"Chiều",p:3}],
+2:[{c:"5/4",s:"Sáng",p:2},{c:"3/1",s:"Sáng",p:3},{c:"3/6",s:"Sáng",p:4},{c:"4/3",s:"Chiều",p:1},{c:"4/1",s:"Chiều",p:2},{c:"4/2",s:"Chiều",p:3}],
+3:[{c:"3/4",s:"Chiều",p:1},{c:"4/8",s:"Chiều",p:2},{c:"3/3",s:"Chiều",p:3}],
+4:[{c:"5/5",s:"Chiều",p:1},{c:"5/6",s:"Chiều",p:2},{c:"5/3",s:"Chiều",p:3}],
+5:[{c:"4/6",s:"Sáng",p:2},{c:"4/5",s:"Sáng",p:3},{c:"4/7",s:"Chiều",p:1},{c:"5/1",s:"Chiều",p:2},{c:"5/2",s:"Chiều",p:3}]
 };
 var REAL_CLASSES=["3/1","3/2","3/3","3/4","3/5","3/6","3/7","4/1","4/2","4/3","4/4","4/5","4/6","4/7","4/8","5/1","5/2","5/3","5/4","5/5","5/6"];
 var OLD_CLASSES=["3A","3B","3C","4A","4B","4C","5A","5B","5C"];
