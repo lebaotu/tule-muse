@@ -260,6 +260,12 @@
       .status-line{ font-size:13.5px; margin-top:9px; line-height:1.55; color:var(--ink2); }
       .status-line.ok{ color:var(--ok); font-weight:600; }
       .status-line.err{ color:var(--bad); font-weight:600; }
+      .bank-online-line{ display:flex; align-items:center; gap:9px; background:var(--surface); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow); padding:11px 16px; font-size:14.5px; font-weight:600; color:var(--ink2); margin:0 0 16px; line-height:1.5; }
+      .bank-online-line svg{ width:18px; height:18px; flex:none; color:var(--cyan-d); }
+      .bank-online-line.ok{ border-color:var(--ok); background:var(--ok-soft); color:var(--ok); }
+      .bank-online-line.ok svg{ color:var(--ok); }
+      .bank-online-line.warn{ border-color:var(--warn); background:var(--warn-soft); color:var(--warn); }
+      .bank-online-line.warn svg{ color:var(--warn); }
 
       /* Modal */
       .modal-back{ position:fixed; inset:0; background:rgba(8,18,38,.55); z-index:80; display:none; align-items:flex-start; justify-content:center; padding:18px 12px; overflow-y:auto; }
@@ -427,6 +433,7 @@
               <p class="desc">Số liệu trực tiếp từ ngân hàng câu hỏi trên thiết bị này. Câu hỏi chỉ được vào đề kiểm tra chấm điểm khi đã duyệt và đã phân mức độ.</p>
             </div>
           </div>
+          <div class="bank-online-line warn" id="bankOnlineLine" role="status"><svg aria-hidden="true"><use href="#i-sync"/></svg><span>Ngân hàng trực tuyến: chưa tải được (đang dùng bản lưu trên máy)</span></div>
           <div class="alert ok" id="bankNotice" style="margin:0 0 16px"></div>
           <div class="stat-grid">
             <div class="stat-card"><div class="num" id="stTotal">0</div><div class="lbl"><svg><use href="#i-layers"/></svg>Tổng số câu trong kho</div></div>
@@ -442,7 +449,7 @@
           </div>
           <div class="card" style="margin-top:16px">
             <h3><svg><use href="#i-shield"/></svg>Nguyên tắc kiểm duyệt của kho</h3>
-            <p class="hint">Mỗi câu hỏi mang đủ hồ sơ: khối — chủ đề — bài học — yêu cầu cần đạt — mức độ (Nhận biết / Kết nối / Vận dụng) — đáp án — lời giải thích — nguồn. <b>Đề kiểm tra</b> chỉ lấy câu <b>Đã duyệt</b> và đã phân mức độ, theo tỉ lệ mức độ thầy đặt. <b>Bài luyện tập giữa kỳ</b> không chấm điểm, được dùng cả câu đang chờ duyệt. Nếu kho không đủ câu đạt chuẩn, ứng dụng sẽ báo rõ số câu còn thiếu theo từng mức độ và không sinh đề kiểm tra thiếu chuẩn.</p>
+            <p class="hint">Câu hỏi trong kho trực tuyến do Muse soạn và phát hành được coi là <b>đã duyệt sẵn</b> khi đến máy của thầy — thầy không cần bấm duyệt từng câu. Mỗi câu hỏi vẫn mang đủ hồ sơ: khối — chủ đề — bài học — yêu cầu cần đạt — mức độ (Nhận biết / Kết nối / Vận dụng) — đáp án — lời giải thích — nguồn. <b>Đề kiểm tra</b> chỉ lấy câu <b>Đã duyệt</b> và đã phân mức độ, theo tỉ lệ mức độ thầy đặt. <b>Bài luyện tập giữa kỳ</b> không chấm điểm, được dùng cả câu đang chờ duyệt. Nếu phát hiện câu nào chưa đúng, thầy đánh dấu <b>“Cần sửa”</b> để loại câu đó khỏi đề kiểm tra và báo lại cho Muse sửa trên kho trực tuyến. Nếu kho không đủ câu đạt chuẩn, ứng dụng sẽ báo rõ số câu còn thiếu theo từng mức độ và không sinh đề kiểm tra thiếu chuẩn.</p>
           </div>
         </section>
 
@@ -648,8 +655,8 @@
 
               <div class="card">
                 <h3><svg><use href="#i-info"/></svg>Thông tin sản phẩm</h3>
-                <p class="hint"><span class="tag lv-nb">Phiên bản 1.1</span></p>
-                <p class="hint" style="margin-top:8px">v1.1: ứng dụng tự tải toàn bộ ngân hàng câu hỏi (237 câu) từ kho trực tuyến của nhà tule-muse khi có mạng — mở lên là có đủ câu hỏi các bài, không cần nạp tệp; ở phòng Tin không có mạng, ứng dụng dùng bản ngân hàng đã lưu trên thiết bị. v1.0: ra mắt ngân hàng câu hỏi &amp; trộn đề — kho mẫu Lớp 3 Bài 1 (21 câu), trộn mã đề ngẫu nhiên cho từng lớp, hồ sơ in đề + đáp án + ma trận.</p>
+                <p class="hint"><span class="tag lv-nb">Phiên bản 1.2</span></p>
+                <p class="hint" style="margin-top:8px">v1.2: câu hỏi Muse phát hành lên kho trực tuyến được coi là đã duyệt sẵn — thầy không cần bấm duyệt từng câu, chỉ đánh dấu Cần sửa khi thấy câu chưa đúng; trạng thái ngân hàng trực tuyến hiển thị ngay ở Tổng quan. v1.1: ứng dụng tự tải toàn bộ ngân hàng câu hỏi từ kho trực tuyến khi có mạng. v1.0: ra mắt ngân hàng câu hỏi &amp; trộn đề.</p>
                 <p class="hint" style="margin-top:8px">Dữ liệu lưu trên thiết bị với khóa <span class="mono">nhch002_v1</span>. Sản phẩm thuộc nhà tule-muse — Trường Tiểu học Huỳnh Ngọc Huệ.</p>
               </div>
             </div>
@@ -788,6 +795,8 @@
         sync:{ url:"", key:"", auto:false, interval:15, lastSyncAt:0 },
         safety:{ bank:null, bankAt:0, full:null, fullAt:0 },
         onlineLoaded:false,
+        onlineLastAt:0,
+        onlineLastOk:false,
         updatedAt: Date.now()
       };
     }
@@ -822,6 +831,11 @@
     function fmtDate(ts){
       var d = new Date(ts); if (isNaN(d)) return "";
       return d.toLocaleDateString("vi-VN") + " " + d.toLocaleTimeString("vi-VN",{hour:"2-digit",minute:"2-digit"});
+    }
+    function fmtHHMM(ts){
+      if (!ts) return "";
+      var d = new Date(ts); if (isNaN(d)) return "";
+      return d.toLocaleTimeString("vi-VN",{hour:"2-digit",minute:"2-digit"});
     }
     var toastTimer = null;
     function toast(msg){
@@ -937,9 +951,10 @@
     $("btnEnter").addEventListener("click", function(){
       $("splash").style.display = "none"; $("app").style.display = "block";
       renderDash(); renderLockInd();
-      // v1.1: tự tải ngân hàng trực tuyến sau khi vào màn hình chính (không chặn mở đầu).
-      // Không có mạng (phòng Tin) thì im lặng dùng kho đã lưu trên máy.
-      try { fetchOnlineBank().catch(function(){}); } catch(e) {}
+      // v1.2: tự tải ngân hàng trực tuyến sau khi vào màn hình chính (không chặn mở đầu).
+      // Không có mạng (phòng Tin) thì im lặng dùng kho đã lưu trên máy;
+      // dòng trạng thái ngân hàng ở Tổng quan tự cập nhật theo kết quả lần tải này.
+      try { fetchOnlineBank().catch(function(){}); } catch(e) { try { renderDash(); } catch(e2) {} }
     });
 
     /* ================= TỔNG QUAN ================= */
@@ -954,6 +969,20 @@
       };
     }
     var bankNotice = "";
+    function bankOnlineLineText(){
+      var total = state.questions.length;
+      var duyet = state.questions.filter(function(q){ return q.trangThai === "duyet"; }).length;
+      if (state.onlineLastOk && state.onlineLastAt){
+        return "Ngân hàng trực tuyến: đã cập nhật lúc " + fmtHHMM(state.onlineLastAt) + " — tổng " + total + " câu (" + duyet + " câu đã duyệt)";
+      }
+      return "Ngân hàng trực tuyến: chưa tải được (đang dùng bản lưu trên máy — " + total + " câu)";
+    }
+    function renderBankOnlineLine(){
+      var el = $("bankOnlineLine"); if (!el) return;
+      var ok = !!(state.onlineLastOk && state.onlineLastAt);
+      el.className = "bank-online-line " + (ok ? "ok" : "warn");
+      el.innerHTML = '<svg aria-hidden="true"><use href="#i-sync"/></svg><span>' + esc(bankOnlineLineText()) + '</span>';
+    }
     function renderDash(){
       var noticeEl = $("bankNotice");
       if (noticeEl){
@@ -961,6 +990,7 @@
         noticeEl.style.margin = "0 0 16px";
         noticeEl.innerHTML = bankNotice ? "<b>" + esc(bankNotice) + "</b>" : "";
       }
+      renderBankOnlineLine();
       var total = state.questions.length;
       var duyet = state.questions.filter(function(q){ return q.trangThai === "duyet"; }).length;
       var cho = state.questions.filter(function(q){ return q.trangThai === "cho"; }).length;
@@ -1612,16 +1642,22 @@
       });
     });
 
-    /* ================= NGÂN HÀNG TRỰC TUYẾN (v1.1) ================= */
+    /* ================= NGÂN HÀNG TRỰC TUYẾN (v1.2) ================= */
     var ONLINE_BANK_URL = "https://lebaotu.github.io/tule-muse/002-ngan-hang-cau-hoi/ngan-hang-cau-hoi.json";
     function normQText(s){ return String(s == null ? "" : s).trim().replace(/\s+/g, " "); }
     function bankKeyOf(q){ return q.khoi + "|" + String(q.bai) + "|" + normQText(q.cauHoi); }
     function setOnlineStatus(html, cls){ var el = $("onlineStatus"); if (el){ el.innerHTML = html; el.className = "status-line " + (cls || ""); } }
-    // Hợp nhất danh sách câu đã đọc từ kho trực tuyến vào kho trên máy.
+    // Hợp nhất danh sách câu đã đọc từ kho trực tuyến vào kho trên máy (v1.2).
     // Khóa nhận diện: khối + bài + nội dung câu hỏi đã chuẩn hoá khoảng trắng.
-    // Câu mới: thêm với trạng thái trong tệp. Câu đã có: chỉ cập nhật nội dung
-    // khi câu trên máy vẫn "Chờ duyệt" và chưa từng bị sửa tay — không bao giờ
-    // ghi đè trạng thái duyệt, không đụng câu Đã duyệt / đã sửa tay.
+    // - Máy chưa có câu đó: thêm mới nguyên trạng theo tệp, KỂ CẢ trạng thái
+    //   "Đã duyệt" và mức độ trong tệp — câu Muse phát hành được coi là đã duyệt sẵn.
+    // - Máy đã có, bản trên máy đang "Chờ duyệt" và chưa từng bị sửa tay
+    //   (cờ daSuaTay): cập nhật TOÀN BỘ theo bản trực tuyến — mức độ, đáp án,
+    //   giải thích, yêu cầu cần đạt, chủ đề, nguồn VÀ trạng thái duyệt trong tệp
+    //   (tệp ghi "Đã duyệt" thì máy cũng chuyển thành "Đã duyệt").
+    // - Bản trên máy đã "Đã duyệt" hoặc đã sửa tay: giữ nguyên, không ghi đè.
+    // - Bản trên máy đang "Cần sửa": luôn giữ nguyên (kể cả trạng thái "Cần sửa"),
+    //   không bị bản trực tuyến ghi đè.
     function mergeOnlineQuestions(good){
       var added = 0, updated = 0;
       var index = {};
@@ -1630,13 +1666,18 @@
         var k = bankKeyOf(v);
         var ex = index[k];
         if (!ex){ state.questions.push(v); index[k] = v; added++; return; }
+        if (ex.trangThai === "sua") return;
         if (ex.trangThai === "cho" && !ex.daSuaTay){
           var changed = JSON.stringify(ex.luaChon) !== JSON.stringify(v.luaChon)
             || ex.dapAn !== v.dapAn || (ex.mucDo || "") !== (v.mucDo || "")
-            || (ex.giaiThich || "") !== (v.giaiThich || "") || (ex.yc || "") !== (v.yc || "");
+            || (ex.giaiThich || "") !== (v.giaiThich || "") || (ex.yc || "") !== (v.yc || "")
+            || (ex.chuDe || "") !== (v.chuDe || "") || (ex.nguon || "") !== (v.nguon || "")
+            || (ex.trangThai || "") !== (v.trangThai || "");
           if (changed){
             ex.luaChon = v.luaChon; ex.dapAn = v.dapAn; ex.mucDo = v.mucDo;
             ex.giaiThich = v.giaiThich; ex.yc = v.yc;
+            ex.chuDe = v.chuDe; ex.nguon = v.nguon;
+            ex.trangThai = v.trangThai;
             updated++;
           }
         }
@@ -1655,12 +1696,19 @@
         var changed = (res.added + res.updated) > 0;
         var firstSuccess = !state.onlineLoaded;
         state.onlineLoaded = true;
+        state.onlineLastAt = Date.now();
+        state.onlineLastOk = true;
+        saveState();
         if (changed || firstSuccess){
-          saveState();
           bankNotice = "Ngân hàng đã cập nhật: tổng " + state.questions.length + " câu";
-          renderDash(); renderBank();
         }
-        return { fetched: good.length, bad: bad, added: res.added, updated: res.updated, total: state.questions.length, changed: changed };
+        renderDash(); renderBank();
+        return { fetched: good.length, bad: bad, added: res.added, updated: res.updated, total: state.questions.length, changed: changed, updatedAt: state.onlineLastAt };
+      }).catch(function(err){
+        state.onlineLastOk = false;
+        try { saveState(); } catch(e) {}
+        try { renderDash(); } catch(e) {}
+        throw err;
       });
     }
     $("btnOnlineUpdate").addEventListener("click", function(){
@@ -1669,9 +1717,11 @@
       setOnlineStatus("Đang tải ngân hàng từ kho trực tuyến…");
       fetchOnlineBank().then(function(res){
         setOnlineStatus("Đã tải về <b>" + res.fetched + "</b> câu từ kho trực tuyến (thêm mới " + res.added + " câu, cập nhật " + res.updated + " câu" + (res.bad ? ", bỏ qua " + res.bad + " bản ghi lỗi" : "") + "). Tổng kho hiện tại: <b>" + res.total + " câu</b>.", "ok");
+        renderDash();
         toast("Cập nhật ngân hàng xong: tổng " + res.total + " câu.");
       }).catch(function(){
         setOnlineStatus("Không tải được ngân hàng trực tuyến — thiết bị có thể đang <b>không có mạng</b> (như ở phòng Tin). Ứng dụng vẫn dùng bình thường với ngân hàng đã lưu trên máy (" + state.questions.length + " câu).", "err");
+        renderDash();
       }).then(function(){ btn.disabled = false; });
     });
 
