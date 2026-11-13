@@ -1,0 +1,4509 @@
+{
+ "phienBan": "master-2026-11-13",
+ "tongSo": 237,
+ "cauHoi": [
+  {
+   "id": "SEED-001",
+   "lop": 3,
+   "bai": "Bài 1: Thông tin và quyết định",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Có ba dạng thông tin thường gặp. Đó là những dạng nào?",
+   "luaChon": [
+    "Hình ảnh, nóng, lạnh",
+    "Âm thanh, mùi hương, chữ",
+    "Chữ, mùi vị, màu sắc",
+    "Chữ, hình ảnh, âm thanh"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-002",
+   "lop": 3,
+   "bai": "Bài 1: Thông tin và quyết định",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Tiếng chuông báo thức mỗi sáng là thông tin giúp bạn Minh quyết định điều gì?",
+   "luaChon": [
+    "Đi ngủ tiếp",
+    "Đi đá bóng",
+    "Xem ti vi",
+    "Thức dậy, chuẩn bị đi học"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-003",
+   "lop": 3,
+   "bai": "Bài 1: Thông tin và quyết định",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trời mưa, Khoa đưa áo mưa cho mẹ. Câu nào là THÔNG TIN?",
+   "luaChon": [
+    "Khoa đưa áo mưa cho mẹ",
+    "Mẹ mặc áo mưa",
+    "Trời mưa",
+    "Khoa đi học"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-004",
+   "lop": 3,
+   "bai": "Bài 1: Thông tin và quyết định",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Tiếng chim hót mà Minh và An nghe thấy là thông tin dạng gì?",
+   "luaChon": [
+    "Không phải thông tin",
+    "Dạng âm thanh",
+    "Dạng chữ",
+    "Dạng hình ảnh"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-005",
+   "lop": 3,
+   "bai": "Bài 1: Thông tin và quyết định",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Dòng chữ tên trường trên cổng trường là thông tin dạng gì?",
+   "luaChon": [
+    "Dạng mùi vị",
+    "Dạng hình ảnh động",
+    "Dạng âm thanh",
+    "Dạng chữ"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-006",
+   "lop": 3,
+   "bai": "Bài 1: Thông tin và quyết định",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để ra quyết định, em cần có gì?",
+   "luaChon": [
+    "Chỉ cần đoán",
+    "Không cần gì cả",
+    "Cần có thông tin",
+    "Cần có máy tính"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-007",
+   "lop": 3,
+   "bai": "Bài 2: Xử lý thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Bộ phận nào của con người làm nhiệm vụ xử lí thông tin?",
+   "luaChon": [
+    "Đôi mắt",
+    "Đôi tai",
+    "Chân tay",
+    "Bộ não"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-008",
+   "lop": 3,
+   "bai": "Bài 2: Xử lý thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi một người hát theo video, mắt và tai làm nhiệm vụ gì?",
+   "luaChon": [
+    "Xử lí thông tin",
+    "Không làm gì",
+    "Thu nhận thông tin (lời và nhạc)",
+    "Ra quyết định"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-009",
+   "lop": 3,
+   "bai": "Bài 2: Xử lý thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Em bấm phím số 3 trên điều khiển, ti vi chuyển sang kênh 3. Thông tin ti vi nhận được là gì?",
+   "luaChon": [
+    "Tiếng hát",
+    "Số 3",
+    "Hình ảnh kênh 3",
+    "Màu đỏ"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-010",
+   "lop": 3,
+   "bai": "Bài 2: Xử lý thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Ti vi được điều khiển bằng giọng nói thì thông tin ti vi nhận được thuộc dạng nào?",
+   "luaChon": [
+    "Dạng số",
+    "Dạng hình ảnh",
+    "Dạng chữ",
+    "Dạng âm thanh"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-011",
+   "lop": 3,
+   "bai": "Bài 2: Xử lý thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Con người điều khiển một thiết bị (ti vi, máy giặt, điều hoà...) bằng cách nào?",
+   "luaChon": [
+    "Tắt điện",
+    "Cung cấp thông tin cho thiết bị",
+    "Lắc mạnh thiết bị",
+    "Nói chuyện với bạn"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-012",
+   "lop": 3,
+   "bai": "Bài 3: Máy tính và em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Các bộ phận cơ bản của máy tính để bàn là:",
+   "luaChon": [
+    "Loa, máy in, chuột",
+    "Màn hình, bàn phím, thân máy, chuột",
+    "Màn hình, máy in, bàn phím",
+    "Thân máy, loa, bàn phím"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-013",
+   "lop": 3,
+   "bai": "Bài 3: Máy tính và em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Bộ phận nào quan trọng nhất của máy tính, có bộ xử lí giống như bộ não?",
+   "luaChon": [
+    "Màn hình",
+    "Loa",
+    "Chuột",
+    "Thân máy"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-014",
+   "lop": 3,
+   "bai": "Bài 3: Máy tính và em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Bộ phận nào hiển thị kết quả làm việc của máy tính?",
+   "luaChon": [
+    "Thân máy",
+    "Chuột",
+    "Màn hình",
+    "Bàn phím"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-015",
+   "lop": 3,
+   "bai": "Bài 3: Máy tính và em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Máy tính nhà Minh không nghe được âm thanh. Cần lắp thêm thiết bị nào?",
+   "luaChon": [
+    "Máy in",
+    "Bàn phím",
+    "Chuột",
+    "Loa"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-016",
+   "lop": 3,
+   "bai": "Bài 3: Máy tính và em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong máy tính bảng, điện thoại thông minh, bộ phận nào tiếp nhận thông tin vào?",
+   "luaChon": [
+    "Thân máy",
+    "Loa",
+    "Màn hình cảm ứng",
+    "Pin"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-017",
+   "lop": 3,
+   "bai": "Bài 3: Máy tính và em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để vệ sinh bàn phím máy tính, em nên dùng gì?",
+   "luaChon": [
+    "Khăn ướt",
+    "Chổi phủi bụi",
+    "Nước rửa chén",
+    "Dao, kéo"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-018",
+   "lop": 3,
+   "bai": "Bài 3: Máy tính và em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Thấy mùi khét từ dây điện khi dùng máy tính, Minh nên làm gì?",
+   "luaChon": [
+    "Mở cửa cho bớt mùi",
+    "Tự rút dây cắm điện",
+    "Chạy ra ngoài báo với người lớn",
+    "Tiếp tục làm việc"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-019",
+   "lop": 3,
+   "bai": "Bài 4: Làm việc với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi ngồi máy tính, mắt em nên cách màn hình khoảng bao nhiêu?",
+   "luaChon": [
+    "Càng gần càng tốt",
+    "2 - 3 mét",
+    "10 - 20 cm",
+    "50 - 80 cm"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-020",
+   "lop": 3,
+   "bai": "Bài 4: Làm việc với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Ngồi đúng tư thế giúp em tránh được bệnh nào?",
+   "luaChon": [
+    "Đau răng",
+    "Vẹo cột sống và cận thị",
+    "Đau tai",
+    "Sổ mũi"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-021",
+   "lop": 3,
+   "bai": "Bài 4: Làm việc với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Sau khoảng bao nhiêu phút dùng máy tính, em nên dừng lại nghỉ ngơi?",
+   "luaChon": [
+    "30 phút",
+    "3 giờ",
+    "5 phút",
+    "Không cần nghỉ"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-022",
+   "lop": 3,
+   "bai": "Bài 4: Làm việc với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Thao tác 'nháy đúp chuột' là gì?",
+   "luaChon": [
+    "Nhấn nút phải chuột một lần",
+    "Nhấn nút trái chuột nhanh hai lần liên tiếp",
+    "Lăn nút cuộn",
+    "Nhấn giữ nút trái rồi kéo"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-023",
+   "lop": 3,
+   "bai": "Bài 4: Làm việc với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Em dùng thao tác nào để di chuyển biểu tượng sang vị trí khác trên màn hình nền?",
+   "luaChon": [
+    "Nháy chuột",
+    "Nháy đúp chuột",
+    "Nháy nút phải chuột",
+    "Kéo thả chuột"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-024",
+   "lop": 3,
+   "bai": "Bài 4: Làm việc với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Thao tác nào đúng khi tắt máy tính?",
+   "luaChon": [
+    "Rút phích cắm điện",
+    "Nhấn nút công tắc trên thân máy",
+    "Tắt màn hình là xong",
+    "Đóng các phần mềm đang mở rồi chọn Start → Power → Shut down"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-025",
+   "lop": 3,
+   "bai": "Bài 4: Làm việc với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi cầm chuột, ngón trỏ đặt vào đâu?",
+   "luaChon": [
+    "Bên hông chuột",
+    "Nút phải chuột",
+    "Nút trái chuột",
+    "Dưới đáy chuột"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-026",
+   "lop": 3,
+   "bai": "Bài 5: Sử dụng bàn phím",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Hai phím có gờ trên hàng phím cơ sở là phím nào?",
+   "luaChon": [
+    "D và K",
+    "A và L",
+    "F và J",
+    "G và H"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-027",
+   "lop": 3,
+   "bai": "Bài 5: Sử dụng bàn phím",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi đặt tay ở vị trí xuất phát, hai ngón cái đặt vào phím nào?",
+   "luaChon": [
+    "Phím Shift",
+    "Phím dấu cách",
+    "Phím F",
+    "Phím Enter"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-028",
+   "lop": 3,
+   "bai": "Bài 5: Sử dụng bàn phím",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Các phím F, J thuộc hàng phím nào?",
+   "luaChon": [
+    "Hàng phím dưới",
+    "Hàng phím trên",
+    "Hàng phím cơ sở",
+    "Hàng phím số"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-029",
+   "lop": 3,
+   "bai": "Bài 5: Sử dụng bàn phím",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Gõ xong, các ngón tay của em phải đưa về hàng phím nào?",
+   "luaChon": [
+    "Hàng phím trên",
+    "Hàng phím cơ sở",
+    "Hàng phím số",
+    "Hàng phím dưới"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-030",
+   "lop": 3,
+   "bai": "Bài 5: Sử dụng bàn phím",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm nào được dùng để tập gõ 10 ngón trong bài?",
+   "luaChon": [
+    "Paint",
+    "Kiran's Typing Tutor",
+    "PowerPoint",
+    "Basic Mouse Skills"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-031",
+   "lop": 3,
+   "bai": "Bài 6: Khám phá thông tin trên Internet",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi truy cập Internet, em có thể xem những gì?",
+   "luaChon": [
+    "Lịch thi đấu bóng đá",
+    "Phim hoạt hình cho thiếu nhi",
+    "Video về danh lam thắng cảnh",
+    "Cả ba ý trên"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-032",
+   "lop": 3,
+   "bai": "Bài 6: Khám phá thông tin trên Internet",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trang thông tin nào KHÔNG phù hợp với các em?",
+   "luaChon": [
+    "Lịch sử, địa lí",
+    "Trò chơi dân gian",
+    "Trang có nội dung bạo lực",
+    "Phim hoạt hình thiếu nhi"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-033",
+   "lop": 3,
+   "bai": "Bài 6: Khám phá thông tin trên Internet",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Ý nào KHÔNG phải là đặc điểm của thông tin trên Internet?",
+   "luaChon": [
+    "Đáng tin cậy, luôn chính xác",
+    "Là kho thông tin khổng lồ",
+    "Được cập nhật thường xuyên",
+    "Đa dạng và phong phú"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-034",
+   "lop": 3,
+   "bai": "Bài 6: Khám phá thông tin trên Internet",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi sử dụng Internet, các em cần làm gì?",
+   "luaChon": [
+    "Kết bạn với người lạ",
+    "Giấu bố mẹ",
+    "Tự vào mọi trang web",
+    "Được thầy cô hoặc bố mẹ cho phép, hướng dẫn"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-035",
+   "lop": 3,
+   "bai": "Bài 6: Khám phá thông tin trên Internet",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Internet có thể giúp em trong việc nào sau đây?",
+   "luaChon": [
+    "Tưới cây",
+    "Xem lại bàn thắng đẹp của đội bóng em thích",
+    "Quét nhà giúp mẹ",
+    "Gấp quần áo"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-036",
+   "lop": 3,
+   "bai": "Bài 7: Sắp xếp để dễ tìm kiếm",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Sắp xếp đồ vật hợp lí sẽ giúp chúng ta:",
+   "luaChon": [
+    "Quản lí đồ vật dễ dàng hơn",
+    "Tìm kiếm đồ vật nhanh hơn",
+    "Cả hai ý trên đều đúng",
+    "Làm người khác khó tìm thấy"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-037",
+   "lop": 3,
+   "bai": "Bài 7: Sắp xếp để dễ tìm kiếm",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Sắp xếp là việc làm gì?",
+   "luaChon": [
+    "Để đồ lộn xộn",
+    "Phân loại đồ vật, dữ liệu vào các nhóm có đặc điểm chung",
+    "Vứt bớt đồ vật",
+    "Cất hết vào một hộp"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-038",
+   "lop": 3,
+   "bai": "Bài 7: Sắp xếp để dễ tìm kiếm",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Xếp thẻ con vật theo môi trường sống, ta chia thành hai nhóm nào?",
+   "luaChon": [
+    "Màu đen và màu trắng",
+    "Dưới nước và trên cạn",
+    "To và nhỏ",
+    "Biết bay và biết bơi"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-039",
+   "lop": 3,
+   "bai": "Bài 7: Sắp xếp để dễ tìm kiếm",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong tủ quần áo, quần áo được xếp vào ngăn quần, ngăn áo để làm gì?",
+   "luaChon": [
+    "Cho đẹp mắt thôi",
+    "Để không ai lấy được",
+    "Để tủ nặng hơn",
+    "Khi cần tìm thì tìm nhanh hơn"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-040",
+   "lop": 3,
+   "bai": "Bài 8: Sơ đồ hình cây. Tổ chức thông tin trong máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Thông tin trong máy tính được lưu trữ thành các:",
+   "luaChon": [
+    "Con chuột",
+    "Tệp",
+    "Loa",
+    "Bàn phím"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-041",
+   "lop": 3,
+   "bai": "Bài 8: Sơ đồ hình cây. Tổ chức thông tin trong máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Biểu tượng của thư mục thường có hình gì?",
+   "luaChon": [
+    "Hình bông hoa",
+    "Hình kẹp giấy (cặp tài liệu)",
+    "Hình ngôi sao",
+    "Hình chiếc loa"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-042",
+   "lop": 3,
+   "bai": "Bài 8: Sơ đồ hình cây. Tổ chức thông tin trong máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Câu nào sau đây là SAI?",
+   "luaChon": [
+    "Một thư mục có thể chứa nhiều tệp và thư mục con",
+    "Hai tệp cùng tên có thể nằm ở hai thư mục khác nhau",
+    "Thư mục có thể chứa nhiều thư mục con cùng tên",
+    "Một ổ đĩa có thể chứa nhiều thư mục"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-043",
+   "lop": 3,
+   "bai": "Bài 8: Sơ đồ hình cây. Tổ chức thông tin trong máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Ổ đĩa trong máy tính thường được đặt tên là gì?",
+   "luaChon": [
+    "X, Y, Z",
+    "1, 2, 3",
+    "A, B",
+    "C, D, E..."
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-044",
+   "lop": 3,
+   "bai": "Bài 8: Sơ đồ hình cây. Tổ chức thông tin trong máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Ổ đĩa, thư mục và tệp được tổ chức dưới dạng sơ đồ nào?",
+   "luaChon": [
+    "Sơ đồ hình tròn",
+    "Sơ đồ hình cây",
+    "Không có sơ đồ",
+    "Sơ đồ hình sao"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-045",
+   "lop": 3,
+   "bai": "Bài 9: Thực hành với tệp và thư mục trong máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để tạo thư mục mới, em chọn lệnh nào trong dải lệnh Home?",
+   "luaChon": [
+    "New folder",
+    "Copy",
+    "Delete",
+    "Rename"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-046",
+   "lop": 3,
+   "bai": "Bài 9: Thực hành với tệp và thư mục trong máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để đổi tên thư mục, em chọn lệnh nào?",
+   "luaChon": [
+    "Delete",
+    "Rename",
+    "New folder",
+    "Paste"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-047",
+   "lop": 3,
+   "bai": "Bài 9: Thực hành với tệp và thư mục trong máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để xoá thư mục đã chọn, em có thể nhấn phím nào trên bàn phím?",
+   "luaChon": [
+    "Space",
+    "Enter",
+    "Shift",
+    "Delete"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-048",
+   "lop": 3,
+   "bai": "Bài 9: Thực hành với tệp và thư mục trong máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Thư mục mới tạo có tên mặc định là gì?",
+   "luaChon": [
+    "Untitled",
+    "Thu muc",
+    "New folder",
+    "My file"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-049",
+   "lop": 3,
+   "bai": "Bài 9: Thực hành với tệp và thư mục trong máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Vì sao cần cân nhắc kĩ trước khi xoá thư mục?",
+   "luaChon": [
+    "Vì xoá rất lâu",
+    "Vì không xoá được",
+    "Để tránh mất thông tin",
+    "Vì máy sẽ hỏng"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-050",
+   "lop": 3,
+   "bai": "Bài 10: Bảo vệ thông tin khi dùng máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Thông tin trong máy tính có thể trao đổi với máy khác bằng cách nào?",
+   "luaChon": [
+    "Qua Internet",
+    "Qua thiết bị lưu trữ như USB, thẻ nhớ",
+    "Cả hai cách trên",
+    "Không thể trao đổi"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-051",
+   "lop": 3,
+   "bai": "Bài 10: Bảo vệ thông tin khi dùng máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Em KHÔNG nên chia sẻ rộng rãi trên Internet thông tin nào?",
+   "luaChon": [
+    "Tên bộ phim hoạt hình em thích",
+    "Họ tên, địa chỉ nhà em",
+    "Bài thơ em thích",
+    "Món ăn em thích"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-052",
+   "lop": 3,
+   "bai": "Bài 10: Bảo vệ thông tin khi dùng máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi có thông tin cá nhân của em, người xấu có thể:",
+   "luaChon": [
+    "Tìm đến em để thực hiện ý đồ xấu",
+    "Mạo danh em hoặc người thân làm việc xấu",
+    "Đăng tin nói xấu gia đình em",
+    "Tất cả các ý trên"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-053",
+   "lop": 3,
+   "bai": "Bài 10: Bảo vệ thông tin khi dùng máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Việc nào giúp bảo vệ thông tin cá nhân và gia đình?",
+   "luaChon": [
+    "Bảo vệ mật khẩu khi dùng máy tính",
+    "Cho người lạ biết địa chỉ nhà",
+    "Đưa mật khẩu cho bạn bè",
+    "Nhận tệp từ người không quen"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-054",
+   "lop": 3,
+   "bai": "Bài 10: Bảo vệ thông tin khi dùng máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Câu nào ĐÚNG?",
+   "luaChon": [
+    "USB là thiết bị lưu trữ và trao đổi thông tin giữa các máy tính",
+    "Máy tính không lưu được ảnh",
+    "Máy tính không lưu được giọng nói",
+    "Chỉ trao đổi được thông tin khi có Internet"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-055",
+   "lop": 3,
+   "bai": "Bài 11: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm nào được dùng để tạo bài trình chiếu trong bài học?",
+   "luaChon": [
+    "Kiran's Typing Tutor",
+    "Paint",
+    "Microsoft PowerPoint",
+    "Microsoft Word"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-056",
+   "lop": 3,
+   "bai": "Bài 11: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để chèn hình ảnh vào trang chiếu, em dùng nút lệnh Picture trong dải lệnh nào?",
+   "luaChon": [
+    "View",
+    "Insert",
+    "File",
+    "Home"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-057",
+   "lop": 3,
+   "bai": "Bài 11: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nhấn phím nào để trình chiếu toàn màn hình?",
+   "luaChon": [
+    "F1",
+    "F5",
+    "Delete",
+    "Enter"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-058",
+   "lop": 3,
+   "bai": "Bài 11: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để lưu bài trình chiếu, em chọn lệnh nào trong bảng chọn File?",
+   "luaChon": [
+    "Print",
+    "Open",
+    "Save",
+    "Close"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-059",
+   "lop": 3,
+   "bai": "Bài 11: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi gõ sai chữ, em nhấn phím nào để xoá?",
+   "luaChon": [
+    "Shift",
+    "Backspace",
+    "Enter",
+    "F5"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-060",
+   "lop": 3,
+   "bai": "Bài 11: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Hình ảnh được chọn trên trang chiếu sẽ có mấy nút tròn xung quanh?",
+   "luaChon": [
+    "10 nút",
+    "2 nút",
+    "8 nút",
+    "4 nút"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-061",
+   "lop": 3,
+   "bai": "Bài 12: Tìm hiểu về thế giới tự nhiên (tự chọn)",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm nào giúp em khám phá Hệ Mặt Trời và vòng đời động vật?",
+   "luaChon": [
+    "Kids Games Learning Science",
+    "Basic Mouse Skills",
+    "PowerPoint",
+    "Word"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-062",
+   "lop": 3,
+   "bai": "Bài 12: Tìm hiểu về thế giới tự nhiên (tự chọn)",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Theo bài học, Kim tinh có đặc điểm gì?",
+   "luaChon": [
+    "Sáng nhất và nóng nhất",
+    "Lớn nhất Hệ Mặt Trời",
+    "Gần Mặt Trời nhất",
+    "Có nhiều nước nhất"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-063",
+   "lop": 3,
+   "bai": "Bài 12: Tìm hiểu về thế giới tự nhiên (tự chọn)",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Vòng đời của bướm gồm những giai đoạn nào?",
+   "luaChon": [
+    "Sâu bướm, nhộng, trứng",
+    "Trứng, sâu bướm, kén, nhộng",
+    "Trứng, sâu bướm, nhộng, bướm",
+    "Trứng, sâu bướm, bướm"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-064",
+   "lop": 3,
+   "bai": "Bài 12: Tìm hiểu về thế giới tự nhiên (tự chọn)",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nhờ máy tính, con người quan sát thế giới tự nhiên như thế nào?",
+   "luaChon": [
+    "Mờ nhạt, khó hiểu",
+    "Không quan sát được",
+    "Chỉ đọc được chữ",
+    "Sinh động và trực quan"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-065",
+   "lop": 3,
+   "bai": "Bài 13: Luyện tập và sử dụng chuột (tự chọn)",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm luyện tập chuột trong bài tên là gì?",
+   "luaChon": [
+    "Kiran's Typing Tutor",
+    "Paint",
+    "PowerPoint",
+    "Basic Mouse Skills"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-066",
+   "lop": 3,
+   "bai": "Bài 13: Luyện tập và sử dụng chuột (tự chọn)",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm Basic Mouse Skills có bài tập theo mấy mức?",
+   "luaChon": [
+    "5 mức",
+    "3 mức",
+    "7 mức",
+    "10 mức"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-067",
+   "lop": 3,
+   "bai": "Bài 13: Luyện tập và sử dụng chuột (tự chọn)",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Mức 5 của Basic Mouse Skills luyện thao tác nào?",
+   "luaChon": [
+    "Nháy chuột",
+    "Di chuyển chuột",
+    "Nháy đúp chuột",
+    "Kéo thả chuột"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-068",
+   "lop": 3,
+   "bai": "Bài 13: Luyện tập và sử dụng chuột (tự chọn)",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong Basic Mouse Skills, nhấn phím nào để chuyển sang mức tiếp theo?",
+   "luaChon": [
+    "Enter",
+    "N",
+    "F2",
+    "Q"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-069",
+   "lop": 3,
+   "bai": "Bài 13: Luyện tập và sử dụng chuột (tự chọn)",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Em cần nháy đúp chuột khi nào?",
+   "luaChon": [
+    "Gõ chữ",
+    "Lăn trang",
+    "Khởi động một phần mềm trên màn hình nền",
+    "Chọn lệnh New folder"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-070",
+   "lop": 3,
+   "bai": "Bài 14: Em thực hiện công việc như thế nào?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nhiều công việc được thực hiện như thế nào?",
+   "luaChon": [
+    "Theo từng bước, theo một thứ tự nhất định",
+    "Chỉ làm một bước",
+    "Làm lộn xộn cũng được",
+    "Làm bước cuối trước"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-071",
+   "lop": 3,
+   "bai": "Bài 14: Em thực hiện công việc như thế nào?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Vì sao nên chia một việc thành những việc nhỏ hơn?",
+   "luaChon": [
+    "Để không phải làm",
+    "Để mất nhiều thời gian",
+    "Để dễ hiểu và dễ thực hiện",
+    "Để việc khó hơn"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-072",
+   "lop": 3,
+   "bai": "Bài 14: Em thực hiện công việc như thế nào?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Mỗi sáng, An phải làm việc gì TRƯỚC khi vệ sinh cá nhân?",
+   "luaChon": [
+    "Ăn trưa",
+    "Thức dậy",
+    "Đi học",
+    "Đi giày dép"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-073",
+   "lop": 3,
+   "bai": "Bài 14: Em thực hiện công việc như thế nào?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong việc đánh răng, bước nào làm ngay sau 'Lấy kem bàn chải'?",
+   "luaChon": [
+    "Chuẩn bị",
+    "Súc miệng",
+    "Rửa sạch",
+    "Chải răng"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-074",
+   "lop": 3,
+   "bai": "Bài 14: Em thực hiện công việc như thế nào?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Rô-bốt trong bài có thể thực hiện những lệnh nào?",
+   "luaChon": [
+    "Tiến 1 ô, quay trái, quay phải",
+    "Hát, múa",
+    "Bay, nhảy, bơi",
+    "Lùi 5 ô"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-075",
+   "lop": 3,
+   "bai": "Bài 15: Công việc được thực hiện theo điều kiện",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Cách nói nào dùng để diễn đạt việc làm tuỳ thuộc vào điều kiện?",
+   "luaChon": [
+    "Hoặc ... hoặc ...",
+    "Và ... và ...",
+    "Nếu ... thì ...",
+    "Không ... mà ..."
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-076",
+   "lop": 3,
+   "bai": "Bài 15: Công việc được thực hiện theo điều kiện",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong câu 'Nếu trời không mưa thì Khoa sẽ đi đá bóng', phần nào là điều kiện?",
+   "luaChon": [
+    "Trời không mưa",
+    "Khoa",
+    "Đi đá bóng",
+    "Sẽ"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-077",
+   "lop": 3,
+   "bai": "Bài 15: Công việc được thực hiện theo điều kiện",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Số điện thoại cấp cứu là số nào?",
+   "luaChon": [
+    "113",
+    "115",
+    "111",
+    "114"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-078",
+   "lop": 3,
+   "bai": "Bài 15: Công việc được thực hiện theo điều kiện",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Số điện thoại báo cháy là số nào?",
+   "luaChon": [
+    "115",
+    "114",
+    "112",
+    "113"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-079",
+   "lop": 3,
+   "bai": "Bài 15: Công việc được thực hiện theo điều kiện",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nếu đèn giao thông chuyển sang màu đỏ thì em làm gì?",
+   "luaChon": [
+    "Đi nhanh qua đường",
+    "Phải dừng lại",
+    "Chạy thật nhanh",
+    "Quay về nhà"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-080",
+   "lop": 3,
+   "bai": "Bài 16: Công việc của em và sự trợ giúp của máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để làm tốt một việc, trước tiên chúng ta cần xác định gì?",
+   "luaChon": [
+    "Ai làm nhanh nhất",
+    "Những gì đã có và kết quả cần đạt được",
+    "Máy tính nào đẹp nhất",
+    "Không cần xác định"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-081",
+   "lop": 3,
+   "bai": "Bài 16: Công việc của em và sự trợ giúp của máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nhóm An, Minh, Khoa cần tạo ra sản phẩm gì?",
+   "luaChon": [
+    "Bài hát",
+    "Một trò chơi",
+    "Bức tranh vẽ tay",
+    "Bài trình chiếu về kế hoạch trồng hoa"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-082",
+   "lop": 3,
+   "bai": "Bài 16: Công việc của em và sự trợ giúp của máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Việc đầu tiên khi xây dựng bài trình chiếu là gì?",
+   "luaChon": [
+    "Hoàn thiện sản phẩm",
+    "Lên ý tưởng",
+    "Trình chiếu",
+    "Lưu tệp"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-083",
+   "lop": 3,
+   "bai": "Bài 16: Công việc của em và sự trợ giúp của máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong các việc nhỏ, việc nào cần dùng máy tính?",
+   "luaChon": [
+    "Mua chậu hoa",
+    "Tưới nước cho cây",
+    "Nhặt cỏ",
+    "Tạo bài trình chiếu"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-084",
+   "lop": 4,
+   "bai": "Bài 1. Phần cứng và phần mềm máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Thiết bị nào sau đây là PHẦN CỨNG?",
+   "luaChon": [
+    "Trò chơi trên máy tính",
+    "Ứng dụng xem video",
+    "Phần mềm trình chiếu",
+    "Bàn phím"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-085",
+   "lop": 4,
+   "bai": "Bài 1. Phần cứng và phần mềm máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phát biểu nào SAI?",
+   "luaChon": [
+    "Thân máy là phần cứng",
+    "Trò chơi trên máy tính là phần mềm",
+    "Ứng dụng xem video là phần mềm",
+    "Chương trình luyện gõ bàn phím là phần cứng"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-086",
+   "lop": 4,
+   "bai": "Bài 1. Phần cứng và phần mềm máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Vì sao em không nhìn thấy phần mềm?",
+   "luaChon": [
+    "Vì phần mềm nằm trong hộp",
+    "Vì phần mềm có màu trong suốt",
+    "Vì phần mềm không có hình dạng, chỉ thấy kết quả hoạt động qua phần cứng",
+    "Vì phần mềm quá nhỏ"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-087",
+   "lop": 4,
+   "bai": "Bài 1. Phần cứng và phần mềm máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phát biểu nào ĐÚNG?",
+   "luaChon": [
+    "Phần cứng làm việc độc lập, không cần phần mềm",
+    "Phần mềm tự làm mọi việc, không cần phần cứng",
+    "Cả phần cứng và phần mềm đều cần để máy tính hoạt động",
+    "Máy tính chỉ cần phần cứng"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-088",
+   "lop": 4,
+   "bai": "Bài 1. Phần cứng và phần mềm máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Ống kính điện thoại là phần cứng. Ứng dụng chụp ảnh là gì?",
+   "luaChon": [
+    "Phần mềm",
+    "Thiết bị điện",
+    "Phần cứng",
+    "Pin"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-089",
+   "lop": 4,
+   "bai": "Bài 1. Phần cứng và phần mềm máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Việc nào là sử dụng máy tính ĐÚNG cách?",
+   "luaChon": [
+    "Đặt máy tính ở nơi thoáng mát, khô ráo, sạch sẽ",
+    "Vừa dùng máy tính vừa uống nước",
+    "Nhấn giữ nút công tắc để tắt máy",
+    "Dùng dao cạo vết bẩn trên màn hình"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-090",
+   "lop": 4,
+   "bai": "Bài 2. Gõ bàn phím đúng cách",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Gõ bàn phím đúng cách giúp em điều gì?",
+   "luaChon": [
+    "Không cần học bài",
+    "Bàn phím đẹp hơn",
+    "Máy tính chạy nhanh hơn",
+    "Gõ nhanh, chính xác, tiết kiệm thời gian và bảo vệ sức khoẻ"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-091",
+   "lop": 4,
+   "bai": "Bài 2. Gõ bàn phím đúng cách",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Sau khi gõ xong một phím trên hàng phím số, em đặt ngón tay thế nào?",
+   "luaChon": [
+    "Đưa về vị trí xuất phát trên hàng phím cơ sở",
+    "Giữ nguyên trên hàng phím số",
+    "Nhấc tay khỏi bàn phím",
+    "Đưa lên hàng phím trên"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-092",
+   "lop": 4,
+   "bai": "Bài 2. Gõ bàn phím đúng cách",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khoa chỉ dùng hai ngón trỏ để gõ. Cách gõ đó thế nào?",
+   "luaChon": [
+    "Là cách duy nhất",
+    "Đúng cách, rất nhanh",
+    "Chưa đúng cách, gõ chậm và dễ mỏi",
+    "Là cách gõ 10 ngón"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-093",
+   "lop": 4,
+   "bai": "Bài 2. Gõ bàn phím đúng cách",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi gõ phím số, các ngón tay xuất phát từ hàng phím nào?",
+   "luaChon": [
+    "Hàng phím số",
+    "Hàng phím cơ sở",
+    "Hàng phím dưới",
+    "Hàng phím chứa dấu cách"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-094",
+   "lop": 4,
+   "bai": "Bài 2. Gõ bàn phím đúng cách",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để gõ chữ hoa trong Notepad, em dùng phím nào?",
+   "luaChon": [
+    "Tab",
+    "Delete",
+    "Enter",
+    "Caps Lock hoặc Shift"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-095",
+   "lop": 4,
+   "bai": "Bài 3: Thông tin trên trang web",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trang web thường có các loại thông tin nào?",
+   "luaChon": [
+    "Chỉ có hình ảnh và âm thanh",
+    "Chỉ có video",
+    "Chỉ có văn bản và hình ảnh",
+    "Văn bản, hình ảnh, âm thanh, video và siêu liên kết"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-096",
+   "lop": 4,
+   "bai": "Bài 3: Thông tin trên trang web",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi nháy chuột vào siêu liên kết thì điều gì xảy ra?",
+   "luaChon": [
+    "Mở trang web khác hoặc đến vị trí khác",
+    "Xoá trang web",
+    "Không có gì",
+    "Máy tính tắt"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-097",
+   "lop": 4,
+   "bai": "Bài 3: Thông tin trên trang web",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Văn bản có chứa văn bản, hình ảnh, âm thanh, video và siêu liên kết được gọi là gì?",
+   "luaChon": [
+    "Thư mục",
+    "Bàn phím",
+    "Siêu văn bản",
+    "Tệp nhạc"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-098",
+   "lop": 4,
+   "bai": "Bài 3: Thông tin trên trang web",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Cố tình xem trang web không phù hợp lứa tuổi có thể gây tác hại gì?",
+   "luaChon": [
+    "Suy nghĩ lệch lạc",
+    "Bị lừa đảo, dụ dỗ, bắt nạt",
+    "Lãng phí thời gian",
+    "Tất cả các ý trên"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-099",
+   "lop": 4,
+   "bai": "Bài 3: Thông tin trên trang web",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Tác hại nào KHÔNG phải do cố tình xem trang web không phù hợp?",
+   "luaChon": [
+    "Bị dụ dỗ làm việc không đúng",
+    "Lãng phí thời gian",
+    "Bị bắt nạt, đe doạ trên mạng",
+    "Máy tính bị hỏng phần cứng"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-100",
+   "lop": 4,
+   "bai": "Bài 4. Tìm kiếm thông tin trên Internet",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Từ khoá là gì?",
+   "luaChon": [
+    "Tên trang web",
+    "Mật khẩu",
+    "Từ hoặc cụm từ thể hiện nội dung muốn tìm kiếm",
+    "Chìa khoá mở máy tính"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-101",
+   "lop": 4,
+   "bai": "Bài 4. Tìm kiếm thông tin trên Internet",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Muốn tìm thông tin về Bảo tàng Dân tộc học Việt Nam, từ khoá nào phù hợp nhất?",
+   "luaChon": [
+    "Bảo tàng",
+    "Các dân tộc ở Việt Nam",
+    "Bảo tàng Dân tộc học Việt Nam",
+    "Bảo tàng Việt Nam"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-102",
+   "lop": 4,
+   "bai": "Bài 4. Tìm kiếm thông tin trên Internet",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Địa chỉ nào là của một máy tìm kiếm?",
+   "luaChon": [
+    "Notepad",
+    "google.com",
+    "PowerPoint",
+    "Scratch"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-103",
+   "lop": 4,
+   "bai": "Bài 4. Tìm kiếm thông tin trên Internet",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Bước ĐẦU TIÊN để tìm kiếm thông tin là gì?",
+   "luaChon": [
+    "Nháy vào siêu liên kết",
+    "Xác định từ khoá",
+    "Tắt máy tính",
+    "Gõ từ khoá vào ô tìm kiếm"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-104",
+   "lop": 4,
+   "bai": "Bài 4. Tìm kiếm thông tin trên Internet",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Sau khi gõ từ khoá vào ô tìm kiếm, em nhấn phím nào?",
+   "luaChon": [
+    "Enter",
+    "Shift",
+    "Delete",
+    "Esc"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-105",
+   "lop": 4,
+   "bai": "Bài 5. Thao tác với tệp và thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Muốn tệp, thư mục có ở cả vị trí cũ và vị trí mới, em dùng thao tác nào?",
+   "luaChon": [
+    "Đổi tên",
+    "Di chuyển",
+    "Xoá",
+    "Sao chép"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-106",
+   "lop": 4,
+   "bai": "Bài 5. Thao tác với tệp và thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi DI CHUYỂN một thư mục đến chỗ khác thì thư mục ở vị trí cũ thế nào?",
+   "luaChon": [
+    "Bị đổi tên",
+    "Được nhân đôi",
+    "Không còn tồn tại ở vị trí cũ",
+    "Vẫn còn"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-107",
+   "lop": 4,
+   "bai": "Bài 5. Thao tác với tệp và thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Bạn Thu An chuyển từ Nhóm 1 sang Nhóm 2. Cách tốt nhất là gì?",
+   "luaChon": [
+    "Di chuyển thư mục Thu An từ Nhom 1 sang Nhom 2",
+    "Tạo mới thư mục rồi xoá cái cũ",
+    "Đổi tên thư mục Nhom 1",
+    "Sao chép rồi xoá"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-108",
+   "lop": 4,
+   "bai": "Bài 5. Thao tác với tệp và thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Thao tác nhầm với tệp và thư mục KHÔNG gây ra tác hại nào?",
+   "luaChon": [
+    "Làm mất thông tin",
+    "Làm hỏng phần cứng máy tính",
+    "Lỗi chương trình máy tính",
+    "Khó quản lí tệp và thư mục"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-109",
+   "lop": 4,
+   "bai": "Bài 5. Thao tác với tệp và thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Bạn nào thao tác KHÔNG đúng?",
+   "luaChon": [
+    "Khoa đổi tên thư mục con của mình",
+    "An xoá tệp nháp trong thư mục của mình",
+    "Huy xoá tệp trong thư mục Windows ở ổ đĩa C",
+    "Minh sao chép tệp vào thư mục của mình"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-110",
+   "lop": 4,
+   "bai": "Bài 5. Thao tác với tệp và thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để di chuyển thư mục, em chọn lệnh nào?",
+   "luaChon": [
+    "New folder",
+    "Move to",
+    "Rename",
+    "Copy"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-111",
+   "lop": 4,
+   "bai": "Bài 6. Sử dụng phần mềm khi được phép",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Theo bài học, phần mềm nào KHÔNG miễn phí?",
+   "luaChon": [
+    "PowerPoint",
+    "Unikey",
+    "Scratch",
+    "Kiran's Typing Tutor"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-112",
+   "lop": 4,
+   "bai": "Bài 6. Sử dụng phần mềm khi được phép",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm có bản quyền là gì?",
+   "luaChon": [
+    "Phần mềm tải lậu",
+    "Phần mềm hết hạn",
+    "Phần mềm không có tác giả",
+    "Phần mềm đã được tác giả cho phép sử dụng"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-113",
+   "lop": 4,
+   "bai": "Bài 6. Sử dụng phần mềm khi được phép",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Vì sao nên dùng phần mềm có bản quyền?",
+   "luaChon": [
+    "Giữ an toàn thông tin trên máy tính",
+    "Tránh vi phạm pháp luật",
+    "Được nhà sản xuất hỗ trợ khi gặp sự cố",
+    "Tất cả các ý trên"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-114",
+   "lop": 4,
+   "bai": "Bài 6. Sử dụng phần mềm khi được phép",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Dùng phần mềm có bản quyền KHÔNG tránh được rủi ro nào?",
+   "luaChon": [
+    "Máy tính bị nhiễm virus",
+    "Bị đánh cắp thông tin",
+    "Bị mất điện",
+    "Vi phạm pháp luật"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-115",
+   "lop": 4,
+   "bai": "Bài 6. Sử dụng phần mềm khi được phép",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Tìm cách dùng phần mềm có bản quyền mà không trả tiền là việc làm thế nào?",
+   "luaChon": [
+    "Được khuyến khích",
+    "Không sao cả",
+    "Vi phạm pháp luật và ảnh hưởng quyền lợi người làm ra phần mềm",
+    "Rất thông minh"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-116",
+   "lop": 4,
+   "bai": "Bài 7: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm nào hỗ trợ gõ tiếng Việt?",
+   "luaChon": [
+    "Unikey",
+    "Windows Media Player",
+    "Paint",
+    "Scratch"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-117",
+   "lop": 4,
+   "bai": "Bài 7: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Hai kiểu gõ tiếng Việt phổ biến là gì?",
+   "luaChon": [
+    "Word và Excel",
+    "ABC và XYZ",
+    "Telex và VNI",
+    "Shift và Enter"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-118",
+   "lop": 4,
+   "bai": "Bài 7: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Theo kiểu Telex, muốn có chữ 'đ' em gõ thế nào?",
+   "luaChon": [
+    "dj",
+    "dw",
+    "dd",
+    "d9"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-119",
+   "lop": 4,
+   "bai": "Bài 7: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Theo kiểu Telex, để có từ 'đi chơi' em gõ:",
+   "luaChon": [
+    "ddi choow",
+    "ddi chowi",
+    "d9i cho7i",
+    "di choi"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-120",
+   "lop": 4,
+   "bai": "Bài 7: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Theo kiểu Telex, để có từ 'quê hương' em gõ:",
+   "luaChon": [
+    "quee huwowng",
+    "quee huong",
+    "que huong",
+    "que huwowng"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-121",
+   "lop": 4,
+   "bai": "Bài 7: Bài trình chiếu của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để gõ chữ hoa, em làm thế nào?",
+   "luaChon": [
+    "Nhấn Delete",
+    "Nhấn Enter",
+    "Nháy đúp chuột",
+    "Nhấn giữ phím Shift và gõ phím chữ"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-122",
+   "lop": 4,
+   "bai": "Bài 8. Định dạng văn bản trên trang chiếu",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Các nút lệnh định dạng phông, kiểu, màu, cỡ chữ nằm trong nhóm lệnh nào của dải lệnh Home?",
+   "luaChon": [
+    "Font",
+    "Slides",
+    "Paragraph",
+    "Clipboard"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-123",
+   "lop": 4,
+   "bai": "Bài 8. Định dạng văn bản trên trang chiếu",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để tạo gạch đầu dòng, em dùng nút lệnh nào?",
+   "luaChon": [
+    "Bold",
+    "Underline",
+    "Bullets",
+    "Italic"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-124",
+   "lop": 4,
+   "bai": "Bài 8. Định dạng văn bản trên trang chiếu",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trước khi định dạng văn bản, em cần làm gì?",
+   "luaChon": [
+    "Trình chiếu",
+    "Chọn phần văn bản cần định dạng",
+    "Lưu tệp",
+    "Tắt máy"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-125",
+   "lop": 4,
+   "bai": "Bài 8. Định dạng văn bản trên trang chiếu",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Ba kiểu chữ học trong bài là gì?",
+   "luaChon": [
+    "Đậm, nghiêng, gạch chân",
+    "Trái, phải, giữa",
+    "To, nhỏ, vừa",
+    "Đỏ, xanh, vàng"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-126",
+   "lop": 4,
+   "bai": "Bài 8. Định dạng văn bản trên trang chiếu",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Lệnh nào dùng để bỏ dấu đầu dòng đã chọn?",
+   "luaChon": [
+    "Open",
+    "Delete",
+    "Save",
+    "None"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-127",
+   "lop": 4,
+   "bai": "Bài 9. Hiệu ứng chuyển trang",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Hiệu ứng chuyển trang là gì?",
+   "luaChon": [
+    "Hình ảnh trong trang",
+    "Cách trang chiếu xuất hiện khi trình chiếu",
+    "Tên tệp trình chiếu",
+    "Màu chữ trên trang"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-128",
+   "lop": 4,
+   "bai": "Bài 9. Hiệu ứng chuyển trang",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Các nút lệnh hiệu ứng chuyển trang nằm trên dải lệnh nào?",
+   "luaChon": [
+    "Transitions",
+    "Design",
+    "Home",
+    "Animations"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-129",
+   "lop": 4,
+   "bai": "Bài 9. Hiệu ứng chuyển trang",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Mỗi trang chiếu dùng được bao nhiêu kiểu hiệu ứng chuyển trang?",
+   "luaChon": [
+    "Một kiểu duy nhất",
+    "Hai kiểu",
+    "Năm kiểu",
+    "Không giới hạn"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-130",
+   "lop": 4,
+   "bai": "Bài 9. Hiệu ứng chuyển trang",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Câu nào ĐÚNG?",
+   "luaChon": [
+    "Một bài trình chiếu chỉ có một hiệu ứng",
+    "Không thể bỏ hiệu ứng",
+    "Hiệu ứng làm bài kém sinh động",
+    "Một bài trình chiếu có thể có nhiều hiệu ứng chuyển trang khác nhau"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-131",
+   "lop": 4,
+   "bai": "Bài 9. Hiệu ứng chuyển trang",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nhấn phím nào để trình chiếu và xem hiệu ứng?",
+   "luaChon": [
+    "Tab",
+    "F1",
+    "F5",
+    "Esc"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-132",
+   "lop": 4,
+   "bai": "Bài 10. Phần mềm soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm soạn thảo văn bản giúp em làm gì?",
+   "luaChon": [
+    "Gõ, chỉnh sửa, trình bày và lưu văn bản",
+    "Vẽ tranh",
+    "Khám phá thế giới tự nhiên",
+    "Luyện chuột"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-133",
+   "lop": 4,
+   "bai": "Bài 10. Phần mềm soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nhấn phím Delete sẽ xoá kí tự ở đâu?",
+   "luaChon": [
+    "Bên trái con trỏ soạn thảo",
+    "Bên phải con trỏ soạn thảo",
+    "Cả dòng",
+    "Cả văn bản"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-134",
+   "lop": 4,
+   "bai": "Bài 10. Phần mềm soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nhấn phím Backspace sẽ xoá kí tự ở đâu?",
+   "luaChon": [
+    "Bên trái con trỏ soạn thảo",
+    "Bên phải con trỏ soạn thảo",
+    "Đầu văn bản",
+    "Cuối văn bản"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-135",
+   "lop": 4,
+   "bai": "Bài 10. Phần mềm soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Muốn xuống dòng sang đoạn văn bản mới, em nhấn phím nào?",
+   "luaChon": [
+    "Delete",
+    "Space",
+    "Enter",
+    "Shift"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-136",
+   "lop": 4,
+   "bai": "Bài 10. Phần mềm soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm soạn thảo văn bản dùng trong bài là gì?",
+   "luaChon": [
+    "PowerPoint",
+    "Microsoft Word",
+    "Kiran's Typing Tutor",
+    "Scratch"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-137",
+   "lop": 4,
+   "bai": "Bài 11. Chỉnh sửa văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Câu thơ lặp lại nhiều lần, em dùng thao tác nào để không phải gõ lại?",
+   "luaChon": [
+    "Sao chép",
+    "Xoá",
+    "Tắt máy",
+    "Đổi tên"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-138",
+   "lop": 4,
+   "bai": "Bài 11. Chỉnh sửa văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để DI CHUYỂN phần văn bản, em dùng nút lệnh Cut rồi nút lệnh nào?",
+   "luaChon": [
+    "Copy",
+    "Open",
+    "Save",
+    "Paste"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-139",
+   "lop": 4,
+   "bai": "Bài 11. Chỉnh sửa văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Lệnh Copy dùng để làm gì?",
+   "luaChon": [
+    "Xoá văn bản",
+    "Dán văn bản",
+    "Cắt phần văn bản",
+    "Sao chép phần văn bản được chọn"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-140",
+   "lop": 4,
+   "bai": "Bài 11. Chỉnh sửa văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để lưu tệp với tên mới, em chọn lệnh nào trong bảng chọn File?",
+   "luaChon": [
+    "Open",
+    "Print",
+    "Save As",
+    "New"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-141",
+   "lop": 4,
+   "bai": "Bài 11. Chỉnh sửa văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để chèn hình ảnh vào văn bản, em chọn nút lệnh Picture trong dải lệnh nào?",
+   "luaChon": [
+    "Home",
+    "File",
+    "View",
+    "Insert"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-142",
+   "lop": 4,
+   "bai": "Bài 12A: Thực hành đa phương tiện",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Video, bài trình chiếu... sử dụng nhiều dạng thông tin được gọi là gì?",
+   "luaChon": [
+    "Phần cứng",
+    "Sản phẩm đa phương tiện",
+    "Thư mục",
+    "Siêu liên kết"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-143",
+   "lop": 4,
+   "bai": "Bài 12A: Thực hành đa phương tiện",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm dùng để xem video trong bài là gì?",
+   "luaChon": [
+    "Scratch",
+    "Windows Media Player",
+    "Notepad",
+    "Unikey"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-144",
+   "lop": 4,
+   "bai": "Bài 12A: Thực hành đa phương tiện",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để mở video bằng Windows Media Player, em nháy nút phải chuột rồi chọn gì?",
+   "luaChon": [
+    "Delete",
+    "Rename",
+    "Copy",
+    "Open with → Windows Media Player"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-145",
+   "lop": 4,
+   "bai": "Bài 12A: Thực hành đa phương tiện",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Video truyền thuyết thời các Vua Hùng được xem trong bài là gì?",
+   "luaChon": [
+    "Sự tích quả dưa hấu",
+    "Tấm Cám",
+    "Thánh Gióng",
+    "Sơn Tinh Thuỷ Tinh"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-146",
+   "lop": 4,
+   "bai": "Bài 12B: Phần mềm luyện tập gõ bàn phím",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Muốn gõ chữ hoa, em dùng phím nào?",
+   "luaChon": [
+    "Shift",
+    "Alt",
+    "Tab",
+    "Ctrl"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-147",
+   "lop": 4,
+   "bai": "Bài 12B: Phần mềm luyện tập gõ bàn phím",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Bài học luyện gõ chữ hoa trong Kiran's Typing Tutor tên là gì?",
+   "luaChon": [
+    "Capitals",
+    "Colours",
+    "Numbers",
+    "Words"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-148",
+   "lop": 4,
+   "bai": "Bài 12B: Phần mềm luyện tập gõ bàn phím",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Với phím có hai kí tự, muốn gõ kí tự TRÊN (như !, @, #), em làm gì?",
+   "luaChon": [
+    "Nhấn Caps Lock rồi Delete",
+    "Nhấn giữ Shift khi gõ",
+    "Nhấn Enter",
+    "Nhấn hai lần"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-149",
+   "lop": 4,
+   "bai": "Bài 12B: Phần mềm luyện tập gõ bàn phím",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nếu kí tự trên do tay phải phụ trách thì ngón nào nhấn giữ Shift?",
+   "luaChon": [
+    "Ngón út tay phải",
+    "Ngón cái tay phải",
+    "Ngón út tay trái",
+    "Ngón trỏ tay phải"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-150",
+   "lop": 4,
+   "bai": "Bài 12B: Phần mềm luyện tập gõ bàn phím",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Bài học luyện gõ từ trong Kids Typing tên là gì?",
+   "luaChon": [
+    "Words",
+    "Shift",
+    "Capitals",
+    "Enter"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-151",
+   "lop": 4,
+   "bai": "Bài 13. Chơi với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Các trò chơi trên máy tính được tạo ra bằng cách nào?",
+   "luaChon": [
+    "In ra giấy",
+    "Viết chương trình bằng ngôn ngữ lập trình",
+    "Chụp ảnh",
+    "Vẽ bằng bút chì"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-152",
+   "lop": 4,
+   "bai": "Bài 13. Chơi với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Mỗi chỉ dẫn trong ngôn ngữ lập trình được gọi là gì?",
+   "luaChon": [
+    "Siêu liên kết",
+    "Câu lệnh",
+    "Trang chiếu",
+    "Thư mục"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-153",
+   "lop": 4,
+   "bai": "Bài 13. Chơi với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để chạy chương trình trong Scratch, em nháy vào nút nào?",
+   "luaChon": [
+    "Nút quả địa cầu",
+    "Nút Delete",
+    "Nút cờ xanh",
+    "Nút thùng rác"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-154",
+   "lop": 4,
+   "bai": "Bài 13. Chơi với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong Scratch, nháy vào biểu tượng quả địa cầu để làm gì?",
+   "luaChon": [
+    "Dừng chương trình",
+    "Xoá nhân vật",
+    "Chạy chương trình",
+    "Chọn ngôn ngữ hiển thị"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-155",
+   "lop": 4,
+   "bai": "Bài 13. Chơi với máy tính",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Chỉ dẫn: đi 100 bước, quay trái 90 độ, lặp lại 4 lần. Bạn sẽ đi theo hình gì?",
+   "luaChon": [
+    "Hình tròn",
+    "Đường thẳng",
+    "Hình tam giác",
+    "Hình vuông"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-156",
+   "lop": 4,
+   "bai": "Bài 14. Khám phá môi trường lập trình trực quan",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong Scratch, nhóm lệnh và các lệnh thuộc nhóm đó có đặc điểm gì?",
+   "luaChon": [
+    "Cùng hình tròn",
+    "Cùng màu sắc",
+    "Không có màu",
+    "Khác màu"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-157",
+   "lop": 4,
+   "bai": "Bài 14. Khám phá môi trường lập trình trực quan",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Các lệnh được ghép với nhau tạo thành gì?",
+   "luaChon": [
+    "Trang chiếu",
+    "Siêu văn bản",
+    "Khối lệnh",
+    "Thư mục"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-158",
+   "lop": 4,
+   "bai": "Bài 14. Khám phá môi trường lập trình trực quan",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi chạy chương trình, các lệnh trong khối lệnh được thực hiện theo thứ tự nào?",
+   "luaChon": [
+    "Từ dưới lên trên",
+    "Ngẫu nhiên",
+    "Từ trên xuống dưới",
+    "Cùng lúc"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-159",
+   "lop": 4,
+   "bai": "Bài 14. Khám phá môi trường lập trình trực quan",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Lệnh 'đặt bút' trong nhóm Bút vẽ dùng để làm gì?",
+   "luaChon": [
+    "Để nhân vật bắt đầu vẽ",
+    "Dừng vẽ",
+    "Xoá hình vẽ",
+    "Đổi nhân vật"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-160",
+   "lop": 4,
+   "bai": "Bài 14. Khám phá môi trường lập trình trực quan",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Muốn loại bỏ một lệnh khỏi chương trình, em làm gì?",
+   "luaChon": [
+    "Đổi tên tệp",
+    "Nhấn F5",
+    "Tắt máy",
+    "Kéo lệnh trả lại khu vực nhóm lệnh"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-161",
+   "lop": 4,
+   "bai": "Bài 14. Khám phá môi trường lập trình trực quan",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để vẽ hình tam giác đều, góc quay của mèo là bao nhiêu độ?",
+   "luaChon": [
+    "120 độ",
+    "60 độ",
+    "90 độ",
+    "180 độ"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-162",
+   "lop": 4,
+   "bai": "Bài 15. Tạo chương trình máy tính để diễn tả ý tưởng",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi khởi động Scratch, nhân vật mặc định là gì?",
+   "luaChon": [
+    "Chú mèo",
+    "Chú chó",
+    "Con cá",
+    "Chú bướm"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-163",
+   "lop": 4,
+   "bai": "Bài 15. Tạo chương trình máy tính để diễn tả ý tưởng",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Lệnh 'bật lại nếu chạm cạnh' giúp nhân vật thế nào?",
+   "luaChon": [
+    "Phát âm thanh",
+    "Đổi màu",
+    "Không di chuyển ra ngoài sân khấu",
+    "Biến mất"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-164",
+   "lop": 4,
+   "bai": "Bài 15. Tạo chương trình máy tính để diễn tả ý tưởng",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để xoá nhân vật mèo, em nháy vào biểu tượng gì?",
+   "luaChon": [
+    "Bút vẽ",
+    "Quả địa cầu",
+    "Cờ xanh",
+    "Thùng rác"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-165",
+   "lop": 4,
+   "bai": "Bài 15. Tạo chương trình máy tính để diễn tả ý tưởng",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Muốn tạo chương trình hay, hấp dẫn thì điều gì rất quan trọng?",
+   "luaChon": [
+    "Máy tính đắt tiền",
+    "Ý tưởng câu chuyện",
+    "Màn hình to",
+    "Gõ thật nhanh"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-166",
+   "lop": 4,
+   "bai": "Bài 15. Tạo chương trình máy tính để diễn tả ý tưởng",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Lệnh 'đi tới vị trí ngẫu nhiên' làm gì?",
+   "luaChon": [
+    "Đưa nhân vật đến vị trí ngẫu nhiên trên sân khấu",
+    "Phát âm thanh",
+    "Xoá sân khấu",
+    "Dừng chương trình"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-167",
+   "lop": 4,
+   "bai": "Bài 16. Chương trình của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Minh nâng cấp 'Chú chó đáng yêu' bằng cách thêm nhân vật nào?",
+   "luaChon": [
+    "Chú bướm",
+    "Khủng long",
+    "Chú mèo",
+    "Con cá"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-168",
+   "lop": 4,
+   "bai": "Bài 16. Chương trình của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Lệnh 'lướt trong 1 giây tới vị trí ngẫu nhiên' giúp chú bướm làm gì?",
+   "luaChon": [
+    "Biến mất",
+    "Bay trong 1 giây rồi dừng ở vị trí ngẫu nhiên",
+    "Đứng yên mãi",
+    "Kêu lên"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-169",
+   "lop": 4,
+   "bai": "Bài 16. Chương trình của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Mỗi lần đuổi kịp chú bướm thì chú chó làm gì?",
+   "luaChon": [
+    "Biến mất",
+    "Kêu lên một tiếng",
+    "Đổi màu",
+    "Ngủ"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-170",
+   "lop": 4,
+   "bai": "Bài 16. Chương trình của em",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Lệnh 'đặt kiểu xoay trái - phải' giúp nhân vật thế nào?",
+   "luaChon": [
+    "Không bị lộn ngược khi bật lại",
+    "Vẽ hình",
+    "Chạy nhanh hơn",
+    "Phát nhạc"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-171",
+   "lop": 5,
+   "bai": "Bài 1. Em có thể làm gì với máy tính?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Theo bài học, máy tính có thể giúp em trong những việc nào?",
+   "luaChon": [
+    "Học tập, giải trí, tìm kiếm và trao đổi thông tin, hợp tác, tạo sản phẩm số",
+    "Chỉ chơi trò chơi",
+    "Chỉ học tập",
+    "Chỉ tắt máy an toàn"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-172",
+   "lop": 5,
+   "bai": "Bài 1. Em có thể làm gì với máy tính?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Ví dụ nào là dùng máy tính để HỌC TẬP?",
+   "luaChon": [
+    "Xem phim",
+    "Chơi game thiếu nhi",
+    "Dịch từ tiếng Anh bằng Google Translate hoặc làm bài bằng phần mềm soạn thảo",
+    "Gọi video với người thân"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-173",
+   "lop": 5,
+   "bai": "Bài 1. Em có thể làm gì với máy tính?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm nào trong bài giúp em hợp tác, thảo luận với bạn qua Internet?",
+   "luaChon": [
+    "Paint",
+    "Notepad",
+    "Zoom, Google Meet, Microsoft Teams",
+    "Basic Mouse Skills"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-174",
+   "lop": 5,
+   "bai": "Bài 1. Em có thể làm gì với máy tính?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trò chơi mê cung trong bài được viết bằng phần mềm nào?",
+   "luaChon": [
+    "Excel",
+    "Scratch",
+    "Word",
+    "PowerPoint"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-175",
+   "lop": 5,
+   "bai": "Bài 1. Em có thể làm gì với máy tính?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi chơi mê cung trên Scratch, em dùng những phím nào để điều khiển?",
+   "luaChon": [
+    "Phím F5",
+    "Phím số",
+    "Phím mũi tên",
+    "Phím Escape"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-176",
+   "lop": 5,
+   "bai": "Bài 1. Em có thể làm gì với máy tính?",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Theo bài, nếu chăm chỉ học lập trình em có thể làm gì?",
+   "luaChon": [
+    "Thay thế bàn phím bằng chuột",
+    "Chỉ dùng máy tính để nghe nhạc",
+    "Tự viết được chương trình trò chơi thú vị",
+    "Không cần học thêm gì"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-177",
+   "lop": 5,
+   "bai": "Bài 2. Tìm kiếm thông tin trên website",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi truy cập một website, trang nào xuất hiện đầu tiên?",
+   "luaChon": [
+    "Trang trống",
+    "Trang cuối",
+    "Trang quảng cáo",
+    "Trang chủ (homepage)"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-178",
+   "lop": 5,
+   "bai": "Bài 2. Tìm kiếm thông tin trên website",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Thông tin trên website thường được sắp xếp như thế nào để dễ tìm?",
+   "luaChon": [
+    "Ngẫu nhiên",
+    "Không sắp xếp",
+    "Theo chủ đề",
+    "Chỉ theo ngày"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-179",
+   "lop": 5,
+   "bai": "Bài 2. Tìm kiếm thông tin trên website",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Theo bài, em có thể tìm thông tin trên một website bằng cách nào?",
+   "luaChon": [
+    "Chỉ mở Paint",
+    "Chỉ gọi điện thoại",
+    "Duyệt theo chủ đề hoặc dùng công cụ tìm kiếm của website",
+    "Tắt máy tính"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-180",
+   "lop": 5,
+   "bai": "Bài 2. Tìm kiếm thông tin trên website",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Muốn tìm thông tin về bóng đá trên website báo Thiếu niên Tiền phong và Nhi đồng, nên chọn chủ đề nào?",
+   "luaChon": [
+    "Học đường",
+    "Giải trí",
+    "Chuyển động",
+    "Thể thao"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-181",
+   "lop": 5,
+   "bai": "Bài 2. Tìm kiếm thông tin trên website",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Cách nào giúp chia sẻ thông tin (tệp) đang lưu trên máy tính?",
+   "luaChon": [
+    "Tắt màn hình",
+    "Chỉ nhớ trong đầu",
+    "Gửi tệp qua thư điện tử, mạng xã hội hoặc sao chép vào USB",
+    "Xoá tệp đi"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-182",
+   "lop": 5,
+   "bai": "Bài 2. Tìm kiếm thông tin trên website",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Sau khi sao chép tệp sang USB, em cần làm gì trước khi rút USB?",
+   "luaChon": [
+    "Rút ngay lập tức",
+    "Đập nhẹ USB",
+    "Tắt nguồn điện toàn trường",
+    "Ngắt kết nối đúng cách (Eject / Safe To Remove Hardware)"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-183",
+   "lop": 5,
+   "bai": "Bài 2. Tìm kiếm thông tin trên website",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Địa chỉ website báo Thiếu niên Tiền phong và Nhi đồng trong bài là gì?",
+   "luaChon": [
+    "moet.gov.vn",
+    "thieunien.vn",
+    "google.com",
+    "facebook.com"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-184",
+   "lop": 5,
+   "bai": "Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để đưa ra quyết định giải quyết vấn đề, em cần có gì?",
+   "luaChon": [
+    "Chỉ cần đoán",
+    "Không cần gì",
+    "May mắn",
+    "Thông tin"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-185",
+   "lop": 5,
+   "bai": "Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Vì sao An chuẩn bị đúng đồ cho chuyến đi Nha Trang?",
+   "luaChon": [
+    "An không mang gì",
+    "An đã tìm thông tin: Nha Trang là điểm du lịch biển, quanh năm nắng nóng",
+    "An đoán mò",
+    "An mang toàn quần áo mùa đông"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-186",
+   "lop": 5,
+   "bai": "Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Úc nằm ở Nam bán cầu. Khi Việt Nam đang mùa hè thì ở Úc thường là mùa nào?",
+   "luaChon": [
+    "Mùa hè",
+    "Mùa xuân ấm",
+    "Mùa đông",
+    "Không có mùa"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-187",
+   "lop": 5,
+   "bai": "Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Cách hợp lí nhất khi nhóm An, Minh, Khoa làm chung bài trình chiếu là gì?",
+   "luaChon": [
+    "Mỗi bạn làm một bài riêng rồi chọn bài hay nhất",
+    "Không làm gì cả",
+    "Một bạn làm hộ cả nhóm",
+    "Chia việc nhỏ, phân công theo điểm mạnh của từng người"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-188",
+   "lop": 5,
+   "bai": "Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi làm việc nhóm, mỗi người cần có ý thức gì?",
+   "luaChon": [
+    "Giấu thông tin không chia sẻ",
+    "Chỉ làm việc mình thích",
+    "Làm thay hết cho bạn",
+    "Hoàn thành phần việc của mình và hợp tác, giúp đỡ nhau"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-189",
+   "lop": 5,
+   "bai": "Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Thông tin có thể thu thập từ những nguồn nào?",
+   "luaChon": [
+    "Chỉ từ USB",
+    "Chỉ từ sách giáo khoa",
+    "Ti vi, sách, báo, mọi người xung quanh và đặc biệt là Internet",
+    "Chỉ từ bạn bè"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-190",
+   "lop": 5,
+   "bai": "Bài 3. Tìm kiếm thông tin trong giải quyết vấn đề",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi chọn điểm tham quan Sa Pa cho đoàn có nhiều người già, trẻ em, nên tránh điều gì?",
+   "luaChon": [
+    "Các điểm gần như nhà thờ đá, hồ Sa Pa",
+    "Chợ đêm Sa Pa",
+    "Chụp ảnh ruộng bậc thang",
+    "Các điểm xa, đường vất vả, phải trèo đèo lội suối"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-191",
+   "lop": 5,
+   "bai": "Bài 4. Cây thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Tệp và thư mục trong máy tính được sắp xếp theo cấu trúc nào?",
+   "luaChon": [
+    "Cấu trúc cây",
+    "Không có cấu trúc",
+    "Sơ đồ hình tròn",
+    "Hàng ngang"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-192",
+   "lop": 5,
+   "bai": "Bài 4. Cây thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để tạo cây thư mục hợp lí, tên thư mục/tệp nên như thế nào?",
+   "luaChon": [
+    "Rõ ràng, gợi nhớ nội dung, đặt theo cách thống nhất",
+    "Toàn dấu hỏi",
+    "Trùng tên với Windows",
+    "Ngẫu nhiên, càng ngắn càng tốt"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-193",
+   "lop": 5,
+   "bai": "Bài 4. Cây thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Em có thể phân loại tệp theo những cách nào?",
+   "luaChon": [
+    "Không cần phân loại",
+    "Chỉ theo màu sắc màn hình",
+    "Theo loại tệp, theo thời gian, theo đối tượng",
+    "Chỉ theo tốc độ máy"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-194",
+   "lop": 5,
+   "bai": "Bài 4. Cây thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Công cụ tìm kiếm trên máy tính giúp em điều gì?",
+   "luaChon": [
+    "Cài phần mềm",
+    "Xoá toàn bộ ổ đĩa",
+    "Tắt máy",
+    "Nhanh chóng tìm thấy thư mục và tệp muốn tìm"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-195",
+   "lop": 5,
+   "bai": "Bài 4. Cây thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Sau khi nhập tên tệp vào ô tìm kiếm và nhấn Enter, công cụ tìm kiếm sẽ tìm ở đâu?",
+   "luaChon": [
+    "Chỉ trên USB đã rút",
+    "Trong thư mục đang mở (và kết quả liên quan)",
+    "Trên Internet toàn cầu",
+    "Chỉ trong thùng rác"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-196",
+   "lop": 5,
+   "bai": "Bài 4. Cây thư mục",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong thực hành bài, các bạn tạo thư mục Anh-Bai-tap-nhom rồi tạo thêm ba thư mục con tên gì?",
+   "luaChon": [
+    "Lớp 3, Lớp 4, Lớp 5",
+    "Ảnh, Phim, Nhạc",
+    "A, B, C",
+    "An, Minh, Khoa"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-197",
+   "lop": 5,
+   "bai": "Bài 5. Bản quyền nội dung thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nội dung thông tin có thể được thể hiện dưới dạng nào?",
+   "luaChon": [
+    "Chỉ số điện thoại",
+    "Chỉ văn bản",
+    "Văn bản, hình ảnh, âm thanh hoặc đa phương tiện",
+    "Chỉ âm thanh"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-198",
+   "lop": 5,
+   "bai": "Bài 5. Bản quyền nội dung thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Tác giả nội dung thông tin có quyền gì?",
+   "luaChon": [
+    "Đổi tên trường",
+    "Không có quyền gì",
+    "Bắt mọi người xoá máy tính",
+    "Cho phép hoặc không cho phép người khác sử dụng nội dung của mình"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-199",
+   "lop": 5,
+   "bai": "Bài 5. Bản quyền nội dung thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi sử dụng nội dung của người khác, em cần làm gì?",
+   "luaChon": [
+    "Giấu nguồn đi",
+    "Được tác giả cho phép và ghi rõ nguồn tin",
+    "Đăng lên mạng với tên mình",
+    "Xoá tên tác giả"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-200",
+   "lop": 5,
+   "bai": "Bài 5. Bản quyền nội dung thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nếu không rõ tên tác giả bài thơ sưu tầm, em có thể ghi nguồn như thế nào?",
+   "luaChon": [
+    "Không ghi gì",
+    "Ghi \"không biết\"",
+    "Ghi \"sưu tầm\"",
+    "Ghi tên bạn mình"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-201",
+   "lop": 5,
+   "bai": "Bài 5. Bản quyền nội dung thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Bình đọc nhật kí của An rồi kể lại cho bạn khác. Đây là hành vi gì?",
+   "luaChon": [
+    "Tôn trọng bạn bè",
+    "Được khuyến khích",
+    "Vi phạm tính riêng tư",
+    "Không liên quan bản quyền"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-202",
+   "lop": 5,
+   "bai": "Bài 5. Bản quyền nội dung thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Hoa lấy bức tranh của Minh dùng mà không hỏi. Việc làm đó thế nào?",
+   "luaChon": [
+    "Đúng vì dùng máy tính chung",
+    "Đúng vì tranh đẹp",
+    "Sai, cần được Minh cho phép",
+    "Không sao vì cùng lớp"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-203",
+   "lop": 5,
+   "bai": "Bài 5. Bản quyền nội dung thông tin",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Em nên ĐỒNG TÌNH với hành động nào?",
+   "luaChon": [
+    "Nêu rõ tên tác giả bài thơ khi đọc trước lớp",
+    "Sao chép tệp của bạn khi chưa xin phép",
+    "Đọc tin nhắn điện thoại người khác không được phép",
+    "Xem sổ ghi chép của anh trai không xin phép"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-204",
+   "lop": 5,
+   "bai": "Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Định dạng kí tự giúp em làm gì?",
+   "luaChon": [
+    "Xoá hết văn bản",
+    "Tắt máy tính",
+    "Trình bày văn bản đẹp hơn, dễ đọc và dễ ghi nhớ",
+    "Gửi email"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-205",
+   "lop": 5,
+   "bai": "Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi định dạng kí tự trong phần mềm soạn thảo, em thường dùng nhóm lệnh nào trên dải lệnh Home?",
+   "luaChon": [
+    "View",
+    "Font",
+    "Insert",
+    "File"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-206",
+   "lop": 5,
+   "bai": "Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Định dạng kí tự gồm những yếu tố nào?",
+   "luaChon": [
+    "Chỉ màu nền màn hình",
+    "Phông chữ, kiểu chữ, cỡ chữ, màu chữ,...",
+    "Chỉ tốc độ gõ",
+    "Chỉ âm thanh"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-207",
+   "lop": 5,
+   "bai": "Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Sau khi chèn hình ảnh vào văn bản, em có thể làm gì để văn bản đẹp hơn?",
+   "luaChon": [
+    "Thay đổi cách bố trí / đưa ảnh đến vị trí hợp lí",
+    "In ngay không xem",
+    "Không được di chuyển ảnh",
+    "Xoá hết chữ"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-208",
+   "lop": 5,
+   "bai": "Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong bài thực hành Word, tiêu đề \"Kem cầu vòng hoa quả\" được định dạng với phông và cỡ nào?",
+   "luaChon": [
+    "Times New Roman cỡ 8",
+    "Tahoma cỡ 16, kiểu đậm, màu xanh",
+    "Arial cỡ 10",
+    "Comic Sans cỡ 72"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-209",
+   "lop": 5,
+   "bai": "Bài 6. Định dạng kí tự và bố trí hình ảnh trong văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để đưa ảnh sang vị trí mới sau khi chọn cách bố trí Square, em làm gì?",
+   "luaChon": [
+    "Rút chuột ra khỏi máy",
+    "Nháy chuột vào ảnh, nhấn giữ và di chuyển chuột",
+    "Tắt Word",
+    "Nhấn phím Delete"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-210",
+   "lop": 5,
+   "bai": "Bài 7. Thực hành soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Bài học này giúp em thành thạo thao tác nào với đoạn văn bản?",
+   "luaChon": [
+    "Chọn, xoá, sao chép, di chuyển",
+    "Lắp thêm RAM",
+    "Cài hệ điều hành",
+    "Sửa phần cứng"
+   ],
+   "dapAn": 0,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-211",
+   "lop": 5,
+   "bai": "Bài 7. Thực hành soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi có nhiều đoạn văn bản giống nhau, cách làm nhanh là gì?",
+   "luaChon": [
+    "Chụp ảnh màn hình rồi in",
+    "Gõ lại từng chữ nhiều lần",
+    "Gõ một lần rồi sao chép những phần giống nhau",
+    "Không gõ gì"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-212",
+   "lop": 5,
+   "bai": "Bài 7. Thực hành soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để gõ chữ hoa, em có thể làm thế nào?",
+   "luaChon": [
+    "Nhấn Delete",
+    "Rút phích cắm",
+    "Nhấn mũi tên",
+    "Nhấn giữ Shift và gõ phím chữ"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-213",
+   "lop": 5,
+   "bai": "Bài 7. Thực hành soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Nếu gõ nhầm hoặc sai, em dùng phím nào để xoá?",
+   "luaChon": [
+    "F5",
+    "Delete hoặc Backspace",
+    "Windows",
+    "Print Screen"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-214",
+   "lop": 5,
+   "bai": "Bài 7. Thực hành soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Khi hoàn thiện văn bản theo bài, bước cuối cùng em nên làm gì?",
+   "luaChon": [
+    "Xoá tệp ngay",
+    "Đổi mật khẩu Wi-Fi",
+    "Tắt nguồn đột ngột",
+    "Xem lại, sửa lỗi chính tả rồi lưu văn bản"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-215",
+   "lop": 5,
+   "bai": "Bài 7. Thực hành soạn thảo văn bản",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong bài, nguồn hình ảnh minh hoạ được ghi ở đâu?",
+   "luaChon": [
+    "Trên nắp máy tính",
+    "Trong thùng rác",
+    "Ở dòng cuối văn bản (ví dụ shutterstock.com)",
+    "Không cần ghi"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-216",
+   "lop": 5,
+   "bai": "Bài 8A. Làm quen với phần mềm đồ hoạ",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm đồ hoạ giúp em làm gì?",
+   "luaChon": [
+    "Chỉ nghe nhạc",
+    "Chỉ gõ văn bản",
+    "Chỉ duyệt web",
+    "Vẽ tranh, thiết kế biểu tượng, thiết kế thiệp chúc mừng"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-217",
+   "lop": 5,
+   "bai": "Bài 8A. Làm quen với phần mềm đồ hoạ",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Tấm thiệp chúc mừng sinh nhật trong bài gồm thông tin dạng nào?",
+   "luaChon": [
+    "Chỉ âm thanh",
+    "Chỉ video",
+    "Chỉ số",
+    "Dạng chữ và dạng hình ảnh"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-218",
+   "lop": 5,
+   "bai": "Bài 8A. Làm quen với phần mềm đồ hoạ",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Phần mềm đồ hoạ dùng minh họa trong bài thực hành là gì?",
+   "luaChon": [
+    "Scratch",
+    "Zoom",
+    "Excel",
+    "Microsoft Paint"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-219",
+   "lop": 5,
+   "bai": "Bài 8A. Làm quen với phần mềm đồ hoạ",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Trong Paint, trang vẽ là gì?",
+   "luaChon": [
+    "Hộp màu",
+    "Vùng hình chữ nhật màu trắng để vẽ, chỉnh sửa sản phẩm",
+    "Ổ đĩa C",
+    "Thanh địa chỉ trình duyệt"
+   ],
+   "dapAn": 1,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-220",
+   "lop": 5,
+   "bai": "Bài 8A. Làm quen với phần mềm đồ hoạ",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Để vẽ quả bóng bay, bài hướng dẫn dùng công cụ nào trước?",
+   "luaChon": [
+    "Print",
+    "Save",
+    "Eraser",
+    "Oval (hình ô van) trong nhóm công cụ vẽ hình"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-221",
+   "lop": 5,
+   "bai": "Bài 8A. Làm quen với phần mềm đồ hoạ",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Công cụ nào dùng để tô màu bên trong quả bóng bay?",
+   "luaChon": [
+    "Delete",
+    "Zoom",
+    "Line",
+    "Fill (tô màu)"
+   ],
+   "dapAn": 3,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "id": "SEED-222",
+   "lop": 5,
+   "bai": "Bài 8A. Làm quen với phần mềm đồ hoạ",
+   "chuDe": "",
+   "yeuCau": "",
+   "mucDo": "",
+   "cauHoi": "Muốn tạo nhiều quả bóng bay giống nhau, em dùng những công cụ nào?",
+   "luaChon": [
+    "Chỉ Shut down",
+    "Chỉ F5",
+    "Select, Copy, Paste, rồi Resize / Rotate",
+    "Chỉ bàn phím số"
+   ],
+   "dapAn": 2,
+   "giaiThich": "",
+   "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
+   "trangThai": "Chờ duyệt"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Sáng nay, mẹ nhắn tin: “Chiều nay đón con lúc 4 giờ.” Tin nhắn của mẹ là thông tin dạng gì?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 1,
+   "giaiThich": "Tin nhắn được viết bằng các chữ nên thuộc thông tin dạng chữ.",
+   "lop": 3,
+   "luaChon": [
+    "Dạng hình ảnh",
+    "Dạng chữ",
+    "Dạng âm thanh",
+    "Dạng mùi vị"
+   ],
+   "mucDo": "Nhận biết",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nhận biết được ba dạng thông tin thường gặp: chữ, âm thanh, hình ảnh",
+   "id": "M-20261113-G3B1-01"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Khi xem dự báo thời tiết, bạn nhỏ nhìn thấy hình vẽ mặt trời và đám mây. Hình vẽ đó là thông tin dạng gì?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 2,
+   "giaiThich": "Hình vẽ mặt trời và đám mây là thông tin được thể hiện bằng hình ảnh.",
+   "lop": 3,
+   "luaChon": [
+    "Dạng âm thanh",
+    "Dạng chữ",
+    "Dạng hình ảnh",
+    "Dạng mùi vị"
+   ],
+   "mucDo": "Nhận biết",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nhận biết được ba dạng thông tin thường gặp: chữ, âm thanh, hình ảnh",
+   "id": "M-20261113-G3B1-02"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Thông tin giúp chúng ta làm gì?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 1,
+   "giaiThich": "Có thông tin, chúng ta hiểu đúng sự việc và đưa ra quyết định đúng.",
+   "lop": 3,
+   "luaChon": [
+    "Trang trí lớp học đẹp hơn",
+    "Đưa ra quyết định đúng",
+    "Chạy nhanh hơn",
+    "Ngủ ngon hơn"
+   ],
+   "mucDo": "Nhận biết",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nêu được ví dụ về vai trò của thông tin đối với việc đưa ra quyết định",
+   "id": "M-20261113-G3B1-03"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Nghe tiếng còi xe cứu thương, các xe khác nhường đường. Tiếng còi là thông tin dạng gì?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 3,
+   "giaiThich": "Tiếng còi được nghe bằng tai nên là thông tin dạng âm thanh.",
+   "lop": 3,
+   "luaChon": [
+    "Dạng chữ",
+    "Dạng hình ảnh",
+    "Dạng mùi vị",
+    "Dạng âm thanh"
+   ],
+   "mucDo": "Nhận biết",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nhận biết được ba dạng thông tin thường gặp: chữ, âm thanh, hình ảnh",
+   "id": "M-20261113-G3B1-04"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Bạn Tùng ngửi thấy mùi khét trong bếp và chạy đi báo cho mẹ. Mùi khét thuộc dạng thông tin nào trong ba dạng thông tin thường gặp?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 2,
+   "giaiThich": "Ba dạng thông tin thường gặp chỉ gồm chữ, âm thanh và hình ảnh; mùi khét không thuộc ba dạng đó.",
+   "lop": 3,
+   "luaChon": [
+    "Thuộc dạng âm thanh",
+    "Thuộc dạng hình ảnh",
+    "Không thuộc ba dạng đó",
+    "Thuộc dạng chữ"
+   ],
+   "mucDo": "Nhận biết",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nhận biết được ba dạng thông tin thường gặp: chữ, âm thanh, hình ảnh",
+   "id": "M-20261113-G3B1-05"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Xem ti vi thấy thông báo ngày mai trời nắng, bố quyết định phơi quần áo ngoài sân. Đâu là THÔNG TIN trong việc trên?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 1,
+   "giaiThich": "“Ngày mai trời nắng” là thông tin bố thu nhận được; việc phơi quần áo là quyết định dựa trên thông tin đó.",
+   "lop": 3,
+   "luaChon": [
+    "Bố phơi quần áo ngoài sân",
+    "Thông báo ngày mai trời nắng",
+    "Bố quyết định phơi quần áo",
+    "Cái ti vi"
+   ],
+   "mucDo": "Kết nối",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nhận biết được thông tin và quyết định trong ví dụ cụ thể",
+   "id": "M-20261113-G3B1-06"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Nghe chuông điện thoại reo, mẹ nhấc máy lên nghe. Trong việc trên, QUYẾT ĐỊNH của mẹ là gì?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 2,
+   "giaiThich": "Tiếng chuông reo là thông tin; mẹ quyết định nhấc máy lên nghe.",
+   "lop": 3,
+   "luaChon": [
+    "Chuông điện thoại reo",
+    "Tiếng chuông điện thoại",
+    "Nhấc máy lên nghe",
+    "Cái điện thoại"
+   ],
+   "mucDo": "Kết nối",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nhận biết được thông tin và quyết định trong ví dụ cụ thể",
+   "id": "M-20261113-G3B1-07"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Để quyết định có mang áo mưa đi học hay không, em nên làm gì trước?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 1,
+   "giaiThich": "Cần thu nhận thông tin trước (nhìn trời, xem dự báo thời tiết) rồi mới đưa ra quyết định.",
+   "lop": 3,
+   "luaChon": [
+    "Cứ mang áo mưa rồi xem trời sau",
+    "Thu nhận thông tin về thời tiết rồi mới quyết định",
+    "Đoán đại rồi quyết định luôn",
+    "Bắt chước bạn bên cạnh"
+   ],
+   "mucDo": "Kết nối",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nêu được ví dụ về vai trò của thông tin đối với việc đưa ra quyết định",
+   "id": "M-20261113-G3B1-08"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Bạn Hà nhìn đồng hồ thấy đã 6 giờ 30 phút nên vội ăn sáng để đi học. Thông tin giúp Hà đưa ra quyết định là gì?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 1,
+   "giaiThich": "Con số chỉ giờ trên đồng hồ là thông tin cho Hà biết đã đến giờ chuẩn bị đi học.",
+   "lop": 3,
+   "luaChon": [
+    "Món ăn sáng",
+    "Con số chỉ giờ trên đồng hồ",
+    "Cái bát ăn cơm",
+    "Tiếng nói của mẹ"
+   ],
+   "mucDo": "Kết nối",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nhận biết được thông tin và quyết định trong ví dụ cụ thể",
+   "id": "M-20261113-G3B1-09"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Nhóm nào sau đây đều gồm thông tin dạng hình ảnh?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 1,
+   "giaiThich": "Tranh vẽ, bức ảnh và hình vẽ trên biển báo đều là thông tin dạng hình ảnh.",
+   "lop": 3,
+   "luaChon": [
+    "Tiếng hát, tiếng trống trường",
+    "Tranh vẽ, bức ảnh, hình vẽ trên biển báo",
+    "Dòng chữ trong sách, tin nhắn",
+    "Tiếng chuông, lời nói của cô giáo"
+   ],
+   "mucDo": "Kết nối",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nhận biết được ba dạng thông tin thường gặp: chữ, âm thanh, hình ảnh",
+   "id": "M-20261113-G3B1-10"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Sáng ra, em nhìn ra cửa sổ thấy bầu trời nhiều mây đen và gió thổi mạnh. Quyết định nào hợp lí nhất?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 0,
+   "giaiThich": "Mây đen và gió mạnh là thông tin cho thấy trời sắp mưa, nên mang theo áo mưa là quyết định hợp lí.",
+   "lop": 3,
+   "luaChon": [
+    "Mang theo áo mưa khi đi học",
+    "Mặc áo ngắn tay cho mát",
+    "Mang kính râm che nắng",
+    "Mở to cửa sổ cho thoáng"
+   ],
+   "mucDo": "Vận dụng",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nêu được ví dụ về vai trò của thông tin đối với việc đưa ra quyết định",
+   "id": "M-20261113-G3B1-11"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Đang đi bộ đến trường, em thấy một vũng nước lớn chắn ngang lối đi. Em nên làm gì?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 1,
+   "giaiThich": "Quan sát thấy vũng nước (thông tin), em quyết định đi vòng qua chỗ khô ráo để được an toàn và không ướt bẩn.",
+   "lop": 3,
+   "luaChon": [
+    "Nhắm mắt đi thẳng qua",
+    "Đi vòng qua chỗ khô ráo, an toàn",
+    "Chạy thật nhanh qua vũng nước",
+    "Đứng lại chờ bạn tới"
+   ],
+   "mucDo": "Vận dụng",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nêu được ví dụ về vai trò của thông tin đối với việc đưa ra quyết định",
+   "id": "M-20261113-G3B1-12"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Trước khi qua đường, em nhìn đèn tín hiệu và thấy đèn dành cho người đi bộ đang đỏ. Quyết định đúng là gì?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 1,
+   "giaiThich": "Đèn đỏ là thông tin báo phải dừng lại; quyết định đúng là chờ đèn xanh mới qua đường.",
+   "lop": 3,
+   "luaChon": [
+    "Chạy thật nhanh qua đường",
+    "Dừng lại chờ đèn xanh",
+    "Cứ đi theo người lớn bất kể đèn gì",
+    "Nhắm mắt đi qua"
+   ],
+   "mucDo": "Vận dụng",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nêu được ví dụ về vai trò của thông tin đối với việc đưa ra quyết định",
+   "id": "M-20261113-G3B1-13"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Cô giáo dặn: nghe tiếng trống trường là đến giờ vào lớp. Một hôm em đang chơi ở sân trường thì nghe tiếng trống vang lên. Em nên làm gì?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 1,
+   "giaiThich": "Tiếng trống là thông tin báo giờ vào lớp, nên em cần vào lớp ngay.",
+   "lop": 3,
+   "luaChon": [
+    "Chơi tiếp cho vui",
+    "Vào lớp ngay",
+    "Đi uống nước thật chậm",
+    "Rủ thêm bạn ra chơi"
+   ],
+   "mucDo": "Vận dụng",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nhận biết được thông tin và quyết định trong ví dụ cụ thể",
+   "id": "M-20261113-G3B1-14"
+  },
+  {
+   "bai": "Bài 1: Thông tin và quyết định",
+   "cauHoi": "Bạn An muốn biết chiều nay có nên mang ô khi đi học thêm hay không. Cách làm đúng để đưa ra quyết định là gì?",
+   "chuDe": "Chủ đề 1: Máy tính và em",
+   "dapAn": 1,
+   "giaiThich": "Xem dự báo thời tiết là thu nhận thông tin; dựa vào đó An quyết định mang ô hay không một cách đúng đắn.",
+   "lop": 3,
+   "luaChon": [
+    "Đoán trước theo cảm giác",
+    "Xem dự báo thời tiết rồi mới quyết định",
+    "Ngày nào cũng mang ô, không cần xem",
+    "Nhờ bạn cùng lớp đoán giúp"
+   ],
+   "mucDo": "Vận dụng",
+   "nguon": "Muse soạn — bám KHDH Tin 3 và SGK KNTT",
+   "trangThai": "Chờ duyệt",
+   "yeuCau": "Nêu được ví dụ về vai trò của thông tin đối với việc đưa ra quyết định",
+   "id": "M-20261113-G3B1-15"
+  }
+ ]
+}
