@@ -575,6 +575,7 @@ input[type=password]{width:100%;border:1.5px solid var(--line);border-radius:9px
             <a class="btn-drive" href="https://drive.google.com/drive/folders/1nq_VyMAmrq3iMXM23gcC1CYUTZLK0wwd" target="_blank" rel="noopener"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 0 0 .4-8.98 7 7 0 0 0-13.4 1.9A4 4 0 0 0 6 19z"/></svg></span> Mở Google Drive của tôi ↗</a>
             <button class="btn secondary btn-xl" id="btnImportB" type="button"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></svg></span> Khôi phục từ tệp (.json)</button>
           </div>
+          <p class="small muted" style="margin:10px 0 0">Trên <b>iPad / iPhone</b>: tệp tải từ Drive nằm trong mục <b>Tải về</b> của ứng dụng Tệp — cứ chạm vào tệp <b class="fname">phong-tin-moi-nhat.json</b> (hoặc tệp sao lưu đã xuất) là chọn được. Nếu lỡ chọn nhầm tệp khác, ứng dụng sẽ báo “tệp không hợp lệ” và không đụng gì tới dữ liệu hiện tại.</p>
         </div>
 
         <div class="safety-box" id="safetyBox">
@@ -806,7 +807,7 @@ function json_(obj) {
           </details>
         </div>
 
-        <input type="file" id="fileImport" accept=".json,application/json" hidden>
+        <input type="file" id="fileImport" hidden>
         <div class="toolbar" style="margin-top:16px">
           <button class="btn ghost" id="btnSample">↺ Nạp lại dữ liệu mẫu</button>
           <button class="btn danger" id="btnWipe"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span> Xóa toàn bộ dữ liệu</button>

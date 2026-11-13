@@ -29,3 +29,4 @@ Một tệp HTML duy nhất, không phụ thuộc thư viện ngoài, mở đư�
 ## Nhật ký cập nhật
 
 - **12/11/2026 — v1:** phát hành bản đầu tiên lên tule-muse: đủ 9 màn hình, khóa PIN, đồng bộ tự động qua Apps Script (đã kiểm tra kết nối thành công), sửa hiển thị nút ở chế độ tối.
+- **13/11/2026 — v1.1:** sửa lỗi khôi phục từ tệp trên iPad/iPhone — tệp sao lưu .json tải từ Drive về bị hệ thống làm mờ, không chọn được trong cửa sổ chọn tệp; nay ô chọn tệp không còn lọc loại tệp, ứng dụng tự kiểm tra nội dung sao lưu trước khi khôi phục.
