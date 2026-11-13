@@ -624,6 +624,7 @@ input[type=password]{width:100%;border:1.5px solid var(--line);border-radius:9px
         <div class="sync-block online" id="autoSyncBlock">
           <h4><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></span> Đồng bộ tự động qua Google Apps Script <span class="sync-tag net">TỰ ĐỘNG — CHỈ KHI CÓ MẠNG</span></h4>
           <p class="small muted" style="margin:0 0 10px"><b>Lưu ý quan trọng:</b> Đồng bộ tự động chỉ chạy khi thiết bị có Internet (điện thoại, laptop ở nhà). Tại phòng Tin chưa có mạng, cứ dùng cách chép USB như cũ — dữ liệu sẽ được đẩy lên Drive khi thầy mở ứng dụng ở thiết bị có mạng. Khi dữ liệu thay đổi và đồng bộ đang bật, ứng dụng tự đẩy bản mới nhất lên Drive sau khoảng 10 giây; theo chu kỳ kiểm tra đã chọn, ứng dụng cũng hỏi Drive xem có bản mới hơn không và hỏi ý thầy trước khi tải về.</p>
+          <p class="small muted" style="margin:0 0 10px"><b>Mỗi thiết bị lưu cấu hình riêng:</b> địa chỉ Web App, khóa bí mật, mã PIN và mã khôi phục được lưu ngay trên từng thiết bị / trình duyệt, <b>không</b> nằm trong tệp sao lưu và không theo dữ liệu sang máy khác. Vì vậy khi mở ứng dụng ở thiết bị mới (hoặc ở địa chỉ web khác), thầy dán lại <b>cùng một</b> địa chỉ Web App và <b>cùng một</b> khóa bí mật như ở máy cũ là đồng bộ chạy tiếp — khóa bí mật chỉ có một, do Apps Script sinh ra, dùng chung cho mọi thiết bị. Mã PIN và mã khôi phục thì mỗi thiết bị đặt riêng, khác nhau là bình thường; thầy chỉ cần ghi lại mã khôi phục của thiết bị mình hay dùng.</p>
           <label class="f"><span>Địa chỉ Web App (Apps Script URL)</span><input type="text" id="as-url" placeholder="https://script.google.com/macros/s/…/exec" autocomplete="off"></label>
           <label class="f"><span>Khóa bí mật (phải khớp với khóa trong mã Apps Script)</span><input type="password" id="as-secret" placeholder="Nhập khóa bí mật" autocomplete="off"></label>
           <div class="formgrid">
@@ -1416,14 +1417,24 @@ function doRestoreReal(pending){
 $("fileImport").addEventListener("change",function(){
   var f=this.files[0];if(!f)return;var fname=f.name;var r=new FileReader();
   r.onload=function(){try{
-    var raw=JSON.parse(r.result);if(!raw.settings||!raw.machines)throw 0;
-    var exportedAt=(raw._backupMeta&&raw._backupMeta.exportedAt)?raw._backupMeta.exportedAt:(raw._exportedAt||"");
+    var txt=String(r.result||"").replace(/^\uFEFF+/,"").trim(); /* bỏ ký tự BOM đầu tệp nếu có */
+    var raw=JSON.parse(txt);
+    /* Tệp đồng bộ trên Drive (phong-tin-moi-nhat.json và các bản trong thư mục Lich-su)
+       do Apps Script ghi ở dạng gói {exportedAt, data:{…}} — bóc lớp gói ra để khôi phục
+       được như tệp sao lưu do ứng dụng tự xuất. */
+    var syncExportedAt="";
+    if((!raw.settings||!raw.machines)&&raw.data&&typeof raw.data==="object"){
+      syncExportedAt=raw.exportedAt||"";
+      raw=raw.data;
+    }
+    if(!raw.settings||!raw.machines)throw 0;
+    var exportedAt=(raw._backupMeta&&raw._backupMeta.exportedAt)?raw._backupMeta.exportedAt:(raw._exportedAt||syncExportedAt);
     var clean=normalizeImport(raw);
     _pendingImport={data:clean,exportedAt:exportedAt,fileName:fname};
     var msg="<b>Thầy sắp khôi phục từ tệp:</b> "+esc(fname)+"<br>• Ngày xuất tệp: <b>"+esc(exportedAt?fmtDateTime(exportedAt):"Không rõ (tệp sao lưu đời cũ)")+"</b><br>• Số bản ghi trong tệp: <b>"+esc(countsText(clean))+"</b><br>• Dữ liệu hiện tại trên máy này: <b>"+esc(countsText(DB))+"</b><br><br><span style='color:var(--red)'><b>Cảnh báo:</b> Khôi phục sẽ <b>GHI ĐÈ toàn bộ</b> dữ liệu hiện tại trên thiết bị này bằng dữ liệu trong tệp.</span><br>An tâm: trước khi ghi đè, ứng dụng sẽ tự động lưu bản sao an toàn của dữ liệu hiện tại để thầy hoàn tác nếu chọn nhầm.";
     _dlgCb=function(v){if(v){doRestore(_pendingImport)}else{_pendingImport=null;toast("Đã hủy khôi phục — dữ liệu hiện tại vẫn nguyên vẹn.")}};
     showDlg(msg,{ok:"Ghi đè & khôi phục"});
-  }catch(e){_pendingImport=null;toast("Tệp không hợp lệ — chưa khôi phục được. Hãy chọn đúng tệp .json do ứng dụng xuất ra.")}};
+  }catch(e){_pendingImport=null;toast("Tệp không hợp lệ — chưa khôi phục được. Hãy chọn tệp .json do ứng dụng xuất ra, hoặc tệp phong-tin-moi-nhat.json tải từ Google Drive.")}};
   r.readAsText(f);this.value="";
 });
 var undoBtn=$("btnUndoRestore");if(undoBtn)undoBtn.addEventListener("click",function(){
