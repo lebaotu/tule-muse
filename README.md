@@ -21,6 +21,7 @@ Các sản phẩm ở đây **được sinh ra ngay tại GitHub**, chứ không
 | # | Sản phẩm | Trạng thái | Ghi chú |
 |---|----------|-----------|---------|
 | 1 | [001 — Ứng dụng quản lí phòng Tin](001-quan-li-phong-tin/) | ✅ Đã phát hành 12/11/2026 | Quản lí phòng Tin 40 máy: sơ đồ phòng, ghi sự cố, nhật ký tiết dạy, kiểm kê, mượn–trả, checklist mở–đóng phòng, trực nhật, báo cáo. Chạy offline, đồng bộ Google Drive qua Apps Script, có khóa mã PIN |
+| 2 | [002 — Ngân hàng câu hỏi & Trộn đề Tin học 3–5](002-ngan-hang-cau-hoi/) | ✅ Đã phát hành 13/11/2026 | Ngân hàng câu hỏi Tin học lớp 3–5 (Kết nối tri thức) theo từng bài bám yêu cầu cần đạt; trộn đề ngẫu nhiên mỗi lớp một mã đề; luyện tập giữa kỳ không chấm điểm, đề kiểm tra cuối kỳ theo ma trận 50/30/20; hồ sơ in đề kèm đáp án và bảng đối chiếu cho tổ trưởng/BGH kiểm tra. Nguyên tắc "AI soạn — thầy duyệt" |
 
 ## 🔖 Dấu ấn nhà trường
 
