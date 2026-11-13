@@ -427,6 +427,7 @@
               <p class="desc">Số liệu trực tiếp từ ngân hàng câu hỏi trên thiết bị này. Câu hỏi chỉ được vào đề kiểm tra chấm điểm khi đã duyệt và đã phân mức độ.</p>
             </div>
           </div>
+          <div class="alert ok" id="bankNotice" style="margin:0 0 16px"></div>
           <div class="stat-grid">
             <div class="stat-card"><div class="num" id="stTotal">0</div><div class="lbl"><svg><use href="#i-layers"/></svg>Tổng số câu trong kho</div></div>
             <div class="stat-card"><div class="num" id="stApproved">0</div><div class="lbl"><svg><use href="#i-shield"/></svg>Câu đã duyệt</div></div>
@@ -590,6 +591,10 @@
                 <h3><svg><use href="#i-layers"/></svg>Nạp / xuất gói ngân hàng câu hỏi</h3>
                 <p class="hint">Gói ngân hàng là tệp JSON dạng <span class="mono">{"phienBan":…, "cauHoi":[…]}</span>. Nạp kiểu “thay thế” sẽ tự lưu bản sao an toàn của ngân hàng hiện tại trước khi ghi đè và cho hoàn tác. Bản ghi lỗi định dạng sẽ bị bỏ qua và được đếm báo lại.</p>
                 <div class="row-btns">
+                  <button class="btn primary" id="btnOnlineUpdate"><svg><use href="#i-sync"/></svg>Cập nhật ngân hàng trực tuyến</button>
+                </div>
+                <p class="status-line" id="onlineStatus">Khi có mạng, ứng dụng tự tải ngân hàng mới nhất từ kho trực tuyến mỗi lần mở lên. Thầy cũng có thể bấm nút trên để cập nhật ngay.</p>
+                <div class="row-btns">
                   <button class="btn primary" id="btnImportPkg"><svg><use href="#i-up"/></svg>Nạp gói câu hỏi…</button>
                   <button class="btn" id="btnExportPkg"><svg><use href="#i-down"/></svg>Xuất ngân hàng ra tệp</button>
                   <button class="btn" id="btnUndoBank"><svg><use href="#i-sync"/></svg>Hoàn tác thay đổi ngân hàng</button>
@@ -643,8 +648,8 @@
 
               <div class="card">
                 <h3><svg><use href="#i-info"/></svg>Thông tin sản phẩm</h3>
-                <p class="hint"><span class="tag lv-nb">Phiên bản 1.0</span></p>
-                <p class="hint" style="margin-top:8px">v1.0: ra mắt ngân hàng câu hỏi &amp; trộn đề — kho mẫu Lớp 3 Bài 1 (21 câu), nạp gói mở rộng 237 câu, trộn mã đề ngẫu nhiên cho từng lớp, hồ sơ in đề + đáp án + ma trận.</p>
+                <p class="hint"><span class="tag lv-nb">Phiên bản 1.1</span></p>
+                <p class="hint" style="margin-top:8px">v1.1: ứng dụng tự tải toàn bộ ngân hàng câu hỏi (237 câu) từ kho trực tuyến của nhà tule-muse khi có mạng — mở lên là có đủ câu hỏi các bài, không cần nạp tệp; ở phòng Tin không có mạng, ứng dụng dùng bản ngân hàng đã lưu trên thiết bị. v1.0: ra mắt ngân hàng câu hỏi &amp; trộn đề — kho mẫu Lớp 3 Bài 1 (21 câu), trộn mã đề ngẫu nhiên cho từng lớp, hồ sơ in đề + đáp án + ma trận.</p>
                 <p class="hint" style="margin-top:8px">Dữ liệu lưu trên thiết bị với khóa <span class="mono">nhch002_v1</span>. Sản phẩm thuộc nhà tule-muse — Trường Tiểu học Huỳnh Ngọc Huệ.</p>
               </div>
             </div>
@@ -782,6 +787,7 @@
         pin:{ hash:null, recHash:null },
         sync:{ url:"", key:"", auto:false, interval:15, lastSyncAt:0 },
         safety:{ bank:null, bankAt:0, full:null, fullAt:0 },
+        onlineLoaded:false,
         updatedAt: Date.now()
       };
     }
@@ -931,6 +937,9 @@
     $("btnEnter").addEventListener("click", function(){
       $("splash").style.display = "none"; $("app").style.display = "block";
       renderDash(); renderLockInd();
+      // v1.1: tự tải ngân hàng trực tuyến sau khi vào màn hình chính (không chặn mở đầu).
+      // Không có mạng (phòng Tin) thì im lặng dùng kho đã lưu trên máy.
+      try { fetchOnlineBank().catch(function(){}); } catch(e) {}
     });
 
     /* ================= TỔNG QUAN ================= */
@@ -944,7 +953,14 @@
         classified: qs.filter(function(q){ return q.mucDo; }).length
       };
     }
+    var bankNotice = "";
     function renderDash(){
+      var noticeEl = $("bankNotice");
+      if (noticeEl){
+        noticeEl.className = "alert ok" + (bankNotice ? " show" : "");
+        noticeEl.style.margin = "0 0 16px";
+        noticeEl.innerHTML = bankNotice ? "<b>" + esc(bankNotice) + "</b>" : "";
+      }
       var total = state.questions.length;
       var duyet = state.questions.filter(function(q){ return q.trangThai === "duyet"; }).length;
       var cho = state.questions.filter(function(q){ return q.trangThai === "cho"; }).length;
@@ -999,7 +1015,18 @@
       $("bankCount").textContent = "Hiển thị " + list.length + " / " + state.questions.length + " câu trong kho.";
       var box = $("qList");
       if (!list.length){
-        box.innerHTML = '<div class="empty">Chưa có câu hỏi nào khớp bộ lọc.<br/>Thầy đổi điều kiện lọc, hoặc bấm “Thêm câu hỏi” / “Nạp gói câu hỏi” để bổ sung vào kho.</div>';
+        var fbSel = $("fBai").value, fkSel = $("fKhoi").value;
+        var lessonEmpty = false;
+        if (fbSel){
+          lessonEmpty = !state.questions.some(function(q){
+            return q.bai === fbSel && (!fkSel || q.khoi === Number(fkSel));
+          });
+        }
+        if (lessonEmpty){
+          box.innerHTML = '<div class="empty">Bài này chưa có câu hỏi trong kho. Ngân hàng đang được bổ sung theo từng đợt — thầy bấm Cập nhật ngân hàng trực tuyến ở Cài đặt, hoặc nạp gói câu hỏi bằng tệp.</div>';
+        } else {
+          box.innerHTML = '<div class="empty">Chưa có câu hỏi nào khớp bộ lọc.<br/>Thầy đổi điều kiện lọc, hoặc bấm “Thêm câu hỏi” / “Nạp gói câu hỏi” để bổ sung vào kho.</div>';
+        }
         return;
       }
       box.innerHTML = list.map(function(q, idx){
@@ -1118,7 +1145,7 @@
           dapAn: dapAn, giaiThich: $("qGiai").value.trim(),
           nguon: $("qNguon").value.trim() || "Giáo viên tự soạn", trangThai: $("qTT").value
         };
-        if (isEdit){ Object.assign(q, data); }
+        if (isEdit){ Object.assign(q, data); q.daSuaTay = true; }
         else { data.id = uid("q"); state.questions.unshift(data); }
         saveState(); closeModal(); renderBank(); renderDash();
         toast(isEdit ? "Đã lưu câu hỏi." : "Đã thêm câu hỏi vào kho.");
@@ -1493,9 +1520,13 @@
     });
 
     /* ================= NẠP / XUẤT GÓI NGÂN HÀNG ================= */
+    var ST_MAP = { "cho":"cho", "duyet":"duyet", "sua":"sua",
+      "Chờ duyệt":"cho", "Đã duyệt":"duyet", "Cần sửa":"sua" };
+    var LV_MAP = { "NB":"NB", "KN":"KN", "VD":"VD",
+      "Nhận biết":"NB", "Kết nối":"KN", "Vận dụng":"VD" };
     function validateQuestion(raw){
       if (!raw || typeof raw !== "object") return null;
-      var khoi = Number(raw.khoi);
+      var khoi = Number(raw.khoi != null ? raw.khoi : raw.lop);
       if ([3,4,5].indexOf(khoi) === -1) return null;
       var bai = String(raw.bai == null ? "" : raw.bai).replace(/^Bài\s*/i, "").trim();
       if (!lessonOf(khoi, bai)) return null;
@@ -1507,12 +1538,12 @@
       if (opts.some(function(o){ return !o; })) return null;
       var dapAn = Number(raw.dapAn);
       if ([0,1,2,3].indexOf(dapAn) === -1) return null;
-      var mucDo = ["NB","KN","VD"].indexOf(raw.mucDo) !== -1 ? raw.mucDo : "";
-      var trangThai = ["cho","duyet","sua"].indexOf(raw.trangThai) !== -1 ? raw.trangThai : "cho";
+      var mucDo = LV_MAP[raw.mucDo] || "";
+      var trangThai = ST_MAP[raw.trangThai] || "cho";
       var l = lessonOf(khoi, bai);
       return {
         id: uid("q"), khoi: khoi, bai: bai, chuDe: String(raw.chuDe || l.cd),
-        yc: String(raw.yc || ""), mucDo: mucDo, cauHoi: cauHoi, luaChon: opts, dapAn: dapAn,
+        yc: String(raw.yc != null ? raw.yc : (raw.yeuCau || "")), mucDo: mucDo, cauHoi: cauHoi, luaChon: opts, dapAn: dapAn,
         giaiThich: String(raw.giaiThich || ""), nguon: String(raw.nguon || "Nạp từ gói câu hỏi"), trangThai: trangThai
       };
     }
@@ -1579,6 +1610,69 @@
         saveState(); renderBank(); renderDash();
         setPkgStatus("Đã hoàn tác — ngân hàng quay về bản sao an toàn.", "ok");
       });
+    });
+
+    /* ================= NGÂN HÀNG TRỰC TUYẾN (v1.1) ================= */
+    var ONLINE_BANK_URL = "https://lebaotu.github.io/tule-muse/002-ngan-hang-cau-hoi/ngan-hang-cau-hoi.json";
+    function normQText(s){ return String(s == null ? "" : s).trim().replace(/\s+/g, " "); }
+    function bankKeyOf(q){ return q.khoi + "|" + String(q.bai) + "|" + normQText(q.cauHoi); }
+    function setOnlineStatus(html, cls){ var el = $("onlineStatus"); if (el){ el.innerHTML = html; el.className = "status-line " + (cls || ""); } }
+    // Hợp nhất danh sách câu đã đọc từ kho trực tuyến vào kho trên máy.
+    // Khóa nhận diện: khối + bài + nội dung câu hỏi đã chuẩn hoá khoảng trắng.
+    // Câu mới: thêm với trạng thái trong tệp. Câu đã có: chỉ cập nhật nội dung
+    // khi câu trên máy vẫn "Chờ duyệt" và chưa từng bị sửa tay — không bao giờ
+    // ghi đè trạng thái duyệt, không đụng câu Đã duyệt / đã sửa tay.
+    function mergeOnlineQuestions(good){
+      var added = 0, updated = 0;
+      var index = {};
+      state.questions.forEach(function(q){ var k = bankKeyOf(q); if (!index[k]) index[k] = q; });
+      good.forEach(function(v){
+        var k = bankKeyOf(v);
+        var ex = index[k];
+        if (!ex){ state.questions.push(v); index[k] = v; added++; return; }
+        if (ex.trangThai === "cho" && !ex.daSuaTay){
+          var changed = JSON.stringify(ex.luaChon) !== JSON.stringify(v.luaChon)
+            || ex.dapAn !== v.dapAn || (ex.mucDo || "") !== (v.mucDo || "")
+            || (ex.giaiThich || "") !== (v.giaiThich || "") || (ex.yc || "") !== (v.yc || "");
+          if (changed){
+            ex.luaChon = v.luaChon; ex.dapAn = v.dapAn; ex.mucDo = v.mucDo;
+            ex.giaiThich = v.giaiThich; ex.yc = v.yc;
+            updated++;
+          }
+        }
+      });
+      return { added: added, updated: updated };
+    }
+    function fetchOnlineBank(){
+      return fetch(ONLINE_BANK_URL, { cache: "no-store" }).then(function(r){
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      }).then(function(data){
+        if (!data || !Array.isArray(data.cauHoi)) throw new Error("Định dạng kho trực tuyến không đúng.");
+        var good = [], bad = 0;
+        data.cauHoi.forEach(function(rw){ var v = validateQuestion(rw); if (v) good.push(v); else bad++; });
+        var res = mergeOnlineQuestions(good);
+        var changed = (res.added + res.updated) > 0;
+        var firstSuccess = !state.onlineLoaded;
+        state.onlineLoaded = true;
+        if (changed || firstSuccess){
+          saveState();
+          bankNotice = "Ngân hàng đã cập nhật: tổng " + state.questions.length + " câu";
+          renderDash(); renderBank();
+        }
+        return { fetched: good.length, bad: bad, added: res.added, updated: res.updated, total: state.questions.length, changed: changed };
+      });
+    }
+    $("btnOnlineUpdate").addEventListener("click", function(){
+      var btn = $("btnOnlineUpdate");
+      btn.disabled = true;
+      setOnlineStatus("Đang tải ngân hàng từ kho trực tuyến…");
+      fetchOnlineBank().then(function(res){
+        setOnlineStatus("Đã tải về <b>" + res.fetched + "</b> câu từ kho trực tuyến (thêm mới " + res.added + " câu, cập nhật " + res.updated + " câu" + (res.bad ? ", bỏ qua " + res.bad + " bản ghi lỗi" : "") + "). Tổng kho hiện tại: <b>" + res.total + " câu</b>.", "ok");
+        toast("Cập nhật ngân hàng xong: tổng " + res.total + " câu.");
+      }).catch(function(){
+        setOnlineStatus("Không tải được ngân hàng trực tuyến — thiết bị có thể đang <b>không có mạng</b> (như ở phòng Tin). Ứng dụng vẫn dùng bình thường với ngân hàng đã lưu trên máy (" + state.questions.length + " câu).", "err");
+      }).then(function(){ btn.disabled = false; });
     });
 
     /* ================= SAO LƯU / KHÔI PHỤC TOÀN BỘ ================= */
