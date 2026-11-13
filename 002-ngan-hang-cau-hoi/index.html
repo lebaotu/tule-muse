@@ -655,8 +655,8 @@
 
               <div class="card">
                 <h3><svg><use href="#i-info"/></svg>Thông tin sản phẩm</h3>
-                <p class="hint"><span class="tag lv-nb">Phiên bản 1.2</span></p>
-                <p class="hint" style="margin-top:8px">v1.2: câu hỏi Muse phát hành lên kho trực tuyến được coi là đã duyệt sẵn — thầy không cần bấm duyệt từng câu, chỉ đánh dấu Cần sửa khi thấy câu chưa đúng; trạng thái ngân hàng trực tuyến hiển thị ngay ở Tổng quan. v1.1: ứng dụng tự tải toàn bộ ngân hàng câu hỏi từ kho trực tuyến khi có mạng. v1.0: ra mắt ngân hàng câu hỏi &amp; trộn đề.</p>
+                <p class="hint"><span class="tag lv-nb">Phiên bản 1.3</span></p>
+                <p class="hint" style="margin-top:8px">v1.3: khi cập nhật ngân hàng trực tuyến, ứng dụng tự điền các trường còn trống trên máy (mức độ, giải thích, yêu cầu cần đạt) từ kho trực tuyến — nhờ đó các câu hỏi vừa được phân loại mức độ ở kho sẽ đủ điều kiện vào đề kiểm tra ngay trên máy của thầy mà không cần cài lại dữ liệu. v1.2: câu hỏi Muse phát hành được coi là đã duyệt sẵn; trạng thái ngân hàng hiển thị ở Tổng quan. v1.1: tự tải ngân hàng trực tuyến khi có mạng. v1.0: ra mắt.</p>
                 <p class="hint" style="margin-top:8px">Dữ liệu lưu trên thiết bị với khóa <span class="mono">nhch002_v1</span>. Sản phẩm thuộc nhà tule-muse — Trường Tiểu học Huỳnh Ngọc Huệ.</p>
               </div>
             </div>
@@ -1642,12 +1642,12 @@
       });
     });
 
-    /* ================= NGÂN HÀNG TRỰC TUYẾN (v1.2) ================= */
+    /* ================= NGÂN HÀNG TRỰC TUYẾN (v1.3) ================= */
     var ONLINE_BANK_URL = "https://lebaotu.github.io/tule-muse/002-ngan-hang-cau-hoi/ngan-hang-cau-hoi.json";
     function normQText(s){ return String(s == null ? "" : s).trim().replace(/\s+/g, " "); }
     function bankKeyOf(q){ return q.khoi + "|" + String(q.bai) + "|" + normQText(q.cauHoi); }
     function setOnlineStatus(html, cls){ var el = $("onlineStatus"); if (el){ el.innerHTML = html; el.className = "status-line " + (cls || ""); } }
-    // Hợp nhất danh sách câu đã đọc từ kho trực tuyến vào kho trên máy (v1.2).
+    // Hợp nhất danh sách câu đã đọc từ kho trực tuyến vào kho trên máy (v1.3).
     // Khóa nhận diện: khối + bài + nội dung câu hỏi đã chuẩn hoá khoảng trắng.
     // - Máy chưa có câu đó: thêm mới nguyên trạng theo tệp, KỂ CẢ trạng thái
     //   "Đã duyệt" và mức độ trong tệp — câu Muse phát hành được coi là đã duyệt sẵn.
@@ -1655,19 +1655,28 @@
     //   (cờ daSuaTay): cập nhật TOÀN BỘ theo bản trực tuyến — mức độ, đáp án,
     //   giải thích, yêu cầu cần đạt, chủ đề, nguồn VÀ trạng thái duyệt trong tệp
     //   (tệp ghi "Đã duyệt" thì máy cũng chuyển thành "Đã duyệt").
-    // - Bản trên máy đã "Đã duyệt" hoặc đã sửa tay: giữ nguyên, không ghi đè.
-    // - Bản trên máy đang "Cần sửa": luôn giữ nguyên (kể cả trạng thái "Cần sửa"),
-    //   không bị bản trực tuyến ghi đè.
+    // - ĐIỀN TRƯỜNG CÒN TRỐNG (v1.3): với mọi câu đã có trên máy mà thầy CHƯA
+    //   sửa tay, bất kể trạng thái duyệt là gì — nếu một trường trong các trường
+    //   {mucDo, giaiThich, yc (yêu cầu cần đạt), chuDe} trên máy đang TRỐNG mà
+    //   bản trực tuyến có giá trị thì điền giá trị trực tuyến vào. Không bao giờ
+    //   ghi đè trường đã có giá trị trên máy, không đổi trạng thái duyệt trên máy.
+    //   Việc điền trường trống cũng được tính là một lần cập nhật.
+    // - Câu thầy đã sửa tay (cờ daSuaTay): giữ nguyên tuyệt đối, không đụng vào.
+    // - Ngoài việc điền trường trống ở trên, bản trên máy đang "Cần sửa" vẫn
+    //   được giữ nguyên, không bị bản trực tuyến ghi đè.
     function mergeOnlineQuestions(good){
       var added = 0, updated = 0;
       var index = {};
       state.questions.forEach(function(q){ var k = bankKeyOf(q); if (!index[k]) index[k] = q; });
+      var FILL_FIELDS = ["mucDo", "giaiThich", "yc", "chuDe"];
+      function isBlank(x){ return x == null || String(x).trim() === ""; }
       good.forEach(function(v){
         var k = bankKeyOf(v);
         var ex = index[k];
         if (!ex){ state.questions.push(v); index[k] = v; added++; return; }
-        if (ex.trangThai === "sua") return;
-        if (ex.trangThai === "cho" && !ex.daSuaTay){
+        if (ex.daSuaTay) return;
+        var didUpdate = false;
+        if (ex.trangThai === "cho"){
           var changed = JSON.stringify(ex.luaChon) !== JSON.stringify(v.luaChon)
             || ex.dapAn !== v.dapAn || (ex.mucDo || "") !== (v.mucDo || "")
             || (ex.giaiThich || "") !== (v.giaiThich || "") || (ex.yc || "") !== (v.yc || "")
@@ -1678,9 +1687,17 @@
             ex.giaiThich = v.giaiThich; ex.yc = v.yc;
             ex.chuDe = v.chuDe; ex.nguon = v.nguon;
             ex.trangThai = v.trangThai;
-            updated++;
+            didUpdate = true;
           }
         }
+        // Điền trường còn trống (v1.3): áp dụng cho mọi trạng thái duyệt,
+        // chỉ điền khi trường trên máy trống và bản trực tuyến có giá trị.
+        var filled = false;
+        FILL_FIELDS.forEach(function(f){
+          if (isBlank(ex[f]) && !isBlank(v[f])){ ex[f] = v[f]; filled = true; }
+        });
+        if (filled) didUpdate = true;
+        if (didUpdate) updated++;
       });
       return { added: added, updated: updated };
     }
