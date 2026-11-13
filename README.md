@@ -22,6 +22,7 @@ Các sản phẩm ở đây **được sinh ra ngay tại GitHub**, chứ không
 |---|----------|-----------|---------|
 | 1 | [001 — Ứng dụng quản lí phòng Tin](001-quan-li-phong-tin/) | ✅ Đã phát hành 12/11/2026 | Quản lí phòng Tin 40 máy: sơ đồ phòng, ghi sự cố, nhật ký tiết dạy, kiểm kê, mượn–trả, checklist mở–đóng phòng, trực nhật, báo cáo. Chạy offline, đồng bộ Google Drive qua Apps Script, có khóa mã PIN |
 | 2 | [002 — Ngân hàng câu hỏi & Trộn đề Tin học 3–5](002-ngan-hang-cau-hoi/) | ✅ Đã phát hành 13/11/2026 | Ngân hàng câu hỏi Tin học lớp 3–5 (Kết nối tri thức) theo từng bài bám yêu cầu cần đạt; trộn đề ngẫu nhiên mỗi lớp một mã đề; luyện tập giữa kỳ không chấm điểm, đề kiểm tra cuối kỳ theo ma trận 50/30/20; hồ sơ in đề kèm đáp án và bảng đối chiếu cho tổ trưởng/BGH kiểm tra. Nguyên tắc "AI soạn — thầy duyệt" |
+| 3 | [003 — Sổ đánh giá Tin học 3–5](003-so-danh-gia-tin-hoc/) | ✅ Đã phát hành 13/11/2026 | Sổ đánh giá môn Tin học cho 21 lớp (708 học sinh nạp sẵn): ghi nhận thường xuyên bằng nhận xét, điểm kiểm tra định kỳ nối từ 002, tổng hợp mức theo TT27/TT89 phục vụ ký số Học bạ số, theo dõi năng lực số (TT02) và AI (QĐ 2422), chuyển năm học tự động lên lớp. Giao diện Windows 11 Fluent, chạy offline, đồng bộ Drive qua Apps Script |
 
 ## 🔖 Dấu ấn nhà trường
 
