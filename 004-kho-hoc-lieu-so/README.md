@@ -48,6 +48,8 @@ Một tệp HTML duy nhất, không phụ thuộc thư viện ngoài, mở đư�
 
 ## Nhật ký cập nhật
 
+- **16/11/2026 — v1.2.1:** sửa lỗi mục "Dạy tuần này" thiếu Lớp 3 môn Tin học: ghi đúng khoảng tuần cho cả 49 bài Tin học theo PPCT/KHDH của trường (trước đây chỉ ghi tuần bắt đầu nên bài nhiều tuần bị mất khỏi danh sách ở các tuần sau); bài tự chọn không thuộc kế hoạch dạy được ghi nhãn "Tự chọn".
+
 - **16/11/2026 — v1.2 (bản hoàn thiện):** thêm mục Dạy tuần này; sảnh trò chơi thống nhất với 3 chế độ chơi; ba trò chơi mới — Ai là triệu phú, Bingo tri thức, Ô Ăn Quan tri thức; hộp câu hỏi hiện đáp án + lời giải thích sau mỗi câu; tìm kiếm toàn kho và đánh dấu "Cần sửa"; cơ chế ảnh bìa môn qua thư mục covers/ (7 ảnh bìa hoạt hình 3D đi kèm gói ZIP offline). Dữ liệu giữ nguyên 1.006 bài / 10.858 câu.
 
 - **16/11/2026 — v1.1:** bổ sung Khoa học Lớp 5 (358 câu) và Lịch sử & Địa lí Lớp 5 (385 câu) — tổng kho 1.006 bài / 10.858 câu, đầy đủ mọi môn theo đúng khối lớp được dạy; sửa ma trận môn–lớp: Khoa học và Lịch sử & Địa lí chỉ hiện Lớp 4–5, bỏ hẳn Lớp 3 (lớp 3 không học hai môn này).
