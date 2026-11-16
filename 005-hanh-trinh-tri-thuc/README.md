@@ -27,4 +27,5 @@ Theo từng hành trình/lớp: phần trăm hoàn thành, tổng sao, bảng t�
 
 ## Nhật ký cập nhật
 
+- **16/11/2026 — v1.0.1:** minh bạch điểm số — màn kết quả mỗi chặng tách rõ điểm câu đúng (×10), điểm thưởng sao (×5) và điểm ô may mắn (+30), kèm dòng công thức tính điểm dưới bản đồ và chi tiết điểm trong Sổ hành trình; sửa nhãn chủ đề trên bản đồ bị cắt mép ở hai phía (nhãn dài nay được kẹp trọn trong khung bản đồ).
 - **16/11/2026 — v1.0:** phát hành bản đầu: bản đồ Đảo tri thức sinh tự động theo từng Môn + Lớp từ ngân hàng của 004; 2 chế độ Cả lớp / Đối kháng tổ; chặng, chặng thử thách, ô may mắn, Cổng chủ đề; sao và điểm hành trình; Sổ hành trình theo lớp; khóa chặng theo tuần; xuất/nhập tiến trình.

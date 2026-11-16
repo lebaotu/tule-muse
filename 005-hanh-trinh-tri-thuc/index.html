@@ -267,6 +267,7 @@
         <span><svg style="width:16px;height:16px"><use href="#i-gate"/></svg> Cổng chủ đề</span>
         <span><svg style="width:16px;height:16px"><use href="#i-bolt"/></svg> Chặng thử thách (sao ×2)</span>
         <span><svg style="width:16px;height:16px"><use href="#i-gift"/></svg> Ô may mắn</span>
+        <span><b>Cách tính điểm:</b>&nbsp;mỗi câu đúng +10 · mỗi sao +5 (điểm thưởng sao) · ô may mắn +30</span>
       </div>
       <p class="hint" id="map-hint"></p>
     </section>
@@ -327,7 +328,7 @@
           <button class="btn danger" id="btn-wipe"><svg><use href="#i-trash"/></svg> Xóa toàn bộ tiến trình</button>
         </div>
         <h3 style="margin-top:22px">Thông tin</h3>
-        <p><b>005 — Hành trình tri thức</b>, sản phẩm trong hệ tule-muse.</p>
+        <p><b>005 — Hành trình tri thức</b> · phiên bản 1.0.1, sản phẩm trong hệ tule-muse.</p>
         <p>Tác giả: <b>Lê Bảo Tú</b> — Giáo viên Tin học, Trường Tiểu học Huỳnh Ngọc Huệ (phường Thanh Khê, Đà Nẵng).</p>
         <p class="hint">Dữ liệu câu hỏi: nền ngân hàng của 004 “Kho học liệu số” (gói đa môn v2) và ngân hàng Tin học của 002 (bản v5) — 7 môn, 1.006 bài, 10.858 câu. Tiến trình lưu trên máy với khóa <span style="font-family:monospace">httt005_v1</span>; ứng dụng chạy hoàn toàn offline, không chứa dữ liệu cá nhân học sinh nên không cần mã PIN.</p>
         <p style="margin-top:16px"><button class="btn primary" id="btn-close-settings">Đóng</button></p>
@@ -586,7 +587,8 @@
       var seenTopic={};
       nodes.forEach(function(n,i){
         if(n.kind==="bai"&&n.bi===0 && !seenTopic[n.ti]){ seenTopic[n.ti]=1; var p=nodePos(i);
-          html+='<div class="topic-tag" style="left:'+p.x+'px;top:'+(p.y-88)+'px;border-left:8px solid '+TOPIC_COLORS[n.ti%TOPIC_COLORS.length]+'">'+esc(n.topicTen)+'</div>'; }
+          var tw=n.topicTen.length*8+56, cx=Math.max(tw/2+6, Math.min(W-tw/2-6, p.x));
+          html+='<div class="topic-tag" style="left:'+Math.round(cx)+'px;top:'+(p.y-88)+'px;border-left:8px solid '+TOPIC_COLORS[n.ti%TOPIC_COLORS.length]+'">'+esc(n.topicTen)+'</div>'; }
       });
       /* cờ các tổ tại chặng hiện tại */
       j.teams.forEach(function(t,ti){
@@ -778,6 +780,7 @@
     function finishSession(){
       stopTimer(); $("timerwrap").style.display="none";
       var j=cur.journey, n=cur.nodes[sess.node], p=j.prog[sess.team];
+      var ptsBefore=teamPoints(p), starsBefore=p.stars[sess.node]||0;
       var ratio=sess.total? sess.correct/sess.total : 0;
       var pass, need;
       if(n.kind==="cong"){ need=Math.ceil(sess.total*0.7); pass=sess.correct>=need; }
@@ -793,6 +796,8 @@
       }
       p.dungAll=(p.dungAll||0)+sess.correct;
       save();
+      var starGain=Math.max(0,(p.stars[sess.node]||0)-starsBefore);
+      var gainPts=teamPoints(p)-ptsBefore;
       var starHtml="";
       if(n.kind==="bai"||n.kind==="cong"){
         var shown=Math.min(stars,3);
@@ -800,6 +805,7 @@
       }
       $("qcard").innerHTML='<div class="result-box"><h2>'+(pass?"Qua chặng!":"Chưa qua chặng")+'</h2>'+starHtml+
         '<p style="font-size:1.15rem">Đúng <b>'+sess.correct+'/'+sess.total+'</b> câu'+(pass?"":" — cần đúng ít nhất "+need+" câu")+'.</p>'+
+        '<p style="font-size:1.08rem">Điểm chặng này: <b>+'+gainPts+' điểm</b> <span class="meta">— '+sess.correct+' câu đúng × 10 điểm = '+(sess.correct*10)+' điểm'+(starGain>0? ' · điểm thưởng sao: +'+starGain+' sao × 5 điểm = '+(starGain*5)+' điểm' : (stars>0? ' · sao lần này chưa vượt lần tốt nhất của chặng nên điểm thưởng sao không tăng' : ''))+'</span></p>'+
         '<p class="meta">'+esc(j.teams[sess.team].ten)+' · Tổng điểm hành trình hiện tại: <b>'+teamPoints(p)+'</b> điểm</p>'+
         '<div class="play-actions" style="justify-content:center">'+
         (pass?"":'<button class="btn" id="r-retry">Chơi lại chặng này</button>')+
@@ -840,6 +846,7 @@
         '<div class="stat"><div class="v">'+teamStars(p)+'</div><div class="k">Tổng sao</div></div>'+
         '<div class="stat"><div class="v">'+teamPoints(p)+'</div><div class="k">Điểm hành trình</div></div>'+
         '<div class="stat"><div class="v">'+done+'/'+total+'</div><div class="k">Chặng + cổng đã qua</div></div></div>'+
+        '<p class="hint" style="margin-top:2px">Chi tiết điểm hành trình: <b>'+(p.dungAll||0)+' câu đúng × 10 = '+((p.dungAll||0)*10)+' điểm</b> · <b>điểm thưởng sao: '+teamStars(p)+' sao × 5 = '+(teamStars(p)*5)+' điểm</b> · <b>thưởng ô may mắn: '+(p.bonus||0)+' điểm</b> → tổng <b>'+teamPoints(p)+' điểm</b>. Sao mỗi chặng tính theo lần đạt cao nhất; chặng thử thách được gấp đôi sao nên điểm thưởng sao cũng gấp đôi.</p>'+
         '<h3 style="margin:8px 0">'+esc(KHO.mon[j.mon].ten)+' · Lớp '+j.lop+' — '+esc(j.teams[lbTeam].ten)+'</h3>'+
         '<div style="overflow-x:auto"><table><thead><tr><th>Bài học</th><th class="num">Số câu đã làm</th><th class="num">Đúng</th><th class="num">Tỉ lệ đúng</th><th>Đánh giá</th><th class="num">Sao</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+
         '<p class="hint" style="margin-top:10px">Bài có tỉ lệ đúng dưới 60% được đánh dấu “Bài yếu” để thầy ôn lại cho lớp. Số liệu là căn cứ tham khảo cho đánh giá thường xuyên, có thể nối sang Sổ đánh giá 003 ở giai đoạn sau.</p>';
