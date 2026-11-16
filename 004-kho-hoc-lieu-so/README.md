@@ -48,6 +48,8 @@ Một tệp HTML duy nhất, không phụ thuộc thư viện ngoài, mở đư�
 
 ## Nhật ký cập nhật
 
+- **16/11/2026 — v1.3.1:** thêm ảnh bìa hoạt cảnh học sinh cho 3 trò chơi còn lại (Đua điểm tổ, Mở ô bí mật, Bingo tri thức) — nhúng trong ứng dụng và hiện làm banner ở màn thiết lập của từng trò, đồng bộ với Ai là triệu phú; cả 4 trò chơi nay đều có bìa.
+
 - **16/11/2026 — v1.3 (đợt hình ảnh):** nhúng thẳng 7 ảnh bìa môn (WebP) vào trong ứng dụng — hiện ở thẻ môn và đầu trang môn trên mọi bản (Pages, offline); trò "Ai là triệu phú" có hoạt cảnh học sinh trong trường quay làm nền + pháo giấy khi đạt mốc cao; gỡ bỏ trò "Ô Ăn Quan tri thức" (sảnh còn 4 trò). Dữ liệu giữ nguyên 1.006 bài / 10.858 câu.
 
 - **16/11/2026 — v1.2.1:** sửa lỗi mục "Dạy tuần này" thiếu Lớp 3 môn Tin học: ghi đúng khoảng tuần cho cả 49 bài Tin học theo PPCT/KHDH của trường (trước đây chỉ ghi tuần bắt đầu nên bài nhiều tuần bị mất khỏi danh sách ở các tuần sau); bài tự chọn không thuộc kế hoạch dạy được ghi nhãn "Tự chọn".
