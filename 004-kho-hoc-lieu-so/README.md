@@ -25,9 +25,16 @@ Mỗi câu hỏi có mức độ theo Thông tư 27 (Nhận biết / Kết nối
 - **Hồ sơ bài học:** xem toàn bộ câu hỏi của một bài kèm yêu cầu cần đạt; in hồ sơ bài dạng xem trước A4 trong trang.
 - **Trình chiếu:** chiếu câu hỏi lên màn hình/máy chiếu để cả lớp cùng làm, có đồng hồ đếm ngược tùy chọn cho từng câu.
 - **Luyện tập nhanh:** rút câu ngẫu nhiên theo bài/mức độ để ôn tập.
+- **Sảnh trò chơi thống nhất:** chọn phạm vi (bài/chủ đề) → chọn trò chơi → chọn chế độ (Cả lớp / Đối kháng / Tiếp sức) → Bắt đầu; khi chơi theo tổ luôn có thanh điểm các tổ ở đầu màn hình, hộp câu hỏi lớn hiện đáp án kèm lời giải thích sau mỗi câu.
 - **Đua điểm tổ:** trò chơi thi đua giữa các tổ trong lớp, tính điểm theo mức độ câu hỏi.
 - **Mở ô bí mật:** trò chơi mở ô chọn câu hỏi, có ô ngôi sao may mắn cộng điểm.
+- **Ai là triệu phú:** 12 câu khó dần theo mức độ, thang điểm, mốc an toàn, trợ giúp 50:50 và đổi câu.
+- **Bingo tri thức:** mỗi tổ một thẻ 4×4 ô đáp án, chiếu câu lần lượt, tổ hoàn thành một hàng trước thắng.
+- **Ô Ăn Quan tri thức:** trò chơi dân gian Ô Ăn Quan kết hợp câu hỏi — trả lời đúng mới được rải quân, ăn quan tính điểm, chơi 2–4 tổ.
+- **Dạy tuần này:** Tổng quan tự tính tuần học theo lịch năm học và liệt kê các bài đúng tuần của từng môn/lớp, chạm là mở thẳng bài.
+- **Tìm kiếm toàn kho:** tìm câu hỏi theo nội dung và tên bài trên cả 7 môn; mỗi câu có nút đánh dấu "Cần sửa" (loại khỏi luyện tập/trò chơi, xem lại trong Quản trị kho).
 - **Quản trị kho:** nạp/cập nhật thêm gói môn từ tệp; gói mới có phiên bản cao hơn sẽ tự thay gói cũ đang lưu trên máy.
+- **Ảnh bìa môn:** ứng dụng tự hiện ảnh bìa nếu có thư mục `covers/` đặt cạnh tệp `index.html` (tên tệp theo mã môn, ví dụ `covers/toan.jpg`); không có thì giữ thiết kế màu/icon mặc định.
 
 ## Nguyên tắc chuẩn
 
@@ -40,6 +47,8 @@ Mỗi câu hỏi có mức độ theo Thông tư 27 (Nhận biết / Kết nối
 Một tệp HTML duy nhất, không phụ thuộc thư viện ngoài, mở được trên mọi trình duyệt hiện đại, kể cả khi không có mạng. Font thân bài Segoe UI; tên trường và tiêu đề sản phẩm theo chuẩn thương hiệu chung của nhà tule-muse.
 
 ## Nhật ký cập nhật
+
+- **16/11/2026 — v1.2 (bản hoàn thiện):** thêm mục Dạy tuần này; sảnh trò chơi thống nhất với 3 chế độ chơi; ba trò chơi mới — Ai là triệu phú, Bingo tri thức, Ô Ăn Quan tri thức; hộp câu hỏi hiện đáp án + lời giải thích sau mỗi câu; tìm kiếm toàn kho và đánh dấu "Cần sửa"; cơ chế ảnh bìa môn qua thư mục covers/ (7 ảnh bìa hoạt hình 3D đi kèm gói ZIP offline). Dữ liệu giữ nguyên 1.006 bài / 10.858 câu.
 
 - **16/11/2026 — v1.1:** bổ sung Khoa học Lớp 5 (358 câu) và Lịch sử & Địa lí Lớp 5 (385 câu) — tổng kho 1.006 bài / 10.858 câu, đầy đủ mọi môn theo đúng khối lớp được dạy; sửa ma trận môn–lớp: Khoa học và Lịch sử & Địa lí chỉ hiện Lớp 4–5, bỏ hẳn Lớp 3 (lớp 3 không học hai môn này).
 
