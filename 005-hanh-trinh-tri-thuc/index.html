@@ -116,7 +116,12 @@
       .tnode.locked{opacity:.45;filter:grayscale(.6)}
       .tnode.future{opacity:.55}
       .tnode.gate{width:96px;z-index:4}
-      .tnode.gate .disc{width:78px;height:78px;border-radius:20px;font-size:1rem;border-color:#ffe08a;box-shadow:0 0 0 3px var(--gold),0 0 22px rgba(245,179,1,.55),0 4px 12px rgba(0,0,0,.35)}
+      .tnode.gate .disc{width:78px;height:78px;border-radius:20px;font-size:1rem;background:linear-gradient(180deg,#ffe066,#f0a500);color:#6b4400;border:3px solid #fff3c4;box-shadow:0 0 0 4px #d99a00,0 0 18px rgba(245,179,1,.45),0 4px 12px rgba(0,0,0,.35)}
+      .tnode.gate.locked,.tnode.gate.future{opacity:1;filter:none}
+      .tnode.gate.locked .disc,.tnode.gate.future .disc{background:linear-gradient(180deg,#b08a1e,#7d5f0c);color:#ffe9a8;border-color:#d9b84a;box-shadow:0 0 0 4px #6e5410,0 4px 12px rgba(0,0,0,.45)}
+      .tnode.gate.now .disc{animation:pulse 1.4s infinite,bob 1.4s ease-in-out infinite;box-shadow:0 0 0 4px var(--gold),0 0 32px rgba(245,179,1,.9),0 4px 12px rgba(0,0,0,.35)}
+      .tnode .lockbadge{position:absolute;right:-7px;bottom:-7px;width:27px;height:27px;border-radius:50%;background:#5b4a12;color:#ffe9a8;border:2px solid #ffe9a8;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.4)}
+      .tnode .lockbadge svg{width:15px;height:15px}
       .tnode.lucky .disc{background:linear-gradient(180deg,#ffd43b,#f5b301);color:#5c3d00;animation:luckyGlow 1.9s ease-in-out infinite}
       @keyframes luckyGlow{0%,100%{box-shadow:0 3px 10px rgba(0,0,0,.35),0 0 0 0 rgba(245,179,1,.5)}50%{box-shadow:0 3px 10px rgba(0,0,0,.35),0 0 0 9px rgba(245,179,1,0)}}
       .topic-tag{position:absolute;transform:translate(-50%,-50%);z-index:2;background:rgba(13,43,69,.85);color:#fff;font-weight:700;font-size:.85rem;border-radius:999px;padding:5px 14px;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.35);border:1.5px solid rgba(255,255,255,.35)}
@@ -303,7 +308,7 @@
         <span><i style="background:#1e9e52"></i> Đã qua</span>
         <span><i style="background:var(--gold)"></i> Chặng hiện tại</span>
         <span><i style="background:#8aa3b8"></i> Chưa mở / bị khóa tuần</span>
-        <span><svg style="width:16px;height:16px"><use href="#i-gate"/></svg> Cổng chủ đề</span>
+        <span><svg style="width:16px;height:16px;color:#d99a00"><use href="#i-gate"/></svg> Cổng chủ đề (khung vàng)</span>
         <span><svg style="width:16px;height:16px"><use href="#i-bolt"/></svg> Chặng thử thách (sao ×2)</span>
         <span><svg style="width:16px;height:16px"><use href="#i-gift"/></svg> Ô may mắn</span>
         <span><b>Cách tính điểm:</b>&nbsp;mỗi câu đúng +10 · mỗi sao +5 (điểm thưởng sao) · ô may mắn +30</span>
@@ -374,7 +379,7 @@
           <button class="btn danger" id="btn-wipe"><svg><use href="#i-trash"/></svg> Xóa toàn bộ tiến trình</button>
         </div>
         <h3 style="margin-top:22px">Thông tin</h3>
-        <p><b>005 — Hành trình tri thức</b> · phiên bản 1.2 — giao diện trò chơi mới kèm gói âm thanh, sản phẩm trong hệ tule-muse.</p>
+        <p><b>005 — Hành trình tri thức</b> · phiên bản 1.2.1 — giao diện trò chơi kèm gói âm thanh; Cổng chủ đề hiện khung vàng rõ ràng ngay cả khi đang khóa (vàng trầm lúc khóa, phát sáng khi đến lượt), sản phẩm trong hệ tule-muse.</p>
         <p>Tác giả: <b>Lê Bảo Tú</b> — Giáo viên Tin học, Trường Tiểu học Huỳnh Ngọc Huệ (phường Thanh Khê, Đà Nẵng).</p>
         <p class="hint">Dữ liệu câu hỏi: nền ngân hàng của 004 “Kho học liệu số” (gói đa môn v2) và ngân hàng Tin học của 002 (bản v5) — 7 môn, 1.006 bài, 10.858 câu. Tiến trình lưu trên máy với khóa <span style="font-family:monospace">httt005_v1</span>; ứng dụng chạy hoàn toàn offline, không chứa dữ liệu cá nhân học sinh nên không cần mã PIN.</p>
         <p style="margin-top:16px"><button class="btn primary" id="btn-close-settings">Đóng</button></p>
@@ -740,7 +745,8 @@
             '<span class="lbl">'+esc(n.ten.replace(/^Bài [^:]+: /,""))+'</span>';
         } else if(n.kind==="cong"){
           var open=nodeDone(p,nodes,i);
-          inner='<span class="disc" style="background:'+MON_COLORS[KHO.mon[j.mon].ten]+'"><svg style="width:36px;height:36px"><use href="#i-gate"/></svg></span>'+
+          var gLock=(!open&&(locked||i>curI));
+          inner='<span class="disc"><svg style="width:36px;height:36px"><use href="#i-gate"/></svg>'+(gLock? '<span class="lockbadge"><svg><use href="#i-lock"/></svg></span>':"")+'</span>'+
             (open? '<span class="stars">ĐÃ QUA</span>':"")+'<span class="lbl">CỔNG · '+esc(n.topicTen.replace(/^Chủ đề [^.:]+[.:]?\s*/,""))+'</span>';
         } else {
           inner='<span class="disc"><svg style="width:26px;height:26px"><use href="#i-gift"/></svg></span><span class="lbl">Ô may mắn</span>';
