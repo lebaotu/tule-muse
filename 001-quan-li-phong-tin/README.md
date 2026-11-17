@@ -6,6 +6,7 @@
 
 ## Chức năng
 
+- **17/11/2026 — v1.4.3:** tên trường ở màn hình mở đầu đổi sang font Baloo 2, phối màu xanh sáng/xanh trời theo tông navy-cyan trên nền mở đầu navy đậm.
 - **Tổng quan:** tình hình phòng máy trong ngày, thao tác nhanh ghi sự cố / ghi tiết dạy / checklist.
 - **Sơ đồ phòng:** bản đồ 40 máy trực quan, chạm vào từng máy để ghi sự cố; theo dõi trạng thái sửa chữa và chi phí.
 - **Nhật ký tiết dạy:** ghi tiết dạy theo danh mục bài học trong kế hoạch dạy học Tin học lớp 3–5.
