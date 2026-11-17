@@ -22,6 +22,7 @@ Mỗi câu hỏi có mức độ theo Thông tư 27 (Nhận biết / Kết nối
 
 ## Chức năng
 
+- **17/11/2026 — v1.3.4:** đợt hoàn thiện khối 4: Toán thêm 18 câu cho Bài 28 và Bài 30 (Chủ đề 6, trước đây chưa có câu), bổ sung 23 lời giải thích còn thiếu (Toán 9, Tiếng Anh 14) — hai gói đạt 100% câu có giải thích; tổng kho 7 môn / 1.017 bài / 10.957 câu.
 - **17/11/2026 — v1.3.3:** cập nhật toàn bộ dữ liệu khối 4 theo Kế hoạch môn học (CV 2345): thêm 81 câu ở các mục Ôn tập/Kiểm tra, căn lại tuần cho 1.092 câu, không đổi nội dung/đáp án/mức độ; tổng kho 7 môn / 1.015 bài / 10.939 câu.
 - **Hồ sơ bài học:** xem toàn bộ câu hỏi của một bài kèm yêu cầu cần đạt; in hồ sơ bài dạng xem trước A4 trong trang.
 - **Trình chiếu:** chiếu câu hỏi lên màn hình/máy chiếu để cả lớp cùng làm, có đồng hồ đếm ngược tùy chọn cho từng câu.
