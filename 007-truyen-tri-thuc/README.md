@@ -17,3 +17,5 @@ Game nhập vai kể chuyện theo chương trình Tin học lớp 3–5 (sách 
 - **17/11/2026 — v1.0:** phát hành bản đầu tiên — đủ truyện Tin học 3–5 (22 cụm, 71 tập), sân khấu thử thách hóa thân vào hình ảnh với cảnh đổi trạng thái (cửa đá đóng → mở, cầu sương, kho sách khôi phục), đấu trùm cuối mỗi cụm, xuất/nhập tiến trình và xuất kết quả phiên cho 008.
 
 - **17/11/2026 — v1.0.1:** thay logo trường bằng bản sạch (đã xoá vòng trắng thừa quanh huy hiệu và gỡ vòng trắng do CSS tạo quanh logo ở màn hình mở đầu); logo hiển thị 104×104 px trực tiếp trên nền.
+
+- **17/11/2026 — v1.1:** mở THẾ GIỚI TOÁN đầu tiên — Vương quốc Số Học cho Lớp 3 học kỳ 1: 13 mùa truyện, 55 tập, 220 thử thách hoá thân vào sân khấu Toán (bậc thang số, cân thăng bằng, tháp khối hình, đồng hồ cát), Cụ Rùa Số Học dẫn đường, tập trùm phá khiên sương ở Cổng Số Học; nạp gói Toán lớp 3 trọn 77 bài/807 câu. Thế giới Tin học giữ nguyên.
