@@ -678,8 +678,8 @@
 
               <div class="card">
                 <h3><svg><use href="#i-info"/></svg>Thông tin sản phẩm</h3>
-                <p class="hint"><span class="tag lv-nb">Phiên bản 1.4</span></p>
-                <p class="hint" style="margin-top:8px">v1.4: áp dụng chuẩn thương hiệu mới — tên trường Playfair Display màu xanh navy, logo thu nhỏ đưa lên cao nhất, tên sản phẩm và tiêu đề màn hình dùng Be Vietnam Pro với điểm nhấn cyan ở “Tin học 3–5”; cả hai font đều nhúng sẵn trong ứng dụng nên hiển thị đúng cả khi không có mạng. v1.3: khi cập nhật ngân hàng trực tuyến, ứng dụng tự điền các trường còn trống trên máy (mức độ, giải thích, yêu cầu cần đạt) từ kho trực tuyến — nhờ đó các câu hỏi vừa được phân loại mức độ ở kho sẽ đủ điều kiện vào đề kiểm tra ngay trên máy của thầy mà không cần cài lại dữ liệu. v1.2: câu hỏi Muse phát hành được coi là đã duyệt sẵn; trạng thái ngân hàng hiển thị ở Tổng quan. v1.1: tự tải ngân hàng trực tuyến khi có mạng. v1.0: ra mắt.</p>
+                <p class="hint"><span class="tag lv-nb">Phiên bản 1.5</span></p>
+                <p class="hint" style="margin-top:8px">v1.5: vá số tổng ngân hàng — khi cập nhật kho trực tuyến, bản ghi trùng nội dung nhưng khác trạng thái duyệt (bản “Cần sửa” trùng với một câu đã duyệt) nay được giữ thành câu riêng thay vì bị gộp mất, nên tổng số câu khớp đúng tệp ngân hàng 1.125 câu (1.122 đã duyệt, 3 cần sửa). v1.4: áp dụng chuẩn thương hiệu mới — tên trường Playfair Display màu xanh navy, logo thu nhỏ đưa lên cao nhất, tên sản phẩm và tiêu đề màn hình dùng Be Vietnam Pro với điểm nhấn cyan ở “Tin học 3–5”; cả hai font đều nhúng sẵn trong ứng dụng nên hiển thị đúng cả khi không có mạng. v1.3: khi cập nhật ngân hàng trực tuyến, ứng dụng tự điền các trường còn trống trên máy (mức độ, giải thích, yêu cầu cần đạt) từ kho trực tuyến — nhờ đó các câu hỏi vừa được phân loại mức độ ở kho sẽ đủ điều kiện vào đề kiểm tra ngay trên máy của thầy mà không cần cài lại dữ liệu. v1.2: câu hỏi Muse phát hành được coi là đã duyệt sẵn; trạng thái ngân hàng hiển thị ở Tổng quan. v1.1: tự tải ngân hàng trực tuyến khi có mạng. v1.0: ra mắt.</p>
                 <p class="hint" style="margin-top:8px">Dữ liệu lưu trên thiết bị với khóa <span class="mono">nhch002_v1</span>. Sản phẩm thuộc nhà tule-muse — Trường Tiểu học Huỳnh Ngọc Huệ.</p>
               </div>
             </div>
@@ -1707,16 +1707,34 @@
     // - Câu thầy đã sửa tay (cờ daSuaTay): giữ nguyên tuyệt đối, không đụng vào.
     // - Ngoài việc điền trường trống ở trên, bản trên máy đang "Cần sửa" vẫn
     //   được giữ nguyên, không bị bản trực tuyến ghi đè.
+    // - BẢN GHI TRÙNG NỘI DUNG NHƯNG KHÁC TRẠNG THÁI (v1.5): tệp ngân hàng có
+    //   thể chứa HAI bản ghi cùng khối + bài + nội dung câu hỏi nhưng là hai
+    //   câu riêng trong tệp — một bản "Đã duyệt" và một bản trùng bị gắn cờ
+    //   "Cần sửa" (ví dụ cặp SEED-208 / GROK-0613 ở Lớp 5 Bài 6). Nếu gộp theo
+    //   mỗi khóa nội dung thì bản "Cần sửa" bị nuốt mất và tổng số câu trên
+    //   máy thiếu đúng 1 câu so với tệp (1.124 thay vì 1.125). Vì vậy: mỗi
+    //   khóa giữ một DANH SÁCH các câu trên máy; bản trực tuyến khớp trước
+    //   tiên với câu CÙNG trạng thái, sau đó với câu đang "Chờ duyệt" (để giữ
+    //   nguyên đường nâng trạng thái ở trên); nếu mọi câu cùng khóa trên máy
+    //   đều đã có trạng thái chốt ("Đã duyệt"/"Cần sửa") khác với bản trực
+    //   tuyến thì bản trực tuyến là một câu riêng — THÊM MỚI như một câu độc
+    //   lập thay vì gộp mất. Nhờ đó tổng số câu trên máy khớp đúng tổng số
+    //   bản ghi hợp lệ trong tệp, và cờ "Cần sửa" của bản trùng vẫn còn để
+    //   thầy nhìn thấy trong kho.
     function mergeOnlineQuestions(good){
       var added = 0, updated = 0;
       var index = {};
-      state.questions.forEach(function(q){ var k = bankKeyOf(q); if (!index[k]) index[k] = q; });
+      state.questions.forEach(function(q){ var k = bankKeyOf(q); if (!index[k]) index[k] = []; index[k].push(q); });
       var FILL_FIELDS = ["mucDo", "giaiThich", "yc", "chuDe"];
       function isBlank(x){ return x == null || String(x).trim() === ""; }
       good.forEach(function(v){
         var k = bankKeyOf(v);
-        var ex = index[k];
-        if (!ex){ state.questions.push(v); index[k] = v; added++; return; }
+        var list = index[k] || [];
+        var ex = null;
+        for (var i = 0; i < list.length; i++){ if (list[i].trangThai === v.trangThai){ ex = list[i]; break; } }
+        if (!ex){ for (var j = 0; j < list.length; j++){ if (list[j].trangThai === "cho"){ ex = list[j]; break; } } }
+        if (!ex && list.length){ state.questions.push(v); list.push(v); index[k] = list; added++; return; }
+        if (!ex){ state.questions.push(v); index[k] = [v]; added++; return; }
         if (ex.daSuaTay) return;
         var didUpdate = false;
         if (ex.trangThai === "cho"){
