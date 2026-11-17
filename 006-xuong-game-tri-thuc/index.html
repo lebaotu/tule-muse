@@ -500,7 +500,7 @@ input[type=range]{flex:1; accent-color:var(--acc); height:36px; min-width:120px}
     </div>
     <h2 style="margin-top:20px"><span class="ic" style="color:var(--acc)"><svg><use href="#i-info"/></svg></span> Thông tin</h2>
     <div class="info-box">
-      <p><b>Xưởng Game Tri Thức</b> — phiên bản 1.1<br>
+      <p><b>Xưởng Game Tri Thức</b> — phiên bản 1.1.1<br>
       Nền tảng trò chơi học tập dùng kho câu hỏi bám chương trình GDPT 2018 (TT32), sách Kết nối tri thức; tổng kết phiên theo mức độ TT27.</p>
       <p>Tác giả: <b>Lê Bảo Tú</b> — Giáo viên Tin học<br>
       Trường Tiểu học Huỳnh Ngọc Huệ, phường Thanh Khê, Đà Nẵng.</p>
@@ -1408,6 +1408,7 @@ function applyResult(ok, timeout){
   if(sid === "trieuphu"){
     if(ok){
       team.rung++;
+      team.right++;
       team.score = LADDER[team.rung - 1];
       sfx("ladder");
       if(team.rung >= S.rungs){

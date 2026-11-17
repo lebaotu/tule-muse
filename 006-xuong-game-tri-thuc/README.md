@@ -19,5 +19,6 @@ Mỗi phiên hiện rõ Môn – Lớp – Bài – Yêu cầu cần đạt ở 
 - **Vòng quay tri thức** — quay vòng nhận hệ số/đặc quyền (nhân đôi điểm, may mắn, mất lượt, đổi câu) trước mỗi câu.
 
 ## Nhật ký cập nhật
+- **17/11/2026 — v1.1.1:** vá lỗi hiển thị ở màn kết quả "Ai là triệu phú": dòng xếp hạng của Cả lớp (và của từng tổ ở chế độ Đối kháng) nay hiện đúng số câu đúng của đội, khớp với dòng tổng kết phiên.
 - **17/11/2026 — v1.1:** mở khóa cả 4 vỏ đợt 2 thành chơi được, sảnh đủ 8 trò: Mở ô kho báu (lưới 12 ô, điểm giấu trong ô), Bingo tri thức (thẻ 3×3 riêng từng tổ, đủ hàng +30 điểm), Ai là triệu phú bản sân khấu lớn (thang 10 câu tới 500 điểm, mốc an toàn câu 5/10, quyền 50:50 và Đổi câu; bìa có thầy giáo MC đối diện học sinh thí sinh và logo chương trình giữa sân khấu), Đua điểm tổ (đua về 100 điểm, chuỗi đúng liên tiếp nhân đôi điểm). Lưới/thẻ/thang tự co theo số câu của bài đã chọn.
 - **17/11/2026 — v1.0:** phát hành bản đầu tiên — khung xưởng 3 bước, lõi rút câu từ kho 10.858 câu của 004, 4 vỏ game đợt 1 (mỗi vỏ một thế giới hình ảnh và âm thanh riêng, tổng hợp bằng WebAudio trong ứng dụng), tổng kết phiên theo mức độ TT27, mục Âm thanh trong Cài đặt, xuất/nhập sao lưu qua tệp.
