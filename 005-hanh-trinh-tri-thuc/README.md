@@ -13,6 +13,7 @@ Dùng nguyên nền ngân hàng câu hỏi của **004 — Kho học liệu số
 - Tạo hành trình: đặt tên lớp → chọn Môn → chọn Lớp → chọn chế độ **Cả lớp** hoặc **Đối kháng tổ** (2–6 tổ, mỗi tổ một lá cờ màu riêng, đi luân phiên).
 - Mỗi chặng rút câu hỏi từ đúng bài học đó (mặc định 6 câu, khó dần; có lời giải thích sau mỗi câu; đồng hồ đếm ngược tùy chọn). Đúng từ 2/3 số câu là qua chặng, nhận 1–3 sao theo tỉ lệ đúng; chơi lại để nâng sao.
 - Có **chặng thử thách** (chỉ câu Kết nối/Vận dụng, sao nhân đôi), **ô may mắn** tặng điểm thưởng, và **Cổng chủ đề** (10 câu trộn toàn chủ đề, qua cổng mở chủ đề tiếp theo).
+- **17/11/2026 — v1.2.4:** nạp dữ liệu khối 4 mới theo Kế hoạch môn học (CV 2345): thêm các chặng Ôn tập/Kiểm tra trên bản đồ, tuần của từng bài căn theo kế hoạch; tổng kho 1.015 bài / 10.939 câu; tiến trình đã lưu của người dùng được giữ nguyên.
 - **Khóa chặng theo tuần học** (lịch năm học 2026–2027, 35 tuần, trừ 2 tuần Tết) — bật mặc định, tắt được trong Cài đặt.
 
 ## Sổ hành trình
