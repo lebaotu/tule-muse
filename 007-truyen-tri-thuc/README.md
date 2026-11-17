@@ -1,0 +1,17 @@
+# 007 — Truyện Tri Thức: Biệt đội Ánh Sao
+
+Game nhập vai kể chuyện theo chương trình Tin học lớp 3–5 (sách Kết nối tri thức): học sinh không "trả lời câu hỏi" mà sống trong một bộ truyện dài kỳ — Thư viện Ánh Sao bị Sương Mù Quên Lãng xâm chiếm, và chỉ tri thức thật mới xua được sương. Mỗi cụm bài là một mùa truyện, mỗi bài là một tập có rẽ nhánh bỏ phiếu, thử thách hóa thân vào hình ảnh (đáp án là vật thể trong tranh để chạm vào), trả lời chưa đúng thì rẽ sang cảnh biến cố với câu cứu viện — không ai bị loại, không ngõ cụt.
+
+**Tác giả:** Lê Bảo Tú — Giáo viên Tin học, Trường Tiểu học Huỳnh Ngọc Huệ.
+**Bản trực tuyến:** https://lebaotu.github.io/tule-muse/007-truyen-tri-thuc/
+
+## Nội dung
+- Đủ 3 khối lớp 3–4–5: **22 cụm truyện · 71 tập · 284 thử thách**, bám SGK/KHDH Tin học Kết nối tri thức và ngân hàng 1.131 câu hỏi đã duyệt của sản phẩm 002 (kèm 9 câu mới về tạo bài trình chiếu bám SGK Tin học 4, trang 30–33).
+- Hai chế độ: Cả lớp phiêu lưu chung và Đối kháng tổ (mỗi tổ điều khiển một anh hùng). Khóa mở tập theo tuần học (tắt được trong Cài đặt), tính sao và vật phẩm theo tập, tiến trình lưu theo lớp, xuất kết quả phiên theo định dạng dùng chung để sản phẩm 008 tổng hợp.
+
+## Kiến trúc
+- Sản phẩm có mạng trước (theo hướng mới từ 007): tệp app chính nhẹ (~0,95 MB); 53 ảnh minh họa 3D nằm trong thư mục con `anh/` thành 13 tệp nạp lười theo cảnh — mở tập nào mới tải ảnh của tập đó.
+- Bản offline cho phòng Tin: chép nguyên thư mục này (index.html + thư mục anh/) vào USB là chạy, không cần sửa gì.
+
+## Nhật ký cập nhật
+- **17/11/2026 — v1.0:** phát hành bản đầu tiên — đủ truyện Tin học 3–5 (22 cụm, 71 tập), sân khấu thử thách hóa thân vào hình ảnh với cảnh đổi trạng thái (cửa đá đóng → mở, cầu sương, kho sách khôi phục), đấu trùm cuối mỗi cụm, xuất/nhập tiến trình và xuất kết quả phiên cho 008.
