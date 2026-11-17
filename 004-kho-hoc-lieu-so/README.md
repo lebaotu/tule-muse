@@ -48,6 +48,7 @@ Một tệp HTML duy nhất, không phụ thuộc thư viện ngoài, mở đư�
 
 ## Nhật ký cập nhật
 
+- **17/11/2026 — v1.3.2:** nạp vá dữ liệu ngân hàng Tin học v5.1 — sửa đáp án câu Vận dụng Lớp 5 Bài 6 (M-20261113-VD-HKI-16) từ C sang D; hai câu trùng GROK-0338 (Lớp 4 Bài 6) và GROK-0613 (Lớp 5 Bài 6) gắn cờ "Cần sửa" nên bị loại khỏi Trình chiếu, Luyện tập và trò chơi nhưng vẫn tra cứu được trong Hồ sơ bài; sửa chính tả "cầu vòng" thành "cầu vồng" (SEED-208); bổ sung lời giải thích cho 66 câu của 3 bài tuần 11 (Lớp 3 Bài 5, Lớp 4 Bài 6, Lớp 5 Bài 6) — cả 3 bài nay đủ 69/69 câu có giải thích. Đồng thời nén lại ảnh bìa và logo để tệp giữ dưới 4,5 MB.
 - **16/11/2026 — v1.3.1:** thêm ảnh bìa hoạt cảnh học sinh cho 3 trò chơi còn lại (Đua điểm tổ, Mở ô bí mật, Bingo tri thức) — nhúng trong ứng dụng và hiện làm banner ở màn thiết lập của từng trò, đồng bộ với Ai là triệu phú; cả 4 trò chơi nay đều có bìa.
 
 - **16/11/2026 — v1.3 (đợt hình ảnh):** nhúng thẳng 7 ảnh bìa môn (WebP) vào trong ứng dụng — hiện ở thẻ môn và đầu trang môn trên mọi bản (Pages, offline); trò "Ai là triệu phú" có hoạt cảnh học sinh trong trường quay làm nền + pháo giấy khi đạt mốc cao; gỡ bỏ trò "Ô Ăn Quan tri thức" (sảnh còn 4 trò). Dữ liệu giữ nguyên 1.006 bài / 10.858 câu.
