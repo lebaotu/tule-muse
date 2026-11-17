@@ -22,6 +22,7 @@ Mỗi câu hỏi có mức độ theo Thông tư 27 (Nhận biết / Kết nối
 
 ## Chức năng
 
+- **17/11/2026 — v1.3.3:** cập nhật toàn bộ dữ liệu khối 4 theo Kế hoạch môn học (CV 2345): thêm 81 câu ở các mục Ôn tập/Kiểm tra, căn lại tuần cho 1.092 câu, không đổi nội dung/đáp án/mức độ; tổng kho 7 môn / 1.015 bài / 10.939 câu.
 - **Hồ sơ bài học:** xem toàn bộ câu hỏi của một bài kèm yêu cầu cần đạt; in hồ sơ bài dạng xem trước A4 trong trang.
 - **Trình chiếu:** chiếu câu hỏi lên màn hình/máy chiếu để cả lớp cùng làm, có đồng hồ đếm ngược tùy chọn cho từng câu.
 - **Luyện tập nhanh:** rút câu ngẫu nhiên theo bài/mức độ để ôn tập.
