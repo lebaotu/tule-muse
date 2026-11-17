@@ -6,6 +6,7 @@
 
 ## Chức năng
 
+- **17/11/2026 — v1.2.1:** tên trường ở màn hình mở đầu đổi sang font Baloo 2, màu xanh Windows #0067C0 đúng màu nhấn Fluent.
 - **Tổng quan:** tiến độ ghi nhận theo kỳ hiện tại, các mốc năm học (giữa HKI tuần 10, cuối HKI tuần 18, giữa HKII tuần 27, cuối năm tuần 33), lớp dạy hôm nay theo thời khóa biểu nạp sẵn.
 - **Lớp & học sinh:** danh sách 21 lớp với học sinh thật (chỉ họ tên + giới tính); tự nhập thêm từ tệp Excel/CSV, thêm/sửa/chuyển lớp, ghi diện hỗ trợ hòa nhập.
 - **Ghi nhận thường xuyên:** ghi nhanh theo tiết/bài (tự gợi ý bài theo tuần PPCT kèm mã chỉ báo năng lực số trong kế hoạch dạy học), 5 nhóm quan sát — học tập, thực hành, nề nếp, tham gia phát biểu, hợp tác — mỗi ghi nhận là nhận xét, không dùng điểm số.
@@ -28,4 +29,6 @@ Một tệp HTML duy nhất, không phụ thuộc thư viện ngoài, mở đư�
 
 ## Nhật ký cập nhật
 
+- **13/11/2026 — v1.2:** chuẩn thương hiệu mới theo ảnh mẫu giáo viên gửi: tên trường dùng font serif Playfair Display màu xanh navy đậm (giao diện tối dùng xanh sáng), logo trường thu nhỏ (46px màn mở đầu, 28px thanh đầu) và đưa lên cao nhất; tên sản phẩm và tiêu đề màn hình dùng font Be Vietnam Pro đậm với điểm nhấn màu ở phần “Tin học 3–5”. Cả hai font nhúng thẳng vào tệp (subset tiếng Việt + Latin) nên hiển thị đúng cả khi không có Internet; font thân bài giữ Segoe UI.
+- **13/11/2026 — v1.1:** thêm đồng bộ Drive tự động ngang chuẩn 001/002 — dán địa chỉ /exec + mã bí mật vào Cài đặt, có Kiểm tra kết nối, Đẩy lên, Kéo về (xác nhận + bản sao an toàn trước khi ghi đè) và tự động theo chu kỳ 1/5/15 phút; mã Apps Script trong app thay bằng bản chuẩn dán-là-chạy tự sinh mã bí mật (thư mục “Sao lưu sổ đánh giá”); cấu hình đồng bộ lưu riêng theo thiết bị, không nằm trong dữ liệu sao lưu. Dữ liệu và mã PIN của bản 1.0 được giữ nguyên.
 - **13/11/2026 — v1.0:** phát hành bản đầu tiên lên tule-muse: đủ 7 màn hình theo bản thiết kế đã duyệt; nạp sẵn danh sách thật 708 học sinh của 21 lớp (chỉ họ tên + giới tính, từ tệp Excel giáo viên cung cấp) và thời khóa biểu 21 tiết/tuần; giao diện Fluent sau 3 vòng nghiệm thu (sửa lỗi gãy dòng tên trường trên điện thoại, lỗi lệch căn lề nút/nhãn, gỡ đóng dấu tác giả khỏi các màn hình bên trong và chuyển thông tin tác giả vào mục Thông tin trong Cài đặt); lưu trữ bền lâu trên thiết bị và nhập Excel offline đã gắn sẵn trong bản phát hành.
