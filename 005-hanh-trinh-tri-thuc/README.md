@@ -13,6 +13,7 @@ Dùng nguyên nền ngân hàng câu hỏi của **004 — Kho học liệu số
 - Tạo hành trình: đặt tên lớp → chọn Môn → chọn Lớp → chọn chế độ **Cả lớp** hoặc **Đối kháng tổ** (2–6 tổ, mỗi tổ một lá cờ màu riêng, đi luân phiên).
 - Mỗi chặng rút câu hỏi từ đúng bài học đó (mặc định 6 câu, khó dần; có lời giải thích sau mỗi câu; đồng hồ đếm ngược tùy chọn). Đúng từ 2/3 số câu là qua chặng, nhận 1–3 sao theo tỉ lệ đúng; chơi lại để nâng sao.
 - Có **chặng thử thách** (chỉ câu Kết nối/Vận dụng, sao nhân đôi), **ô may mắn** tặng điểm thưởng, và **Cổng chủ đề** (10 câu trộn toàn chủ đề, qua cổng mở chủ đề tiếp theo).
+- **17/11/2026 — v1.2.7:** tên trường ở màn hình mở đầu đổi sang font Baloo 2, màu xanh lá cây đậm theo tông đảo tri thức.
 - **17/11/2026 — v1.2.6:** cơ cấu LS&ĐL lớp 4 học kì II theo Kế hoạch môn học (CV 2345) như 004 v1.3.5: bản đồ đổi cấu trúc HKII, thêm chặng Bài 18, bỏ các chặng Tây Nguyên cũ; tổng kho 1.015 bài / 10.923 câu.
 - **17/11/2026 — v1.2.5:** đợt hoàn thiện khối 4 như 004 v1.3.4: thêm 2 chặng Toán Bài 28 (tuần 14) và Bài 30 (tuần 14–15), bổ sung 23 lời giải thích; tổng kho 1.017 bài / 10.957 câu; tiến trình đã lưu giữ nguyên.
 - **17/11/2026 — v1.2.4:** nạp dữ liệu khối 4 mới theo Kế hoạch môn học (CV 2345): thêm các chặng Ôn tập/Kiểm tra trên bản đồ, tuần của từng bài căn theo kế hoạch; tổng kho 1.015 bài / 10.939 câu; tiến trình đã lưu của người dùng được giữ nguyên.

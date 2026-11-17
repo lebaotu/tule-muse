@@ -11,7 +11,7 @@
     <style>
       :root{
         --bg:#f4f7fb; --panel:#ffffff; --panel2:#eef3f9; --ink:#16283f; --ink2:#48607c;
-        --line:#cfdce9; --navy:#0b2a5b; --accent:#0b7285; --accent-ink:#ffffff;
+        --line:#cfdce9; --navy:#0b2a5b; --school-green:#0e6b3a; --accent:#0b7285; --accent-ink:#ffffff;
         --good:#1e9e52; --bad:#d92b2b; --warn:#e67700; --gold:#f5b301;
         --shadow:0 6px 24px rgba(11,42,91,.12);
         --radius:14px;
@@ -20,7 +20,7 @@
       @media (prefers-color-scheme: dark){
         :root{
           --bg:#0d1520; --panel:#16222f; --panel2:#1c2c3d; --ink:#e8f0f8; --ink2:#a9bfd4;
-          --line:#2c4258; --navy:#9fc2ff; --accent:#22b8cf; --accent-ink:#06222a;
+          --line:#2c4258; --navy:#9fc2ff; --school-green:#7be2a3; --accent:#22b8cf; --accent-ink:#06222a;
           --shadow:0 6px 24px rgba(0,0,0,.45);
           color-scheme: dark;
         }
@@ -31,9 +31,9 @@
       button,[role="button"],select,input,summary{min-height:2.25rem}
       button{font:inherit;cursor:pointer}
       h1,h2,h3{font-family:"Baloo 2","Be Vietnam Pro","Segoe UI",sans-serif;line-height:1.2;margin:0}
-      .school-name{font-family:"Playfair Display",Georgia,"Times New Roman",serif;color:var(--navy);text-align:center}
-      .school-name .small{display:block;font-size:clamp(.85rem,2.6vw,1.05rem);letter-spacing:.35em;font-weight:600}
-      .school-name .big{display:block;font-size:clamp(1.7rem,6vw,2.6rem);font-weight:800;letter-spacing:.04em}
+      .school-name{font-family:"Baloo 2","Be Vietnam Pro","Segoe UI",sans-serif;color:var(--school-green);text-align:center}
+      .school-name .small{display:block;font-size:clamp(.85rem,2.6vw,1.05rem);letter-spacing:.35em;font-weight:700;white-space:nowrap}
+      .school-name .big{display:block;font-size:clamp(1.7rem,6vw,2.6rem);font-weight:800;letter-spacing:.04em;white-space:nowrap}
       .view{display:none;max-width:1180px;margin:0 auto;padding:18px 16px 48px}
       .view.on{display:block}
       /* ---------- Splash ---------- */
@@ -379,7 +379,7 @@
           <button class="btn danger" id="btn-wipe"><svg><use href="#i-trash"/></svg> Xóa toàn bộ tiến trình</button>
         </div>
         <h3 style="margin-top:22px">Thông tin</h3>
-        <p><b>005 — Hành trình tri thức</b> · phiên bản 1.2.6 — giao diện trò chơi kèm gói âm thanh; đĩa Cổng chủ đề phủ vàng rõ hẳn ngay cả khi đang khóa (vàng đậm lúc khóa kèm huy hiệu ổ khóa, vàng sáng phát sáng khi đến lượt), sản phẩm trong hệ tule-muse.</p>
+        <p><b>005 — Hành trình tri thức</b> · phiên bản 1.2.7 — giao diện trò chơi kèm gói âm thanh; đĩa Cổng chủ đề phủ vàng rõ hẳn ngay cả khi đang khóa (vàng đậm lúc khóa kèm huy hiệu ổ khóa, vàng sáng phát sáng khi đến lượt), sản phẩm trong hệ tule-muse.</p>
         <p>Tác giả: <b>Lê Bảo Tú</b> — Giáo viên Tin học, Trường Tiểu học Huỳnh Ngọc Huệ (phường Thanh Khê, Đà Nẵng).</p>
         <p class="hint">Dữ liệu câu hỏi: nền ngân hàng của 004 “Kho học liệu số” (gói đa môn v2) và ngân hàng Tin học của 002 (bản v5) — 7 môn, 1.015 bài, 10.923 câu. Tiến trình lưu trên máy với khóa <span style="font-family:monospace">httt005_v1</span>; ứng dụng chạy hoàn toàn offline, không chứa dữ liệu cá nhân học sinh nên không cần mã PIN.</p>
         <p style="margin-top:16px"><button class="btn primary" id="btn-close-settings">Đóng</button></p>
