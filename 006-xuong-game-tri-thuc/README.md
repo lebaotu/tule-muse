@@ -13,6 +13,7 @@ Nền tảng sản xuất trò chơi học tập của hệ tule-muse: một kho
 Mỗi phiên hiện rõ Môn – Lớp – Bài – Yêu cầu cần đạt ở đầu phiên và tổng kết theo mức độ TT27 (Nhận biết / Kết nối / Vận dụng) ở cuối phiên. Ứng dụng chạy hoàn toàn offline sau khi tải, phù hợp phòng Tin học chưa có Internet.
 
 ## Vỏ game đợt 1
+- **17/11/2026 — v1.1.5:** cơ cấu LS&ĐL lớp 4 học kì II theo Kế hoạch môn học (CV 2345) như 004 v1.3.5; tổng kho 1.015 bài / 10.923 câu.
 - **17/11/2026 — v1.1.4:** đợt hoàn thiện khối 4 như 004 v1.3.4: Toán thêm 18 câu Bài 28 + Bài 30, bổ sung 23 lời giải thích; tổng kho 1.017 bài / 10.957 câu.
 - **17/11/2026 — v1.1.3:** nạp dữ liệu khối 4 mới theo Kế hoạch môn học (CV 2345): thêm 81 câu ở các mục Ôn tập/Kiểm tra, căn lại tuần theo kế hoạch; tổng kho 1.015 bài / 10.939 câu.
 - **Kéo co tri thức** — hai đội trả lời cùng một câu hỏi nhưng mỗi đội thấy một bộ đáp án A–D riêng; đội đúng kéo dây về phía mình.
