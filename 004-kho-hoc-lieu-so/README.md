@@ -64,3 +64,5 @@ Một tệp HTML duy nhất, không phụ thuộc thư viện ngoài, mở đư�
 - **16/11/2026 — v1.1:** bổ sung Khoa học Lớp 5 (358 câu) và Lịch sử & Địa lí Lớp 5 (385 câu) — tổng kho 1.006 bài / 10.858 câu, đầy đủ mọi môn theo đúng khối lớp được dạy; sửa ma trận môn–lớp: Khoa học và Lịch sử & Địa lí chỉ hiện Lớp 4–5, bỏ hẳn Lớp 3 (lớp 3 không học hai môn này).
 
 - **16/11/2026 — v1.0:** phát hành bản đầu tiên lên tule-muse: nền tảng kho học liệu số với 7 môn, 948 bài, 10.115 câu hỏi. Dữ liệu gồm ngân hàng Tin học 3–5 (1.125 câu, từ sản phẩm 002) và các gói Toán, Tiếng Việt, Tiếng Anh, Công nghệ, Khoa học, Lịch sử & Địa lí do giáo viên tổng hợp theo sách Kết nối tri thức cho Lớp 1–5. Đủ Trình chiếu, Luyện tập nhanh, Đua điểm tổ, Mở ô bí mật, đồng hồ đếm ngược và in hồ sơ bài học.
+
+- **17/11/2026 — v1.3.7:** thay logo trường bằng bản sạch (đã xoá vòng trắng thừa quanh huy hiệu) và nâng cỡ logo màn hình mở đầu từ 46 lên 104×104 px theo chuẩn chung của nhà tule-muse.
