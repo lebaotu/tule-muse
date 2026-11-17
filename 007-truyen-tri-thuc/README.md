@@ -15,3 +15,5 @@ Game nhập vai kể chuyện theo chương trình Tin học lớp 3–5 (sách 
 
 ## Nhật ký cập nhật
 - **17/11/2026 — v1.0:** phát hành bản đầu tiên — đủ truyện Tin học 3–5 (22 cụm, 71 tập), sân khấu thử thách hóa thân vào hình ảnh với cảnh đổi trạng thái (cửa đá đóng → mở, cầu sương, kho sách khôi phục), đấu trùm cuối mỗi cụm, xuất/nhập tiến trình và xuất kết quả phiên cho 008.
+
+- **17/11/2026 — v1.0.1:** thay logo trường bằng bản sạch (đã xoá vòng trắng thừa quanh huy hiệu và gỡ vòng trắng do CSS tạo quanh logo ở màn hình mở đầu); logo hiển thị 104×104 px trực tiếp trên nền.
