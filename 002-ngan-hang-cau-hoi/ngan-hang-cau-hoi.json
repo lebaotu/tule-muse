@@ -1,5 +1,5 @@
 {
- "phienBan": "master-2026-11-13-v5",
+ "phienBan": "v5.1",
  "tongSo": 1125,
  "cauHoi": [
   {
@@ -492,7 +492,7 @@
     "G và H"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Hai phím F và J có gờ nhỏ để hai ngón trỏ sờ thấy vị trí xuất phát mà không cần nhìn bàn phím.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -511,7 +511,7 @@
     "Phím Enter"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Hai ngón cái luôn đặt lên phím dấu cách dài nhất để sẵn sàng gõ dấu cách.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -530,7 +530,7 @@
     "Hàng phím số"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "F và J nằm trên hàng phím cơ sở, là hàng các ngón tay đặt sẵn khi bắt đầu gõ.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -549,7 +549,7 @@
     "Hàng phím dưới"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Sau mỗi lần gõ phím ở hàng khác, các ngón tay đều trở về hàng phím cơ sở để sẵn sàng gõ tiếp.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -568,7 +568,7 @@
     "Basic Mouse Skills"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Kiran's Typing Tutor là phần mềm trong bài dùng để luyện gõ 10 ngón.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -2107,7 +2107,7 @@
     "Kiran's Typing Tutor"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "PowerPoint là phần mềm trả phí, còn Unikey, Scratch và Kiran's Typing Tutor được dùng miễn phí.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -2126,7 +2126,7 @@
     "Phần mềm đã được tác giả cho phép sử dụng"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Phần mềm có bản quyền là phần mềm tác giả cho phép sử dụng theo điều kiện của mình.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -2145,7 +2145,7 @@
     "Tất cả các ý trên"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Dùng phần mềm có bản quyền vừa an toàn thông tin, vừa không vi phạm pháp luật, vừa được nhà sản xuất hỗ trợ khi gặp sự cố.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -2164,7 +2164,7 @@
     "Vi phạm pháp luật"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Bản quyền chỉ giúp tránh virus, mất thông tin và vi phạm pháp luật; mất điện là sự cố nguồn điện nên phần mềm nào cũng không tránh được.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -2183,7 +2183,7 @@
     "Rất thông minh"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Tìm cách dùng phần mềm có bản quyền mà không trả tiền là vi phạm pháp luật và xâm phạm quyền lợi của người làm ra phần mềm.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -3874,7 +3874,7 @@
     "Gửi email"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Định dạng kí tự làm văn bản đẹp hơn, dễ đọc và dễ ghi nhớ.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -3893,7 +3893,7 @@
     "File"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Trên dải lệnh Home, các lệnh định dạng kí tự nằm trong nhóm Font.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -3912,7 +3912,7 @@
     "Chỉ âm thanh"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Định dạng kí tự gồm phông chữ, kiểu chữ, cỡ chữ, màu chữ và nhiều yếu tố khác.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -3931,7 +3931,7 @@
     "Xoá hết chữ"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Sau khi chèn ảnh, em thay đổi cách bố trí và đưa ảnh đến vị trí hợp lí thì văn bản mới đẹp hơn.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -3942,7 +3942,7 @@
    "chuDe": "",
    "yeuCau": "",
    "mucDo": "Nhận biết",
-   "cauHoi": "Trong bài thực hành Word, tiêu đề \"Kem cầu vòng hoa quả\" được định dạng với phông và cỡ nào?",
+   "cauHoi": "Trong bài thực hành Word, tiêu đề \"Kem cầu vồng hoa quả\" được định dạng với phông và cỡ nào?",
    "luaChon": [
     "Times New Roman cỡ 8",
     "Tahoma cỡ 16, kiểu đậm, màu xanh",
@@ -3950,7 +3950,7 @@
     "Comic Sans cỡ 72"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Trong bài thực hành, tiêu đề được định dạng phông Tahoma, cỡ 16, kiểu đậm, màu xanh.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -3969,7 +3969,7 @@
     "Nhấn phím Delete"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Với kiểu bố trí Square, em nháy chuột vào ảnh rồi nhấn giữ và kéo chuột để đưa ảnh sang vị trí mới.",
    "nguon": "Ngân hàng sẵn có của thầy (nạp từ CSV)",
    "trangThai": "Đã duyệt"
   },
@@ -6401,7 +6401,7 @@
     "Phía trên"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Hàng phím Q W E R T Y nằm ngay phía trên hàng phím cơ sở.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6420,7 +6420,7 @@
     "Phía dưới"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Hàng phím Z X C V B nằm ngay phía dưới hàng phím cơ sở.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6439,7 +6439,7 @@
     "Thư mục"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Phím dài nhất trên bàn phím là phím dấu cách, dùng để tạo khoảng trống giữa các từ.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6458,7 +6458,7 @@
     "Đổi màn hình"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Phím Enter dùng để xuống dòng, sang đoạn mới khi gõ văn bản.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6477,7 +6477,7 @@
     "Trên loa"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Phím Backspace xoá kí tự ngay bên trái con trỏ.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6496,7 +6496,7 @@
     "J"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Ngón trỏ trái đặt trên phím F có gờ, đó là vị trí xuất phát của tay trái.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6515,7 +6515,7 @@
     "Q"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Ngón trỏ phải đặt trên phím J có gờ, đó là vị trí xuất phát của tay phải.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6534,7 +6534,7 @@
     "Tay phải"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Các phím A, S, D, F nằm bên trái bàn phím nên do tay trái phụ trách khi gõ đúng cách.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6553,7 +6553,7 @@
     "Không dùng tay"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Các phím J, K, L nằm bên phải bàn phím nên do tay phải phụ trách khi gõ đúng cách.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6572,7 +6572,7 @@
     "Chồng lên nhau"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Trước khi gõ, hai tay phải đặt đúng vị trí xuất phát trên hàng phím cơ sở thì mới gõ đúng ngón.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6591,7 +6591,7 @@
     "Gõ thật nhanh dù sai"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Mới tập gõ thì gõ đúng quan trọng hơn gõ nhanh; gõ đúng rồi tốc độ sẽ tăng dần.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6610,7 +6610,7 @@
     "Trên chuột"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Phím Esc thường nằm ở góc trên bên trái của bàn phím.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6629,7 +6629,7 @@
     "Sạc pin"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Hàng phím số dùng để nhập các chữ số.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6648,7 +6648,7 @@
     "Giảm việc nhìn bàn phím"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Gõ mười ngón giúp em gõ mà không phải nhìn bàn phím, vì các ngón đã nhớ vị trí phím.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6667,7 +6667,7 @@
     "Cảm nhận bằng đầu ngón tay"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Phím có gờ giúp em xác định vị trí bằng cách sờ bằng đầu ngón tay, không cần nhìn.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -6686,7 +6686,7 @@
     "Đập phím thật mạnh"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Luyện gõ đều đặn mỗi ngày một khoảng thời gian vừa phải mới tiến bộ; gõ liền cả ngày vừa mệt vừa dễ sai.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11588,9 +11588,9 @@
     "Phần mềm đã được tác giả cho phép sử dụng"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Phần mềm có bản quyền là phần mềm tác giả cho phép sử dụng theo điều kiện của mình.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
-   "trangThai": "Đã duyệt"
+   "trangThai": "Cần sửa"
   },
   {
    "id": "GROK-0339",
@@ -11607,7 +11607,7 @@
     "Chỉ khi có loa"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Miễn phí không có nghĩa là muốn dùng sao cũng được; phần mềm miễn phí vẫn có điều kiện sử dụng của tác giả.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11626,7 +11626,7 @@
     "Quyền sử dụng hợp lệ"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Muốn dùng phần mềm trả phí hợp pháp thì phải có quyền sử dụng hợp lệ, ví dụ mua bản quyền.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11645,7 +11645,7 @@
     "Mọi người tải trộm"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Tác giả hoặc chủ sở hữu quyền là người làm ra phần mềm nên có quyền đặt điều kiện sử dụng.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11664,7 +11664,7 @@
     "Nguồn chính thức được người lớn kiểm tra"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Tải phần mềm từ nguồn chính thức và được người lớn kiểm tra thì an toàn hơn tải từ link lạ hay tệp người lạ gửi.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11683,7 +11683,7 @@
     "Không có rủi ro"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Phần mềm bẻ khoá vừa vi phạm quyền của tác giả, vừa thường kèm mã độc gây hại cho máy tính.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11702,7 +11702,7 @@
     "Hỏi giáo viên hoặc cha mẹ"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Chưa được phép cài ứng dụng thì em hỏi giáo viên hoặc cha mẹ, không tự cài bí mật.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11721,7 +11721,7 @@
     "Thiết bị điện"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Scratch là phần mềm có thể dùng miễn phí.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11740,7 +11740,7 @@
     "Không bao giờ"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Phần mềm miễn phí vẫn do tác giả làm ra nên vẫn có tác giả.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11759,7 +11759,7 @@
     "Chỉ hình quảng cáo"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Trước khi cài đặt, người lớn nên đọc điều khoản sử dụng và các quyền mà ứng dụng xin truy cập.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11778,7 +11778,7 @@
     "Chỉ sai khi mạng yếu"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Mã kích hoạt trả phí là quyền sử dụng của người mua, tự ý chia sẻ là không tôn trọng quyền đó.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11797,7 +11797,7 @@
     "Có nếu tải miễn phí"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Xoá tên tác giả rồi nhận phần mềm là của mình là không được, dù có đổi màu hay tải miễn phí.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11816,7 +11816,7 @@
     "Mua mật khẩu trộm"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Khi cần công cụ chưa có quyền dùng, em xin phép người lớn hoặc chọn công cụ hợp lệ khác, không tìm bản crack.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11835,7 +11835,7 @@
     "Được bán lại tuỳ ý"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "“Dùng thử 7 ngày” nghĩa là chỉ được dùng trong 7 ngày theo đúng giới hạn và điều kiện của bản thử.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11854,7 +11854,7 @@
     "Chia sẻ mã bí mật"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Dùng đúng giấy phép là cách thể hiện sự tôn trọng người làm ra phần mềm.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11873,7 +11873,7 @@
     "Có, luôn được phép"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Phần mềm được dùng miễn phí không có nghĩa là sửa hay bán tuỳ ý; muốn sửa hay bán phải xem giấy phép có cho phép hay không.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -11892,7 +11892,7 @@
     "Đồng ý mọi quyền"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Ứng dụng đòi quyền không liên quan thì em hỏi người lớn trước khi chấp thuận, không đồng ý bừa.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -16813,9 +16813,9 @@
     "Comic Sans cỡ 72"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Trong bài thực hành, tiêu đề được định dạng phông Tahoma, cỡ 16, kiểu đậm, màu xanh.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
-   "trangThai": "Đã duyệt"
+   "trangThai": "Cần sửa"
   },
   {
    "id": "GROK-0614",
@@ -16832,7 +16832,7 @@
     "Nghiêng"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Muốn một từ nổi bật bằng nét dày thì chọn kiểu Đậm (nút B).",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -16851,7 +16851,7 @@
     "Chọn cụm từ đó"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Muốn đổi màu một cụm từ thì phải chọn cụm từ đó trước, rồi mới chọn màu.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -16870,7 +16870,7 @@
     "Không hiển thị"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Cùng một phông chữ, cỡ 18 lớn hơn cỡ 12.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -16889,7 +16889,7 @@
     "Tự sửa chính tả"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Một đoạn văn dùng quá nhiều màu chữ sẽ rối mắt và khó đọc.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -16908,7 +16908,7 @@
     "Khoá bàn phím"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Kiểu bố trí Square làm văn bản bao quanh khung ảnh.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -16927,7 +16927,7 @@
     "Luôn thay mọi chữ"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Kiểu In Line with Text đặt ảnh như một kí tự nằm trong dòng văn bản.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -16946,7 +16946,7 @@
     "Chỉ nút giữa cạnh ngang"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Muốn đổi kích thước ảnh mà ít bị méo thì kéo nút ở góc ảnh.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -16965,7 +16965,7 @@
     "Che hết tiêu đề"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Hình minh hoạ nên đặt gần nội dung liên quan để người đọc dễ hiểu.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -16984,7 +16984,7 @@
     "Clipboard chỉ sao chép"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Muốn thay phông chữ thì chọn lệnh trong nhóm Font.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -17003,7 +17003,7 @@
     "Quyền sử dụng và nguồn"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Trước khi chèn ảnh của người khác, em cần chú ý quyền sử dụng và nguồn của ảnh.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -17022,7 +17022,7 @@
     "Càng nhỏ càng tốt"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Văn bản cho học sinh tiểu học nên có chữ dễ đọc với cỡ chữ phù hợp.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -17041,7 +17041,7 @@
     "Thêm nhiều ảnh đè lên"
    ],
    "dapAn": 2,
-   "giaiThich": "",
+   "giaiThich": "Ảnh quá lớn chiếm hết trang thì em thu nhỏ ảnh lại cho hợp lí.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -17060,7 +17060,7 @@
     "Delete"
    ],
    "dapAn": 1,
-   "giaiThich": "",
+   "giaiThich": "Muốn căn tiêu đề ra giữa trang thì chọn lệnh Center.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -17079,7 +17079,7 @@
     "X"
    ],
    "dapAn": 0,
-   "giaiThich": "",
+   "giaiThich": "Chữ nghiêng được biểu thị bằng nút I (Italic).",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -17098,7 +17098,7 @@
     "U"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Gạch chân được biểu thị bằng nút U (Underline).",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -17117,7 +17117,7 @@
     "Ảnh và chữ có che nhau không"
    ],
    "dapAn": 3,
-   "giaiThich": "",
+   "giaiThich": "Sau khi bố trí ảnh, em cần kiểm tra xem ảnh và chữ có che nhau không.",
    "nguon": "Kéo co tri thức (Grok) — ngân hàng của thầy",
    "trangThai": "Đã duyệt"
   },
@@ -21334,7 +21334,7 @@
     "Đổi phông chữ của cả văn bản",
     "Chọn cách bố trí ảnh (ví dụ Square) rồi kéo ảnh sang vị trí phù hợp"
    ],
-   "dapAn": 2,
+   "dapAn": 3,
    "giaiThich": "Chọn cách bố trí ảnh rồi kéo ảnh sang chỗ trống thì chữ và ảnh không còn chồng lên nhau, văn bản vừa đẹp vừa dễ đọc.",
    "nguon": "Muse soạn — bám SGK KNTT Tin 5 Bài 6",
    "trangThai": "Đã duyệt"
@@ -21378,5 +21378,5 @@
    "trangThai": "Đã duyệt"
   }
  ],
- "capNhat": "2026-11-13T18:35:00+07:00"
+ "capNhat": "2026-11-17"
 }
