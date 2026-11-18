@@ -339,6 +339,16 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
 .scene-fallback{position:absolute; inset:0; z-index:2; display:none; align-items:center; justify-content:center; background:linear-gradient(160deg,#1a2742 0%,#0c1425 58%,#233457 100%); color:#9fc3e8;}
 .scene-fallback.show{display:flex;}
 .scene-fallback svg{width:120px; height:120px; opacity:.35;}
+
+/* ---------- Đêm Chung Kết (sự kiện đặc biệt v2.0) ---------- */
+.finale-panel{border:2.5px solid var(--gold); background:linear-gradient(165deg,var(--surface) 55%,var(--gold-soft) 130%); box-shadow:var(--shadow);}
+.finale-cover{position:relative; aspect-ratio:16/9; border-radius:10px; overflow:hidden; background:linear-gradient(160deg,#16233f 0%,#0c1425 55%,#233457 100%); margin-bottom:12px;}
+.finale-cover img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;}
+.finale-cover .art-frame-ic svg{width:64px; height:64px;}
+.finale-panel h3.finale-title{font-family:"Baloo 2",sans-serif; font-weight:800; font-size:26px; letter-spacing:.6px; margin:0 0 2px;}
+.finale-sub{font-weight:700; color:var(--gold); font-size:16px; margin:0 0 8px;}
+.finale-status{font-size:15px; color:var(--text); margin:10px 0 0;}
+.finale-khoi-row{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:12px;}
 </style>
 </head>
 <body>
@@ -357,7 +367,7 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
     <p class="slogan">Mỗi câu trả lời đúng là một trang sách được thắp sáng. Cùng Biệt đội Ánh Sao xua tan Sương Mù Quên Lãng, khôi phục từng cuốn sách của Thư viện Ánh Sao!</p>
     <p class="author-line">Tác giả: <b>Lê Bảo Tú</b> — Giáo viên Tin học, Trường Tiểu học Huỳnh Ngọc Huệ</p>
     <button class="btn btn-gold big" id="btn-enter" type="button">Mở cửa thư viện</button>
-    <div><span class="ver-badge">Phiên bản v1.29</span></div>
+    <div><span class="ver-badge">Phiên bản v2.0 · Đêm Chung Kết — Bản Chính Thức (Final Release)</span></div>
   </div>
 </section>
 
@@ -373,6 +383,7 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
     <h2 class="sec-title">Bảy cuốn sách — bảy thế giới</h2>
     <p class="sec-desc">Mỗi cuốn sách là một thế giới tri thức đang bị Sương Mù Quên Lãng bao phủ. Hãy chọn một cuốn sách để bắt đầu hành trình khôi phục.</p>
     <div class="book-grid" id="book-grid"></div>
+    <div id="finale-slot"></div>
 
     <div class="panel">
       <h3>Hành trình theo lớp</h3>
@@ -639,7 +650,8 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
         <p><b>Nguồn dữ liệu:</b> câu hỏi trích từ Ngân hàng câu hỏi Tin học của sản phẩm 002/004 (bản v5.1, chỉ gồm câu đã duyệt), bám sát Chương trình giáo dục phổ thông 2018 (Thông tư 32) và quy định đánh giá học sinh tiểu học (Thông tư 27) với ba mức độ: Nhận biết — Kết nối — Vận dụng.</p>
         <p><b>Dữ liệu truyện:</b> 22 cụm truyện Tin học cho lớp 3, lớp 4 và lớp 5 — 71 tập truyện và tập đấu trùm — soạn bám theo từng chủ đề, từng bài của sách giáo khoa Tin học (Kết nối tri thức với cuộc sống) và Kế hoạch dạy học của nhà trường. Từ bản v1.1 có thêm thế giới Toán — Vương quốc Số Học, và bản v1.2 hoàn thiện trọn năm học: 27 mùa truyện Toán lớp 3, 104 tập, 416 thử thách (kèm 35 câu cứu viện ở học kỳ 2) với 807 câu hỏi Toán lớp 3, Cụ Rùa Số Học dẫn đường. Bản v1.3 mở thêm Toán lớp 4 học kỳ 1: 12 mùa truyện, 49 tập, 196 thử thách (kèm 37 câu cứu viện) với 692 câu hỏi Toán lớp 4. Bản v1.4 nạp tiếp Toán lớp 4 học kỳ 2: 10 mùa truyện, 46 tập, 184 thử thách (kèm 36 câu cứu viện) và 26 câu hỏi bổ sung cho các bài mỏng của học kỳ 2 — khép trọn Toán lớp 4 cả năm với 22 mùa truyện, 95 tập và 718 câu hỏi; toàn bộ Thư viện Ánh Sao nay có 71 mùa truyện. Bản v1.5 mở thêm Toán lớp 5 học kỳ 1: 12 mùa truyện, 47 tập, 188 thử thách (kèm 35 câu cứu viện) và 55 câu hỏi bổ sung cho các bài mỏng của học kỳ 1 — gói câu hỏi Toán lớp 5 có 730 câu; toàn bộ Thư viện Ánh Sao nay có 83 mùa truyện. Bản v1.6 nạp tiếp Toán lớp 5 học kỳ 2: 12 mùa truyện, 52 tập, 208 thử thách (kèm 40 câu cứu viện) và 64 câu hỏi bổ sung cho các bài mỏng của học kỳ 2 — khép trọn Toán lớp 5 cả năm với 24 mùa truyện, 99 tập và 794 câu hỏi; toàn bộ Thư viện Ánh Sao nay có 95 mùa truyện. Bản v1.7 mở thêm Toán lớp 1 học kỳ 1: 8 mùa truyện, 28 tập, 112 thử thách (kèm 20 câu cứu viện) và 24 câu hỏi bổ sung cho các bài mỏng của học kỳ 1 — gói câu hỏi Toán lớp 1 có 369 câu (332 câu trắc nghiệm có phương án, 37 câu tự luận chỉ thuộc hồ sơ bài); toàn bộ Thư viện Ánh Sao nay có 103 mùa truyện. Bản v1.8 nạp tiếp Toán lớp 1 học kỳ 2: 10 mùa truyện, 31 tập — khép trọn Toán lớp 1 cả năm với 18 mùa truyện, 59 tập; đồng thời bổ sung 22 câu hỏi cho các bài mỏng của học kỳ 2 — gói câu hỏi Toán lớp 1 có 391 câu; toàn bộ Thư viện Ánh Sao nay có 113 mùa truyện. Bản v1.8 cũng tăng cỡ chữ trong màn chơi truyện cho học sinh lớp 1 và lớp 2 để các em dễ đọc hơn. Bản v1.9 mở thêm Toán lớp 2 học kỳ 1: 10 mùa truyện, 45 tập, 180 thử thách (kèm 35 câu cứu viện) và 19 câu hỏi bổ sung cho các bài mỏng của học kỳ 1 — gói câu hỏi Toán lớp 2 có 613 câu (530 câu trắc nghiệm có phương án, 83 câu tự luận chỉ thuộc hồ sơ bài); toàn bộ Thư viện Ánh Sao nay có 123 mùa truyện. Bản v1.10 nạp tiếp Toán lớp 2 học kỳ 2: 13 mùa truyện, 53 tập, 212 thử thách (kèm 40 câu cứu viện) và 32 câu hỏi bổ sung cho các bài mỏng của học kỳ 2 — khép trọn Toán lớp 2 cả năm với 23 mùa truyện, 98 tập và 645 câu hỏi; Vương quốc Số Học nay đủ cả năm mùa truyện cho 5 khối lớp với 114 mùa truyện; toàn bộ Thư viện Ánh Sao nay có 136 mùa truyện. Bản v1.11 mở thêm thế giới Tiếng Việt — Khu Vườn Ngôn Từ: Tiếng Việt lớp 3 học kỳ 1 với 9 mùa truyện, 43 tập, Cô Ong Chăm Chữ dẫn đường; gói câu hỏi Tiếng Việt lớp 3 có 795 câu (741 câu trắc nghiệm có phương án, 54 câu tự luận chỉ thuộc hồ sơ bài), gồm 3 câu bổ sung cho Bài 15, 23 và 31; toàn bộ Thư viện Ánh Sao nay có 145 mùa truyện. Bản v1.13 nạp tiếp Tiếng Việt lớp 3 học kỳ 2: 9 mùa truyện, 41 tập — khép trọn Tiếng Việt lớp 3 cả năm với 18 mùa truyện, 84 tập; gói câu hỏi Tiếng Việt lớp 3 có 802 câu; toàn bộ Thư viện Ánh Sao nay có 154 mùa truyện. Bản v1.14 mở thêm Tiếng Việt lớp 4 học kỳ 1 — Khu Vườn Ngôn Từ mở thêm khu vườn của lớp 4 với 9 mùa truyện, 43 tập; toàn bộ Thư viện Ánh Sao nay có 163 mùa truyện. Bản v1.15 nạp tiếp Tiếng Việt lớp 4 học kỳ 2: 9 mùa truyện, 41 tập — khép trọn Tiếng Việt lớp 4 cả năm với 18 mùa truyện, 84 tập; gói câu hỏi Tiếng Việt lớp 4 đủ 432 câu; toàn bộ Thư viện Ánh Sao nay có 172 mùa truyện. Bản v1.16 mở thêm Tiếng Việt lớp 5 học kỳ 1 — khu vườn cuối của Khu Vườn Ngôn Từ với 8 mùa truyện, 40 tập; gói câu hỏi Tiếng Việt lớp 5 có 395 câu (gồm 23 câu bổ sung cho các bài mỏng); toàn bộ Thư viện Ánh Sao nay có 180 mùa truyện. Bản v1.17 nạp tiếp Tiếng Việt lớp 5 học kỳ 2: 8 mùa truyện, 38 tập — khép trọn Tiếng Việt lớp 5 cả năm với 16 mùa truyện, 78 tập; gói câu hỏi Tiếng Việt lớp 5 có 404 câu (thêm 9 câu bổ sung cho các bài mỏng của học kỳ 2); toàn bộ Thư viện Ánh Sao nay có 188 mùa truyện. Bản v1.18 mở thêm Tiếng Việt lớp 2 trọn năm: 16 mùa truyện, 78 tập trong Khu Vườn Ngôn Từ — giọng văn rút gọn cho lớp nhỏ, cỡ chữ TO trong màn chơi; gói câu hỏi Tiếng Việt lớp 2 có 387 câu (gồm 9 câu bổ sung cho các bài mỏng); toàn bộ Thư viện Ánh Sao nay có 204 mùa truyện, 850 tập.</p>
         <p><b>Ảnh minh họa:</b> ảnh được nạp từ thư mục “anh” đặt cạnh tệp của sản phẩm; mở tập nào app mới nạp ảnh của tập đó. Khi thư mục ảnh chưa có (ví dụ mở bản xem trước), truyện vẫn chơi trọn vẹn với nền cảnh dự phòng.</p>
-        <p><b>Phiên bản:</b> v1.29 — Lịch sử và Địa lí lớp 4 trọn năm trên Dòng Sông Thời Gian với 10 mùa truyện, 39 tập (Mùa 1 — Bến Sách Sử Đầu Tiên, Mùa 2 — Đường Lên Đất Tổ, Mùa 3 — Vùng Đất Đồng Bằng, Mùa 4 — Thăng Long Ngàn Năm, Mùa 5 — Cổng Tổng Kết Kỳ Một, Mùa 6 — Dọc Miền Trung Nắng Gió, Mùa 7 — Cố Đô Phố Cổ, Mùa 8 — Miền Đất Chín Rồng, Mùa 9 — Địa Đạo Kể Chuyện, Mùa 10 — Cổng Tổng Kết Cuối Năm) và lớp 5 trọn năm với 8 mùa truyện, 36 tập (Mùa 1 — Bản Đồ Hình Chữ S, Mùa 2 — Khởi Nguồn Văn Lang, Mùa 3 — Giữ Nước Ngàn Năm, Mùa 4 — Hào Khí Đông Dương, Mùa 5 — Sông Núi Giữ Nước, Mùa 6 — Vòng Tay Láng Giềng, Mùa 7 — Vòng Quanh Trái Đất, Mùa 8 — Bến Bờ Tương Lai), Cụ Đồ Nho dẫn đường — thế giới thứ sáu Dòng Sông Thời Gian đã mở trọn cả lớp 4 (10 mùa, 39 tập) và lớp 5 (8 mùa, 36 tập); thư viện nay đủ trọn 6 thế giới với 315 mùa, 1.330 tập. Kiến trúc tách gói theo từng môn — lớp của bản v1.12 được giữ nguyên: gói dữ liệu đặt trong thư mục “goi” cạnh tệp của sản phẩm, vào lớp nào app mới nạp gói của lớp đó.</p>
+        <p><b>Sự kiện Đêm Chung Kết:</b> ở Sảnh thư viện, mọi lớp đều dự được (không khóa tuần, không cần hoàn thành mùa nào trước). Cả lớp lần lượt thắp sáng các Cổng Thế Giới của khối lớp mình — mỗi cổng 2 đòn tri thức mức Kết nối/Vận dụng rút từ chính thế giới đó, trả lời sai có câu cứu viện mức Nhận biết của nhân vật dẫn đường — rồi đối mặt trùm cuối Sương Mù Quên Lãng với 6 đòn tổng hợp. Hoàn thành đêm, lớp nhận Huy Hiệu Ánh Sao trong Album hành trình.</p>
+        <p><b>Phiên bản:</b> v2.0 — Đêm Chung Kết · Bản Chính Thức (Final Release). Thư viện Ánh Sao đã đủ trọn 6 thế giới với 315 mùa truyện, 1.330 tập, và mở thêm sự kiện đặc biệt Đêm Chung Kết — trận quyết chiến cuối cùng với Sương Mù Quên Lãng dành cho mọi lớp. Đây là bản chính thức hoàn thiện của sản phẩm 007.</p>
       </div>
     </div>
   </div>
@@ -805,7 +817,7 @@ var CAU_TIENG_ANH_THEO_LOP = {};
 var CAU_KHOA_HOC_THEO_LOP = {};
 var CAU_CONG_NGHE_THEO_LOP = {};
 var CAU_LICH_SU_DIA_LI_THEO_LOP = {};
-var PHIEN_BAN = "v1.29";
+var PHIEN_BAN = "v2.0";
 var NHAN_VAT_TO = ["Minh Anh", "Tuấn Kiệt", "Thảo Nguyên", "Đức Trí", "Thủ thư Số", "Người đọc dũng cảm"];
 
 /* ================= TRUY CẬP DỮ LIỆU (307 mùa truyện + ngân hàng câu hỏi) ================= */
@@ -1114,6 +1126,14 @@ function tongDiemLop(lop){
     var t = tongDiemMua(lop, m.id);
     s.dung += t.dung; s.sao += t.sao; s.vp += t.vp; s.diem += t.diem; s.xong += t.xong; s.tongTap += m.tap.length;
   });
+  /* Đêm Chung Kết (v2.0): cộng thêm Huy Hiệu Ánh Sao khi lớp đã hoàn thành đêm —
+     không đổi xong/tongTap vì đêm không phải một tập truyện. */
+  var cpF = state.classes[lop];
+  var dcF = cpF && cpF.demChungKet;
+  if (dcF && dcF.hoanThanh) {
+    s.dung += dcF.dungTichLuy; s.sao += dcF.sao; s.vp += 1;
+    s.diem += dcF.dungTichLuy * 10 + dcF.sao * 5 + 30;
+  }
   return s;
 }
 
@@ -1260,6 +1280,7 @@ function renderLobby(){
     });
     g.appendChild(b);
   });
+  renderFinaleCard();
   renderClassChips();
   updateLobbyStatus();
 }
@@ -1403,6 +1424,7 @@ function renderClassChips(){
   });
 }
 function updateLobbyStatus(){
+  renderFinaleCard();
   var el = $("lobby-status");
   var lop = state.lopHienTai;
   if (!lop) { el.textContent = ""; $("btn-continue").disabled = true; return; }
@@ -2101,6 +2123,369 @@ function confetti(){
   })();
 }
 
+/* ================= ĐÊM CHUNG KẾT (sự kiện đặc biệt v2.0) =================
+   Sự kiện khép lại Thư viện Ánh Sao, chơi trên chính màn scr-play nhưng bằng một
+   đối tượng phiên riêng FIN — không đụng vào phiên S của tập truyện. Bể câu của
+   đêm là bể gộp toàn bộ câu trắc nghiệm của từng thế giới ở khối lớp đang chơi,
+   nạp bằng đúng bộ nạp gói napGoi/khoaGoi sẵn có. Tiến trình của đêm lưu ở
+   classProg(lop).demChungKet, tách hẳn khỏi cp.mua / cp.dangDo. */
+var FIN_MON_ORDER = ["Tin học", "Toán", "Tiếng Việt", "Tiếng Anh", "Khoa học", "Công nghệ", "Lịch sử và Địa lí"];
+var FIN_GUIDE = { "Tin học": "Thủ thư Số", "Toán": "Cụ Rùa Số Học", "Tiếng Việt": "Cô Ong Chăm Chữ", "Tiếng Anh": "Vẹt Lulu", "Khoa học": "Robot Hạt Đậu", "Công nghệ": "Bác Thợ Cả", "Lịch sử và Địa lí": "Cụ Đồ Nho" };
+var FIN_GATE = { "Tin học": "Cổng Thư Viện Số", "Toán": "Cổng Vương Quốc Số Học", "Tiếng Việt": "Cổng Khu Vườn Ngôn Từ", "Tiếng Anh": "Cổng Hòn Đảo Song Ngữ", "Khoa học": "Cổng Trạm Khám Phá Xanh", "Công nghệ": "Cổng Xưởng Chế Tạo Nhỏ", "Lịch sử và Địa lí": "Cổng Dòng Sông Thời Gian" };
+var FIN_OPEN_LINE = {
+  "Tin học": "Cổng Thư Viện Số do bác giữ — kiến thức Tin học sẽ thắp sáng những mạch số đầu tiên.",
+  "Toán": "Cụ đã gác Tháp Số cả năm trời. Đêm nay, những con số phát sáng sẽ cùng các cháu đẩy lùi sương mù.",
+  "Tiếng Việt": "Khu Vườn Ngôn Từ thơm hương chữ nghĩa. Ong này tin các cháu sẽ làm từng cánh cửa vườn bừng sáng.",
+  "Tiếng Anh": "Hello, my friends! Đêm nay mình cùng nhau gọi tên thế giới bằng tiếng Anh thật to để sương tan nhé!",
+  "Khoa học": "Hạt Đậu đã nạp đầy pin tò mò. Mọi hiện tượng các cháu khám phá được sẽ thành ánh sáng cho Trạm.",
+  "Công nghệ": "Hộp dụng cụ của bác sẵn sàng rồi. Đêm nay ta lắp từng mảnh sáng, siết chặt từng con ốc tri thức!",
+  "Lịch sử và Địa lí": "Dòng Sông Thời Gian chảy ngàn năm không cạn. Các cháu hãy để tiếng trống đồng đánh thức ký ức quê hương."
+};
+var FIN = null;
+var lastFinaleKhoi = null;
+
+function khoiTuTenLop(tenLop){
+  var m = String(tenLop || "").match(/\d+/);
+  if (!m) return null;
+  var n = parseInt(m[0], 10);
+  return (n >= 1 && n <= 5) ? n : null;
+}
+function renderFinaleCard(){
+  var slot = $("finale-slot"); if (!slot) return;
+  var lop = state.lopHienTai;
+  var status;
+  if (!lop) status = "Hãy chọn lớp ở mục Hành trình theo lớp để tham dự.";
+  else {
+    var cp = state.classes[lop];
+    var dc = cp && cp.demChungKet;
+    if (dc && dc.hoanThanh) {
+      status = "Lớp " + lop + " đã hoàn thành Đêm Chung Kết · " + dc.sao + " sao · " + (dc.dungTichLuy * 10 + dc.sao * 5 + 30) + " điểm — chơi lại để nâng sao nhé!";
+    } else status = "Lớp " + lop + " chưa tham dự Đêm Chung Kết.";
+  }
+  slot.innerHTML =
+    '<div class="panel finale-panel">' +
+      '<div class="finale-cover"><span class="art-frame-ic">' + ICON.book + '</span><img alt="Ảnh bìa Đêm Chung Kết" style="display:none;"></div>' +
+      '<h3 class="finale-title">ĐÊM CHUNG KẾT</h3>' +
+      '<p class="finale-sub">Trận quyết chiến với Sương Mù Quên Lãng</p>' +
+      '<p class="sec-desc" style="margin-bottom:0;">Sự kiện đặc biệt khép lại Thư viện Ánh Sao: thắp sáng các Cổng Thế Giới của khối lớp mình rồi đối mặt trùm cuối Sương Mù. Mở cho mọi lớp — không khóa tuần, không cần hoàn thành mùa nào trước.</p>' +
+      '<p class="finale-status">' + esc(status) + '</p>' +
+      '<div id="finale-khoi-slot"></div>' +
+      '<div class="btn-row" style="margin-top:14px;"><button class="btn btn-gold big" id="btn-finale" type="button">Vào Đêm Chung Kết</button></div>' +
+    '</div>';
+  ganAnh(slot.querySelector(".finale-cover img"), "dem-chung-ket");
+  $("btn-finale").addEventListener("click", function(){
+    audioCtx();
+    if (!state.lopHienTai) { toast("Thầy chọn hoặc thêm lớp trước nhé."); return; }
+    var khoi = khoiTuTenLop(state.lopHienTai);
+    if (khoi) { startFinale(khoi); return; }
+    /* Tên lớp không suy ra được khối: cho thầy chọn khối của đêm nay ngay trong panel */
+    var ks = $("finale-khoi-slot"); if (!ks) return;
+    var html = '<div class="finale-khoi-row"><span style="font-weight:600;">Khối lớp của lớp này:</span>';
+    for (var k = 1; k <= 5; k++) html += '<button type="button" class="chip" data-khoi="' + k + '">Lớp ' + k + '</button>';
+    html += '</div>';
+    ks.innerHTML = html;
+    ks.querySelectorAll("button[data-khoi]").forEach(function(b){
+      b.addEventListener("click", function(){ startFinale(parseInt(b.getAttribute("data-khoi"), 10)); });
+    });
+  });
+}
+function startFinale(khoi){
+  if (!state.lopHienTai) { toast("Thầy chọn hoặc thêm lớp trước nhé."); return; }
+  var worlds = FIN_MON_ORDER.filter(function(mon){ return khoaGoi(mon, khoi) !== null; });
+  if (!worlds.length) { toast("Chưa có thế giới nào mở cho khối lớp này."); return; }
+  lastFinaleKhoi = khoi;
+  /* Nạp gói của mọi thế giới khả dụng ở khối này; gói nào lỗi thì hủy bắt đầu,
+     không chốt trạng thái lỗi — lần bấm sau nạp lại như cơ chế sẵn có. */
+  var pending = worlds.length, failed = null, started = false;
+  worlds.forEach(function(mon){
+    napGoi(mon, khoi, function(ok){
+      if (started) return;
+      if (!ok && !failed) failed = mon;
+      pending--;
+      if (pending > 0) return;
+      if (failed) { toast("Chưa tải được gói dữ liệu của " + failed + " lớp " + khoi + " — thầy bấm lại để thử lại nhé."); return; }
+      started = true;
+      beginFinale(khoi, worlds);
+    });
+  });
+}
+function beginFinale(khoi, worlds){
+  var pools = {};
+  worlds.forEach(function(mon){
+    var pack = cauPack(khoi, mon);
+    var arr = [];
+    if (pack && pack.bai) {
+      for (var k in pack.bai) {
+        var b = pack.bai[k];
+        if (b && b.cauHoi) b.cauHoi.forEach(function(q){ if (q.phuongAn && q.phuongAn.length) arr.push(q); });
+      }
+    }
+    pools[mon] = arr;
+  });
+  S = null; stopTimer();
+  FIN = {
+    lop: state.lopHienTai, khoi: khoi, worlds: worlds, pools: pools, usedIds: {},
+    stats: { tong: 0, dung: 0, theoMucDo: { "1": { tong: 0, dung: 0 }, "2": { tong: 0, dung: 0 }, "3": { tong: 0, dung: 0 } }, cauSai: [] },
+    bossHp: 100, teamHp: 100, locked: false,
+    steps: [], si: -1, gateHit: 0, cur: null, fog: 0.95
+  };
+  buildFinaleSteps();
+  document.body.classList.remove("world-toan");
+  $("play-title").textContent = "Đêm Chung Kết — Lớp " + FIN.lop;
+  $("scr-play").classList.toggle("chu-to", khoi === 1 || khoi === 2);
+  $("hp-wrap").classList.remove("show");
+  var strip = $("team-strip"); strip.classList.remove("show"); strip.innerHTML = "";
+  $("recap-panel").style.display = "none";
+  hideStageSet(); hideSigns();
+  var fog = $("fog-layer"); fog.className = "fog-layer thick"; fog.style.opacity = "0.95";
+  setSceneImage("dem-chung-ket");
+  showScreen("scr-play");
+  finAdvance();
+}
+function buildFinaleSteps(){
+  var steps = [];
+  steps.push({ k: "line", nv: "Thủ thư Số", loi: "Các cháu ơi, đêm nay là đêm đặc biệt nhất của Thư viện Ánh Sao. Sương Mù Quên Lãng đã tụ toàn bộ sức mạnh về đây — nó muốn xóa sạch mọi trang sách trong một đêm!" });
+  FIN.worlds.forEach(function(mon){
+    steps.push({ k: "line", nv: FIN_GUIDE[mon], loi: FIN_OPEN_LINE[mon] });
+  });
+  steps.push({ k: "line", nv: "Sương Mù", loi: "Hỡi những người đọc nhỏ bé… Đêm nay ta sẽ phủ kín Thư viện Ánh Sao. Mọi chữ, mọi số, mọi câu chuyện… sẽ chìm vào quên lãng!" });
+  steps.push({ k: "line", nv: "Thủ thư Số", loi: "Đừng sợ, các cháu! Hãy lần lượt thắp sáng từng Cổng Thế Giới, rồi đối mặt Sương Mù ở cuối đêm. Mỗi câu trả lời đúng là một tia sáng. Biệt đội Ánh Sao — tiến lên!" });
+  FIN.worlds.forEach(function(mon){
+    steps.push({ k: "line", nv: FIN_GUIDE[mon], loi: FIN_GATE[mon] + " đang chìm trong sương. Hai đòn tri thức thật chuẩn sẽ thắp sáng cổng này — " + FIN_GUIDE[mon] + " tin ở các cháu!" });
+    steps.push({ k: "hit", mon: mon, boss: false });
+    steps.push({ k: "hit", mon: mon, boss: false });
+    steps.push({ k: "line", nv: FIN_GUIDE[mon], loi: FIN_GATE[mon] + " đã sáng rực! " + FIN_GUIDE[mon] + " tự hào về các cháu — sương đã lùi một bước dài.", gateLit: true });
+  });
+  steps.push({ k: "boss-intro" });
+  var order = shuffle(FIN.worlds);
+  for (var i = 0; i < 6; i++) steps.push({ k: "hit", mon: order[i % order.length], boss: true });
+  steps.push({ k: "dawn" });
+  FIN.steps = steps;
+}
+function finSetFog(v){
+  if (!FIN) return;
+  FIN.fog = Math.max(0, Math.min(1, v));
+  $("fog-layer").style.opacity = String(FIN.fog);
+}
+function finAdvance(){
+  if (!FIN) return;
+  FIN.si++;
+  if (FIN.si >= FIN.steps.length) { finFinish(); return; }
+  finRunStep(FIN.steps[FIN.si]);
+}
+function finRunStep(st){
+  hideStageSet(); hideSigns();
+  if (st.k === "line") {
+    if (st.gateLit) finSetFog(FIN.fog - 0.5 / FIN.worlds.length);
+    showDialogue(st.nv, st.loi, [{ label: "Tiếp", fn: finAdvance }]);
+  } else if (st.k === "hit") {
+    finStartHit(st);
+  } else if (st.k === "boss-intro") {
+    $("hp-wrap").classList.add("show");
+    finUpdateHP();
+    finSetFog(0.45);
+    showDialogue("Sương Mù", "Các cổng sáng lên rồi sao… Nhưng ta vẫn còn đây! Muốn bình minh lên trên Thư viện Ánh Sao, hãy vượt qua sáu đòn sương cuối cùng của ta!", [{ label: "Tiếp", fn: function(){
+      if (!FIN) return;
+      showDialogue("Thủ thư Số", "Đây là trận cuối, các cháu! Sáu đòn từ khắp các thế giới — mỗi đòn đúng sẽ xé tan một mảng sương. Biệt đội, sẵn sàng!", [{ label: "Đối mặt trùm cuối", fn: finAdvance }]);
+    } }]);
+  } else if (st.k === "dawn") {
+    finSetFog(0);
+    $("fog-layer").classList.remove("thick");
+    var lines = [
+      { nv: "Thủ thư Số", loi: "Nhìn kìa… Bình minh! Ánh nắng đầu tiên sau đêm dài nhất đang tràn vào Thư viện Ánh Sao!" },
+      { nv: FIN_GUIDE[FIN.worlds[0]], loi: "Sương Mù Quên Lãng đã tan hẳn trong ánh sáng. Mọi cuốn sách… đã sáng trở lại!" },
+      { nv: "Minh Anh", loi: "Chúng ta làm được rồi! Thư viện Ánh Sao thuộc về những người đọc dũng cảm!" },
+      { nv: "Thủ thư Số", loi: "Nhân danh Thư viện Ánh Sao, bác trao cho cả lớp Huy Hiệu Ánh Sao — phần thưởng cao quý nhất, được ghi vào Album hành trình của lớp. Cảm ơn các cháu đã khôi phục trọn vẹn mọi thế giới!" }
+    ];
+    var di = 0;
+    var showNext = function(){
+      if (!FIN) return;
+      if (di >= lines.length) { confetti(); sfx("win"); finFinish(); return; }
+      var L = lines[di++];
+      showDialogue(L.nv, L.loi, [{ label: di >= lines.length ? "Nhận Huy Hiệu Ánh Sao" : "Tiếp", fn: showNext }]);
+    };
+    showNext();
+  }
+}
+function finDraw(mon, mucDos){
+  var poolAll = (FIN && FIN.pools[mon]) || [];
+  var want = mucDos.slice();
+  var others = [1, 2, 3].filter(function(l){ return want.indexOf(l) < 0; });
+  others.sort(function(a, b){
+    var da = Math.min.apply(null, want.map(function(w){ return Math.abs(a - w); }));
+    var db = Math.min.apply(null, want.map(function(w){ return Math.abs(b - w); }));
+    return da - db;
+  });
+  var order = want.concat(others);
+  var i, pool, q;
+  for (i = 0; i < order.length; i++) {
+    pool = poolAll.filter(function(x){ return x.mucDo === order[i] && x.phuongAn && x.phuongAn.length && !FIN.usedIds[x.id]; });
+    if (pool.length) { q = pool[Math.floor(Math.random() * pool.length)]; FIN.usedIds[q.id] = true; return q; }
+  }
+  /* Bể của thế giới đã cạn hẳn mới cho phép lặp, vẫn ưu tiên mức được yêu cầu */
+  for (i = 0; i < order.length; i++) {
+    pool = poolAll.filter(function(x){ return x.mucDo === order[i] && x.phuongAn && x.phuongAn.length; });
+    if (pool.length) { q = pool[Math.floor(Math.random() * pool.length)]; FIN.usedIds[q.id] = true; return q; }
+  }
+  return null;
+}
+function finStartHit(st){
+  var q = finDraw(st.mon, [2, 3]);
+  if (!q) { finAdvance(); return; }
+  var setType = st.boss ? "boss" : SET_TYPES[FIN.gateHit % SET_TYPES.length];
+  FIN.gateHit++;
+  FIN.cur = {
+    q: q, mon: st.mon, boss: st.boss, rescue: false, setType: setType,
+    opts: shuffle(q.phuongAn.map(function(p, i){ return { text: p, right: i === q.dapAn }; }))
+  };
+  finRenderStage(FIN.cur);
+  showDialogue(st.boss ? "Sương Mù thách thức" : FIN_GATE[st.mon], q.cauHoi, [], { q: true, inscription: true, hint: "Cả lớp cùng suy nghĩ và chọn một vật thể trong tranh nhé!" });
+}
+function finStartRescue(){
+  if (!FIN || !FIN.cur) { finAdvance(); return; }
+  var mon = FIN.cur.mon, boss = FIN.cur.boss;
+  var q = finDraw(mon, [1]);
+  if (!q) { finProceed(); return; }
+  FIN.cur = {
+    q: q, mon: mon, boss: boss, rescue: true, setType: "bridge",
+    opts: shuffle(q.phuongAn.map(function(p, i){ return { text: p, right: i === q.dapAn }; }))
+  };
+  finRenderStage(FIN.cur);
+  showDialogue("Câu cứu viện của " + FIN_GUIDE[mon], q.cauHoi, [], { q: true, inscription: true, hint: "Câu cứu viện — trả lời đúng để xua sương, quay lại mạch đêm nhé!" });
+}
+function finRenderStage(cur){
+  var set = $("stage-set");
+  set.className = "stage-set show";
+  var figFor = function(i){
+    if (cur.setType === "door") return keySVG(KEY_COLORS[i % 4]);
+    if (cur.setType === "bridge") return plankSVG();
+    if (cur.setType === "chest") return gemSVG(GEM_COLORS[i % 4]);
+    return orbSVG();
+  };
+  var html = '<div class="set-visual">' + (cur.setType === "door" ? "" : setVisualSVG(cur.setType)) + '</div><div class="set-objects">';
+  cur.opts.forEach(function(o, i){
+    html += '<button type="button" class="obj-btn" data-i="' + i + '"><span class="obj-fig">' + figFor(i) + '</span><span class="obj-tag">' + esc(o.text) + '</span></button>';
+  });
+  html += '</div>';
+  set.innerHTML = html;
+  set.querySelectorAll(".obj-btn").forEach(function(b){
+    b.addEventListener("click", function(){ finAnswer(parseInt(b.getAttribute("data-i"), 10), b); });
+  });
+  fitTagText(set);
+}
+function finLoiGiaiThich(mon, q, dung){
+  var nd = q.giaiThich ? esc(q.giaiThich) : ("Đáp án đúng là: “" + esc(q.phuongAn[q.dapAn]) + "”.");
+  return '<div class="librarian"><div class="lb-t">' + ICON.torch + "<span>Lời " + esc(FIN_GUIDE[mon]) + '</span></div><p>' +
+    (dung ? "Đúng rồi! " : "Chưa đúng rồi. ") + nd + '</p></div>';
+}
+function finUpdateHP(){
+  if (!FIN) return;
+  $("hp-boss").style.width = Math.max(0, FIN.bossHp) + "%";
+  $("hp-team").style.width = Math.max(0, FIN.teamHp) + "%";
+  $("hp-boss-num").textContent = Math.max(0, FIN.bossHp) + "/100";
+  $("hp-team-num").textContent = Math.max(0, FIN.teamHp) + "/100";
+}
+function finAnswer(idx, btn){
+  if (!FIN || !FIN.cur || FIN.locked) return;
+  FIN.locked = true;
+  var cur = FIN.cur, q = cur.q;
+  var picked = idx >= 0 ? cur.opts[idx] : null;
+  var dung = !!(picked && picked.right);
+  var md = String(q.mucDo);
+  FIN.stats.tong++; FIN.stats.theoMucDo[md].tong++;
+  if (dung) { FIN.stats.dung++; FIN.stats.theoMucDo[md].dung++; }
+  else if (FIN.stats.cauSai.indexOf(q.id) < 0) FIN.stats.cauSai.push(q.id);
+  var set = $("stage-set");
+  set.querySelectorAll(".obj-btn").forEach(function(b, i){
+    b.disabled = true;
+    if (cur.opts[i].right) b.classList.add("right");
+    else if (i === idx) b.classList.add("wrong");
+  });
+  if (dung) {
+    sfx(cur.boss ? "hit" : "key");
+    set.classList.add("success");
+    var burst = $("light-burst"); burst.classList.remove("go"); void burst.offsetWidth; burst.classList.add("go");
+    if (cur.boss) {
+      FIN.bossHp = Math.max(0, FIN.bossHp - 17);
+      finUpdateHP();
+      var img = $("scene-img"); img.classList.remove("boss-hit"); void img.offsetWidth; img.classList.add("boss-hit");
+      finSetFog(FIN.fog - 0.075);
+    }
+    setTimeout(function(){
+      if (!FIN) return;
+      showDialogue(FIN_GUIDE[cur.mon], "", [{ label: "Tiếp tục hành trình", fn: function(){ FIN.locked = false; finProceed(); } }], { extraHTML: finLoiGiaiThich(cur.mon, q, true) });
+    }, 950);
+  } else {
+    sfx("wrong");
+    if (btn) btn.classList.add("shake");
+    var fog = $("fog-layer"); fog.style.opacity = "1";
+    setTimeout(function(){ if (FIN) fog.style.opacity = String(FIN.fog); else fog.style.opacity = ""; }, 1600);
+    if (cur.boss) {
+      FIN.teamHp -= 20; finUpdateHP();
+      var stg = $("stage"); stg.classList.remove("team-hit"); void stg.offsetWidth; stg.classList.add("team-hit");
+    }
+    setTimeout(function(){
+      if (!FIN) return;
+      if (cur.rescue) {
+        showDialogue(FIN_GUIDE[cur.mon], "", [{ label: "Tiếp tục hành trình", fn: function(){ FIN.locked = false; finProceed(); } }], { extraHTML: finLoiGiaiThich(cur.mon, q, false) });
+      } else {
+        var guide = FIN_GUIDE[cur.mon];
+        var place = cur.boss ? "chân dung Sương Mù" : FIN_GATE[cur.mon];
+        showDialogue(guide, "Sương dâng lên quanh " + place + "! Bình tĩnh nào các cháu — " + guide + " mở câu cứu viện: trả lời đúng để xua sương, quay lại mạch đêm nhé!", [{ label: "Đối mặt câu cứu viện", fn: function(){ FIN.locked = false; finStartRescue(); } }]);
+      }
+    }, 950);
+  }
+}
+function finProceed(){
+  if (!FIN) return;
+  hideStageSet();
+  if (FIN.cur && FIN.cur.boss && FIN.teamHp <= 0) {
+    FIN.teamHp = 50; finUpdateHP();
+    showDialogue("Thủ thư Số", "Sương mù dày quá! Bác hồi lại một phần sức sáng cho Biệt đội — đừng bỏ cuộc, các cháu nhé!", [{ label: "Tiếp tục chiến đấu", fn: function(){ finAdvance(); } }]);
+    return;
+  }
+  finAdvance();
+}
+function finFinish(){
+  hideStageSet(); hideSigns(); stopMusic();
+  var st = FIN.stats;
+  var pct = st.tong ? st.dung / st.tong : 0;
+  var sao = 1; if (pct >= 0.9) sao = 3; else if (pct >= 0.7) sao = 2;
+  var cp = classProg(FIN.lop);
+  cp.demChungKet = cp.demChungKet || { hoanThanh: false, sao: 0, dungTichLuy: 0, soLan: 0 };
+  cp.demChungKet.hoanThanh = true;
+  cp.demChungKet.sao = Math.max(cp.demChungKet.sao, sao);
+  cp.demChungKet.dungTichLuy += st.dung;
+  cp.demChungKet.soLan += 1;
+  saveState();
+  var dc = cp.demChungKet;
+  lastResult = {
+    sanPham: "007", phienBan: PHIEN_BAN, mon: "Đêm Chung Kết", lop: FIN.lop, muaId: "dem-chung-ket", tapId: "dem-chung-ket", bai: "Đêm Chung Kết",
+    thoiGian: new Date().toISOString(), soCau: st.tong, soDung: st.dung,
+    theoMucDo: { "1": st.theoMucDo["1"], "2": st.theoMucDo["2"], "3": st.theoMucDo["3"] },
+    cauSai: st.cauSai.slice()
+  };
+  $("sum-title").textContent = "Đêm Chung Kết — Lớp " + FIN.lop;
+  var sh = ""; for (var i = 1; i <= 3; i++) sh += '<span class="' + (i <= sao ? "on" : "") + '" style="display:inline-flex;">' + ICON.star(i <= sao) + '</span>';
+  $("sum-stars").innerHTML = sh;
+  $("sum-verdict").textContent = "Bình minh đã lên trên Thư viện Ánh Sao! Sương Mù Quên Lãng bị đẩy lui hoàn toàn — cả " + FIN.worlds.length + " Cổng Thế Giới cùng bừng sáng và trùm cuối đã tan trong nắng sớm. Biệt đội giành " + sao + " sao trong Đêm Chung Kết.";
+  $("sum-item").innerHTML = '<div class="item-earned">' + ICON.gem + '<div><div class="ie-t">Nhận vật phẩm: Huy Hiệu Ánh Sao</div><div style="font-size:14px; color:var(--muted);">Vật phẩm đặc biệt của Đêm Chung Kết đã được cất vào Album hành trình của lớp (+30 điểm).</div></div></div>';
+  $("sum-m1").textContent = st.theoMucDo["1"].dung + "/" + st.theoMucDo["1"].tong + " câu đúng";
+  $("sum-m2").textContent = st.theoMucDo["2"].dung + "/" + st.theoMucDo["2"].tong + " câu đúng";
+  $("sum-m3").textContent = st.theoMucDo["3"].dung + "/" + st.theoMucDo["3"].tong + " câu đúng";
+  $("sum-total-q").textContent = st.dung + "/" + st.tong + " câu đúng";
+  $("sum-p1-label").textContent = "Câu đúng tích lũy của Đêm Chung Kết: " + dc.dungTichLuy + " câu × 10 điểm";
+  $("sum-p1").textContent = (dc.dungTichLuy * 10) + " điểm";
+  $("sum-p2-label").textContent = "Sao của Đêm Chung Kết: " + dc.sao + " sao × 5 điểm";
+  $("sum-p2").textContent = (dc.sao * 5) + " điểm";
+  $("sum-p3-label").textContent = "Vật phẩm “Huy Hiệu Ánh Sao”";
+  $("sum-p3").textContent = "30 điểm";
+  $("sum-total").textContent = "Tổng điểm của Đêm Chung Kết: " + (dc.dungTichLuy * 10 + dc.sao * 5 + 30) + " điểm";
+  $("sum-teams").innerHTML = "";
+  FIN = null;
+  showScreen("scr-summary");
+}
+
 /* ================= ALBUM ================= */
 function renderAlbum(){
   var lop = state.lopHienTai;
@@ -2114,6 +2499,19 @@ function renderAlbum(){
   $("alb-p3").textContent = (tong.vp * 30) + " điểm";
   $("alb-total").textContent = "Tổng điểm của lớp: " + tong.diem + " điểm";
   var grid = $("album-items"); grid.innerHTML = "";
+  /* Huy Hiệu Ánh Sao của Đêm Chung Kết (v2.0) luôn đứng đầu album */
+  (function(){
+    var cpA = lop ? state.classes[lop] : null;
+    var dcA = cpA && cpA.demChungKet;
+    var gotA = !!(dcA && dcA.hoanThanh);
+    var dA = document.createElement("div");
+    dA.className = "album-card" + (gotA ? "" : " empty");
+    dA.innerHTML = ICON.gem + '<div class="ac-name">Huy Hiệu Ánh Sao</div><div class="ac-from">' +
+      (gotA
+        ? "Nhận được từ Đêm Chung Kết — sự kiện đặc biệt khép lại Thư viện Ánh Sao (" + dcA.sao + " sao · hoàn thành " + dcA.soLan + " lần)"
+        : "Chưa nhận — hoàn thành Đêm Chung Kết ở Sảnh thư viện để mở") + '</div>';
+    grid.appendChild(dA);
+  })();
   CAC_MUA.forEach(function(m){
     m.tap.forEach(function(t){
       var tp = lop ? tapProgCo(lop, m.id, t.id) : undefined;
@@ -2259,6 +2657,16 @@ function init(){
     advance();
   });
   $("play-exit").addEventListener("click", function(){
+    if (FIN) {
+      /* Đang trong Đêm Chung Kết: dừng đêm, dọn sân khấu rồi về Sảnh thư viện */
+      FIN = null; stopMusic();
+      $("hp-wrap").classList.remove("show");
+      $("scr-play").classList.remove("chu-to");
+      var fogX = $("fog-layer"); fogX.className = "fog-layer"; fogX.style.opacity = "";
+      hideStageSet(); hideSigns();
+      renderLobby(); showScreen("scr-lobby");
+      return;
+    }
     stopTimer(); S = null; stopMusic();
     renderMap(); showScreen("scr-map");
   });
@@ -2267,8 +2675,18 @@ function init(){
     downloadJSON(lastResult, "ket-qua-007_" + String(lastResult.lop).replace(/[^\w-]/g, "_") + "_" + lastResult.muaId + "_" + lastResult.tapId + ".json");
     toast("Đã xuất kết quả phiên (định dạng dùng chung cho 008).");
   });
-  $("btn-replay").addEventListener("click", function(){ if (lastResult) openSetup(lastResult.muaId, lastResult.tapId); });
-  $("btn-to-map").addEventListener("click", function(){ renderMap(); showScreen("scr-map"); });
+  $("btn-replay").addEventListener("click", function(){
+    if (!lastResult) return;
+    if (lastResult.muaId === "dem-chung-ket") {
+      var kF = khoiTuTenLop(lastResult.lop) || lastFinaleKhoi;
+      if (kF) { startFinale(kF); return; }
+    }
+    openSetup(lastResult.muaId, lastResult.tapId);
+  });
+  $("btn-to-map").addEventListener("click", function(){
+    if (lastResult && lastResult.muaId === "dem-chung-ket") { renderLobby(); showScreen("scr-lobby"); return; }
+    renderMap(); showScreen("scr-map");
+  });
 }
 document.addEventListener("DOMContentLoaded", init);
 
