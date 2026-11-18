@@ -123,7 +123,8 @@ input,select,textarea{font-family:inherit;}
 .tap-card .tap-meta{font-size:13.5px; color:var(--muted);}
 .stars{display:inline-flex; gap:2px; vertical-align:middle; margin-left:6px;}
 .stars svg{width:18px; height:18px; color:var(--line);}
-.stars svg.on{color:var(--gold-bright);}
+.stars span.on svg, .sum-stars span.on svg{color:#FFB300; filter:drop-shadow(0 0 5px rgba(255,190,40,.8));}
+.stars span.on svg path, .sum-stars span.on svg path{fill:url(#saoVang);}
 .tap-actions{margin-top:9px; display:flex; gap:8px; flex-wrap:wrap;}
 .tag{display:inline-block; font-size:12px; font-weight:700; padding:3px 9px; border-radius:999px; border:1.5px solid var(--line); color:var(--muted);}
 .tag.soon{border-color:var(--fog); color:var(--fog);}
@@ -265,7 +266,12 @@ input,select,textarea{font-family:inherit;}
 /* ---------- Summary ---------- */
 .sum-stars{display:flex; gap:6px; justify-content:center; margin:8px 0;}
 .sum-stars svg{width:46px; height:46px; color:var(--line);}
-.sum-stars svg.on{color:var(--gold-bright);}
+@keyframes saoNay{0%{transform:scale(.2); opacity:0;} 60%{transform:scale(1.25); opacity:1;} 100%{transform:scale(1); opacity:1;}}
+.sum-stars span.on{display:inline-flex; animation:saoNay .5s cubic-bezier(.2,2.2,.4,1) both;}
+.sum-stars span.on:nth-child(1){animation-delay:.15s}
+.sum-stars span.on:nth-child(2){animation-delay:.45s}
+.sum-stars span.on:nth-child(3){animation-delay:.75s}
+@media (prefers-reduced-motion: reduce){ .sum-stars span.on{animation:none;} }
 .sum-table{width:100%; border-collapse:collapse; font-size:15.5px;}
 .sum-table td,.sum-table th{padding:9px 8px; border-bottom:1.5px solid var(--line); text-align:left;}
 .sum-table td:last-child,.sum-table th:last-child{text-align:right; font-weight:700; color:var(--ink); white-space:nowrap;}
@@ -349,6 +355,7 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute;" aria-hidden="true"><defs><linearGradient id="saoVang" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFD23F"/><stop offset="100%" stop-color="#FFB300"/></linearGradient></defs></svg>
 
 <!-- ================= 1. SPLASH ================= -->
 <section id="scr-splash" class="screen active">
@@ -364,7 +371,7 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
     <p class="slogan">Mỗi câu trả lời đúng là một trang sách được thắp sáng. Cùng Biệt đội Ánh Sao xua tan Sương Mù Quên Lãng, khôi phục từng cuốn sách của Thư viện Ánh Sao!</p>
     <p class="author-line">Tác giả: <b>Lê Bảo Tú</b> — Giáo viên Tin học, Trường Tiểu học Huỳnh Ngọc Huệ</p>
     <button class="btn btn-gold big" id="btn-enter" type="button">Mở cửa thư viện</button>
-    <div><span class="ver-badge">Phiên bản v2.1 · Đêm Chung Kết — Bản Chính Thức (Final Release)</span></div>
+    <div><span class="ver-badge">Phiên bản v2.2 · Đêm Chung Kết — Bản Chính Thức (Final Release)</span></div>
   </div>
 </section>
 
@@ -649,7 +656,8 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
         <p><b>Ảnh minh họa:</b> ảnh được nạp từ thư mục “anh” đặt cạnh tệp của sản phẩm; mở tập nào app mới nạp ảnh của tập đó. Khi thư mục ảnh chưa có (ví dụ mở bản xem trước), truyện vẫn chơi trọn vẹn với nền cảnh dự phòng.</p>
         <p><b>Sự kiện Đêm Chung Kết:</b> ở Sảnh thư viện, mọi lớp đều dự được (không khóa tuần, không cần hoàn thành mùa nào trước). Cả lớp lần lượt thắp sáng các Cổng Thế Giới của khối lớp mình — mỗi cổng 2 đòn tri thức mức Kết nối/Vận dụng rút từ chính thế giới đó, trả lời sai có câu cứu viện mức Nhận biết của nhân vật dẫn đường — rồi đối mặt trùm cuối Sương Mù Quên Lãng với 6 đòn tổng hợp. Hoàn thành đêm, lớp nhận Huy Hiệu Ánh Sao trong Album hành trình.</p>
         <p><b>Cập nhật v2.1:</b> toàn bộ chữ trong trò chơi thống nhất về một font Baloo 2 — chữ nội dung và lời thoại nét vừa, câu hỏi và đáp án nét đậm, tiêu đề nét đậm nhất — để cả trò chơi có một “giọng chữ” riêng. Mỗi thế giới có nhạc nền riêng (Thư viện Ánh Sao, Vương quốc Số Học, Khu Vườn Ngôn Từ, Hòn Đảo Song Ngữ, Trạm Khám Phá Xanh, Xưởng Chế Tạo Nhỏ, Dòng Sông Thời Gian) và Đêm Chung Kết có bản nhạc riêng hùng tráng. Bộ hiệu ứng âm thanh đầy đủ theo diễn biến câu chuyện: chạm chọn, trả lời đúng / sai, biến cố, câu cứu viện, mở cổng, đánh trúng trùm, thắng trùm, nhận sao và Huy Hiệu Ánh Sao.</p>
-        <p><b>Phiên bản:</b> v2.1 — xây trên bản chính thức v2.0 Đêm Chung Kết (Final Release), bản chính thức đầu tiên của sản phẩm. Thư viện Ánh Sao đã đủ trọn 6 thế giới với 315 mùa truyện, 1.330 tập, và mở thêm sự kiện đặc biệt Đêm Chung Kết — trận quyết chiến cuối cùng với Sương Mù Quên Lãng dành cho mọi lớp.</p>
+        <p><b>Cập nhật v2.2:</b> sửa lỗi ngôi sao thành tích không hiển thị màu vàng (nay sao đạt được vàng rực, hiện lần lượt kèm tiếng sao); thêm ăn mừng cuối tập theo mức sao (pháo giấy và fanfare — thắng Đêm Chung Kết có bản nhạc ăn mừng riêng lớn nhất); nhạc nền và hiệu ứng được soạn lại theo hướng tươi sáng, phiêu lưu, và có thêm nhạc hồi hộp riêng khi đấu trùm.</p>
+        <p><b>Phiên bản:</b> v2.2 — xây trên bản chính thức v2.0 Đêm Chung Kết (Final Release), bản chính thức đầu tiên của sản phẩm. Thư viện Ánh Sao đã đủ trọn 6 thế giới với 315 mùa truyện, 1.330 tập, và mở thêm sự kiện đặc biệt Đêm Chung Kết — trận quyết chiến cuối cùng với Sương Mù Quên Lãng dành cho mọi lớp.</p>
       </div>
     </div>
   </div>
@@ -815,7 +823,7 @@ var CAU_TIENG_ANH_THEO_LOP = {};
 var CAU_KHOA_HOC_THEO_LOP = {};
 var CAU_CONG_NGHE_THEO_LOP = {};
 var CAU_LICH_SU_DIA_LI_THEO_LOP = {};
-var PHIEN_BAN = "v2.1";
+var PHIEN_BAN = "v2.2";
 var NHAN_VAT_TO = ["Minh Anh", "Tuấn Kiệt", "Thảo Nguyên", "Đức Trí", "Thủ thư Số", "Người đọc dũng cảm"];
 
 /* ================= TRUY CẬP DỮ LIỆU (307 mùa truyện + ngân hàng câu hỏi) ================= */
@@ -1219,55 +1227,74 @@ function sfx(name){
   if (name === "page") { tone(520, 0, 0.09, "triangle", 0.06, 760); }
   else if (name === "pop") { tone(680, 0, 0.07, "sine", 0.085, 940); }
   else if (name === "right") {
-    /* Chuông vui 3 nốt khi trả lời đúng — biến thể nhẹ theo thế giới đang chơi */
+    /* Chuông vui khi trả lời đúng — hợp âm TRƯỞNG đi lên sáng, nốt kết cao lấp lánh; biến thể nhẹ theo thế giới đang chơi */
     var w = khoaAmHienTai();
-    var seq = [659, 880, 1318], ty = "sine", sp = 0.09;
-    if (w === "toan") { seq = [784, 988, 1318]; ty = "triangle"; sp = 0.08; }
-    else if (w === "tieng-anh") { seq = [880, 1108, 1397]; sp = 0.07; }
-    else if (w === "tieng-viet") { seq = [587, 740, 880]; sp = 0.11; }
-    else if (w === "khoa-hoc") { seq = [698, 932, 1175]; }
-    else if (w === "cong-nghe") { seq = [740, 988, 1480]; ty = "triangle"; sp = 0.08; }
+    var seq = [523, 659, 784, 1046], ty = "sine", sp = 0.085, sparkF = 1568;
+    if (w === "toan") { seq = [587, 740, 880, 1175]; ty = "triangle"; sp = 0.08; sparkF = 1760; }
+    else if (w === "tieng-anh") { seq = [659, 831, 988, 1318]; sp = 0.07; sparkF = 1975; }
+    else if (w === "tieng-viet") { seq = [494, 587, 740, 988]; sp = 0.1; sparkF = 1480; }
+    else if (w === "khoa-hoc") { seq = [554, 698, 880, 1108]; sparkF = 1661; }
+    else if (w === "cong-nghe") { seq = [587, 740, 988, 1318]; ty = "triangle"; sp = 0.08; sparkF = 1975; }
     seq.forEach(function(f, i){ tone(f, i * sp, 0.24, ty, 0.11); });
+    tone(sparkF, seq.length * sp, 0.3, "sine", 0.06);
   }
   else if (name === "wrong") { tone(330, 0, 0.22, "triangle", 0.055, 262); tone(262, 0.13, 0.32, "sine", 0.05, 185); }
   else if (name === "key") { tone(1046, 0, 0.1, "square", 0.05); tone(1568, 0.08, 0.22, "sine", 0.1); }
   else if (name === "bienCo") { tone(587, 0, 0.75, "sine", 0.045, 174); tone(440, 0.12, 0.65, "triangle", 0.035, 147); tone(880, 0, 0.5, "sine", 0.016, 220); }
-  else if (name === "cuuVien") { [784, 988, 1175, 1568].forEach(function(f, i){ tone(f, i * 0.07, 0.2, "sine", 0.085); }); }
+  else if (name === "cuuVien") { tone(392, 0, 0.3, "sine", 0.07, 784); [784, 988, 1175, 1568].forEach(function(f, i){ tone(f, 0.06 + i * 0.07, 0.2, "sine", 0.085); }); tone(2093, 0.4, 0.3, "sine", 0.05); tone(2637, 0.47, 0.32, "sine", 0.035); }
   else if (name === "cong") { tone(196, 0, 0.45, "sine", 0.07); tone(392, 0, 0.16, "triangle", 0.09); tone(523, 0.11, 0.18, "triangle", 0.09); tone(659, 0.22, 0.34, "sine", 0.1); tone(784, 0.22, 0.34, "sine", 0.05); }
   else if (name === "hit") { tone(98, 0, 0.26, "sine", 0.12, 49); tone(185, 0, 0.2, "square", 0.1, 82); tone(1175, 0.02, 0.15, "sine", 0.07, 587); }
-  else if (name === "win") { [523,659,784,1046,784,1046,1318].forEach(function(f,i){ tone(f, i * 0.13, 0.24, "triangle", 0.12); }); }
+  else if (name === "win") { [523,659,784,1046,784,1046,1318].forEach(function(f,i){ tone(f, i * 0.13, 0.24, "triangle", 0.12); }); tone(523, 0.95, 0.55, "sine", 0.08); tone(659, 0.95, 0.55, "sine", 0.08); tone(784, 0.95, 0.55, "sine", 0.08); tone(1046, 0.95, 0.6, "sine", 0.06); }
   else if (name === "bossWin") { [392,523,659,784,659,784,1046,1318].forEach(function(f,i){ tone(f, i * 0.12, 0.26, "triangle", 0.11); }); tone(523, 1.0, 0.7, "sine", 0.07); tone(659, 1.0, 0.7, "sine", 0.07); tone(784, 1.0, 0.7, "sine", 0.07); }
-  else if (name === "star") { tone(1568, 0, 0.12, "sine", 0.075); tone(2093, 0.07, 0.22, "sine", 0.065); tone(2637, 0.14, 0.26, "sine", 0.04); }
+  else if (name === "star") { tone(1568, 0, 0.12, "sine", 0.075); tone(2093, 0.07, 0.22, "sine", 0.065); tone(2637, 0.14, 0.26, "sine", 0.04); tone(3136, 0.02, 0.18, "sine", 0.03); tone(2349, 0.1, 0.2, "sine", 0.028); }
   else if (name === "badge") { [1046,1318,1568,2093].forEach(function(f,i){ tone(f, i * 0.1, 0.3, "sine", 0.08); }); tone(523, 0.42, 0.8, "sine", 0.06); tone(659, 0.42, 0.8, "sine", 0.06); tone(784, 0.42, 0.8, "sine", 0.06); tone(1046, 0.42, 0.8, "sine", 0.05); }
+  /* Ăn mừng riêng của Đêm Chung Kết — không dùng lại ở nơi khác */
+  else if (name === "finaleWin") {
+    [523, 659, 784, 1046].forEach(function(f, i){ tone(f, i * 0.12, 0.3, "triangle", 0.13); });
+    [587, 740, 880, 1175].forEach(function(f, i){ tone(f, 0.55 + i * 0.12, 0.3, "triangle", 0.13); });
+    [523, 659, 784, 1046, 1318].forEach(function(f){ tone(f, 1.1, 1.4, "sine", 0.09); });
+    tone(1568, 1.35, 0.5, "sine", 0.06); tone(2093, 1.55, 0.7, "sine", 0.05);
+  }
 }
-/* ----- Nhạc nền theo thế giới (v2.1): 8 chủ đề, mỗi chủ đề một vòng lặp giai điệu + bè trầm riêng,
-   tổng hợp bằng WebAudio qua tone() — thang âm, nhịp độ và âm sắc khác nhau rõ theo từng thế giới ----- */
+/* ----- Nhạc nền theo thế giới (v2.2): 9 chủ đề — 8 thế giới soạn lại theo hướng SÁNG, TƯƠI,
+   PHIÊU LƯU (thang trưởng/ngũ cung trưởng, nhịp nhanh hơn bản trước, spark lấp lánh + tac gõ nhịp)
+   và chủ đề "hoi-hop" hồi hộp riêng cho đấu trùm. Tổng hợp bằng WebAudio qua tone(). ----- */
 var MUSIC_THEMES = {
-  "thu-vien": { ms: 1150, type: "triangle", vol: 0.028, dur: 1.3, bassType: "sine", bassVol: 0.018,
-    mel: [262,330,392,494, 392,330,294,330, 262,294,330,392, 330,294,262,0, 392,494,587,494, 392,330,294,262],
-    bass: [131,0,0,0, 98,0,0,0, 110,0,0,0, 98,0,0,0, 87,0,0,0, 131,0,0,0] },
-  "toan": { ms: 600, type: "triangle", vol: 0.03, dur: 0.9, bassType: "triangle", bassVol: 0.016,
+  "thu-vien": { ms: 1000, type: "triangle", vol: 0.028, dur: 1.25, bassType: "sine", bassVol: 0.018,
+    mel: [523,587,659,784, 659,587,523,587, 659,784,880,784, 659,587,523,0, 587,659,784,880, 784,659,587,523],
+    bass: [131,0,0,0, 196,0,0,0, 165,0,0,0, 196,0,0,0, 175,0,0,0, 131,0,0,0],
+    spark: [0,0,1046,0, 0,0,0,0, 0,0,1318,0, 0,0,0,0, 0,0,0,0, 0,1568,0,0] },
+  "toan": { ms: 510, type: "triangle", vol: 0.03, dur: 0.9, bassType: "triangle", bassVol: 0.016, tac: 1318,
     mel: [523,587,659,784, 659,587,523,587, 659,784,880,784, 659,587,523,0, 587,659,784,659, 880,784,659,587, 523,587,659,587, 523,0,587,0],
-    bass: [131,0,196,0, 165,0,196,0, 175,0,220,0, 196,0,165,0, 131,0,196,0, 165,0,196,0, 175,0,220,0, 196,0,131,0] },
-  "tieng-viet": { ms: 1020, type: "sine", vol: 0.03, dur: 1.5, bassType: "sine", bassVol: 0.016,
-    mel: [392,440,494,587, 494,440,392,330, 294,330,392,440, 392,330,294,0, 330,392,440,494, 440,392,330,294],
-    bass: [98,0,0,0, 110,0,0,0, 87,0,0,0, 98,0,0,0, 110,0,0,0, 98,0,0,0] },
-  "tieng-anh": { ms: 540, type: "sine", vol: 0.03, dur: 0.45, bassType: "sine", bassVol: 0.015,
+    bass: [131,0,196,0, 165,0,196,0, 175,0,220,0, 196,0,165,0, 131,0,196,0, 165,0,196,0, 175,0,220,0, 196,0,131,0],
+    spark: [0,0,0,1568, 0,0,0,0, 0,0,0,1760, 0,0,0,0, 0,0,0,0, 0,1975,0,0, 0,0,0,0, 1568,0,0,0] },
+  "tieng-viet": { ms: 900, type: "sine", vol: 0.03, dur: 1.4, bassType: "sine", bassVol: 0.016,
+    mel: [523,587,659,784, 880,784,659,587, 523,587,659,587, 494,523,587,0, 659,784,880,1046, 880,784,659,587],
+    bass: [131,0,0,0, 175,0,0,0, 131,0,0,0, 196,0,0,0, 165,0,0,0, 131,0,0,0],
+    spark: [0,0,0,0, 1568,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,2093,0, 0,0,0,0] },
+  "tieng-anh": { ms: 470, type: "sine", vol: 0.03, dur: 0.45, bassType: "sine", bassVol: 0.015, tac: 1568,
     mel: [659,784,880,784, 1046,880,784,659, 587,659,784,880, 784,659,587,0, 659,784,880,1046, 880,784,659,587, 523,587,659,784, 659,587,523,0],
-    bass: [165,0,0,196, 0,0,220,0, 147,0,0,196, 0,0,165,0, 165,0,0,196, 0,0,220,0, 131,0,147,0, 165,0,131,0] },
-  "khoa-hoc": { ms: 470, type: "sine", vol: 0.024, dur: 0.8, bassType: "sine", bassVol: 0.02,
-    mel: [294,370,440,587, 440,370,294,370, 330,415,494,659, 494,415,330,415, 349,440,523,698, 523,440,349,440, 392,494,587,784, 587,494,440,370],
-    bass: [73,0,0,0, 0,0,0,0, 82,0,0,0, 0,0,0,0, 87,0,0,0, 0,0,0,0, 98,0,0,0, 0,0,0,0] },
-  "cong-nghe": { ms: 500, type: "triangle", vol: 0.026, dur: 0.7, bassType: "square", bassVol: 0.011, tac: 1568,
-    mel: [392,0,392,494, 0,392,0,587, 494,0,494,392, 0,330,0,392, 440,0,440,523, 0,440,0,659, 587,494,440,392, 330,0,294,0],
-    bass: [98,98,98,98, 110,110,110,110, 98,98,98,98, 110,110,110,110, 87,87,87,87, 98,98,98,98, 110,110,98,98, 87,87,98,98] },
-  "lich-su": { ms: 1400, type: "sine", vol: 0.03, dur: 1.5, bassType: "sine", bassVol: 0.02,
-    mel: [196,262,294,330, 262,196,175,196, 220,262,330,294, 262,220,196,0],
-    bass: [49,0,0,0, 65,0,0,0, 55,0,0,0, 49,0,0,0] },
-  "chung-ket": { ms: 680, type: "triangle", vol: 0.032, dur: 1.1, bassType: "triangle", bassVol: 0.024,
+    bass: [165,0,0,196, 0,0,220,0, 147,0,0,196, 0,0,165,0, 165,0,0,196, 0,0,220,0, 131,0,147,0, 165,0,131,0],
+    spark: [0,0,0,0, 0,2093,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,2093,0,0, 0,0,0,0, 0,0,0,0] },
+  "khoa-hoc": { ms: 410, type: "sine", vol: 0.024, dur: 0.8, bassType: "sine", bassVol: 0.018, tac: 1760,
+    mel: [587,740,880,1175, 880,740,587,740, 659,831,988,1318, 988,831,659,831, 698,880,1046,1397, 1046,880,698,880, 784,988,1175,1568, 1175,988,880,740],
+    bass: [147,0,0,0, 0,0,0,0, 165,0,0,0, 0,0,0,0, 175,0,0,0, 0,0,0,0, 196,0,0,0, 0,0,0,0],
+    spark: [0,0,0,0, 0,0,2349,0, 0,0,0,0, 0,0,2637,0, 0,0,0,0, 0,0,2349,0, 0,0,0,0, 0,0,3136,0] },
+  "cong-nghe": { ms: 430, type: "triangle", vol: 0.026, dur: 0.7, bassType: "square", bassVol: 0.011, tac: 1568,
+    mel: [523,0,523,659, 0,523,0,784, 659,0,659,523, 0,440,0,523, 587,0,587,698, 0,587,0,880, 784,659,587,523, 440,0,392,0],
+    bass: [131,131,131,131, 147,147,147,147, 131,131,131,131, 147,147,147,147, 117,117,117,117, 131,131,131,131, 147,147,131,131, 117,117,131,131],
+    spark: [0,0,0,0, 0,0,0,2093, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,2349, 0,0,0,0, 0,0,0,0] },
+  "lich-su": { ms: 1150, type: "sine", vol: 0.03, dur: 1.45, bassType: "sine", bassVol: 0.019,
+    mel: [392,440,523,587, 523,440,392,440, 494,523,587,659, 587,523,494,440],
+    bass: [98,0,0,0, 131,0,0,0, 110,0,0,0, 98,0,0,0],
+    spark: [0,0,0,0, 0,0,0,0, 0,0,0,1568, 0,0,0,0] },
+  "chung-ket": { ms: 640, type: "triangle", vol: 0.032, dur: 1.1, bassType: "triangle", bassVol: 0.024, tac: 1318,
     mel: [440,523,659,523, 440,523,659,880, 784,659,587,659, 523,587,659,0, 523,659,784,659, 880,784,659,587, 659,784,1046,784, 880,1046,784,659],
     bass: [110,0,0,0, 110,0,0,0, 87,0,0,0, 98,0,0,0, 131,0,0,0, 131,0,0,0, 87,0,0,0, 98,0,0,0],
-    spark: [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 1046,0,1318,0, 1568,0,1318,0, 1046,0,1318,0, 1568,0,2093,0] }
+    spark: [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 1046,0,1318,0, 1568,0,1318,0, 1046,0,1318,0, 1568,0,2093,0] },
+  "hoi-hop": { ms: 390, type: "triangle", vol: 0.026, dur: 0.55, bassType: "sine", bassVol: 0.03, bassDur: 0.6, tac: 1175,
+    mel: [440,0,440,440, 0,440,466,440, 415,0,415,415, 0,415,440,415, 440,0,440,440, 0,440,466,494, 523,0,494,466, 440,0,0,0],
+    bass: [110,110,110,110, 110,110,110,110, 104,104,104,104, 104,104,104,104, 110,110,110,110, 110,110,110,110, 98,98,98,98, 110,110,110,110] }
 };
 var MON_TO_MUSIC = { "Tin học": "thu-vien", "Toán": "toan", "Tiếng Việt": "tieng-viet", "Tiếng Anh": "tieng-anh", "Khoa học": "khoa-hoc", "Công nghệ": "cong-nghe", "Lịch sử và Địa lí": "lich-su" };
 var musicTheme = "thu-vien", musicPlaying = null;
@@ -1296,6 +1323,7 @@ function datChuDeNhac(khoa){ if (khoa && MUSIC_THEMES[khoa]) musicTheme = khoa; 
 function capNhatNhacNen(){
   var key = "thu-vien";
   if (FIN) key = "chung-ket";
+  else if (currentScreen === "scr-play" && S && S.boss) key = "hoi-hop";
   else if (currentScreen === "scr-play" && S) key = chuDeTheoMon((muaById(S.muaId) || {}).mon);
   else if (currentScreen === "scr-summary" && lastResult) key = lastResult.mon === "Đêm Chung Kết" ? "chung-ket" : chuDeTheoMon(lastResult.mon);
   else if (currentScreen === "scr-seasons") key = chuDeTheoMon(monDangXem);
@@ -2146,7 +2174,7 @@ function finishTap(){
   $("sum-title").textContent = tap.ten + " — Lớp " + S.lop;
   var sh = ""; for (var i = 1; i <= 3; i++) sh += '<span class="' + (i <= sao ? "on" : "") + '" style="display:inline-flex;">' + ICON.star(i <= sao) + '</span>';
   $("sum-stars").innerHTML = sh;
-  sfx("star");
+  for (var si = 0; si < sao; si++) (function(i){ setTimeout(function(){ sfx("star"); }, 150 + i * 300); })(si);
   $("sum-verdict").textContent = tap.laTapTrum
     ? "Cổng cuối của cụm truyện đã mở! Biệt đội Ánh Sao giành " + sao + " sao trong trận đấu cổng" + (S.bossDown ? " — Sương Mù bị đánh tan trước đòn cuối!" : ".")
     : "Trang sách của tập này đã được khôi phục! Biệt đội giành " + sao + " sao" + (sao < 3 ? " — chơi lại tập để nâng sao nhé." : " — thành tích tối đa!");
@@ -2172,18 +2200,25 @@ function finishTap(){
   var wasBossDown = S.bossDown;
   S = null;
   showScreen("scr-summary");
-  if (wasBoss) { sfx(wasBossDown ? "bossWin" : "win"); confetti(); }
+  /* Ăn mừng 3 cấp (v2.2): tập thường theo số sao — tập trùm lớn hơn một bậc — Đêm Chung Kết riêng ở finFinish */
+  if (wasBoss) {
+    if (wasBossDown) { sfx("bossWin"); confetti(190); }
+    else { sfx("win"); confetti(130); }
+  } else if (sao === 3) { sfx("win"); confetti(130); }
+  else if (sao === 2) { sfx("win"); confetti(60); }
 }
 
 /* ================= PHÁO GIẤY ================= */
-function confetti(){
+function confetti(soHat){
   var cv = $("confetti"), ctx = cv.getContext("2d");
   cv.width = window.innerWidth; cv.height = window.innerHeight;
   cv.style.display = "block";
   var colors = ["#e9bc3f", "#d94f4f", "#4f83d9", "#53b06a", "#f6ead0"];
+  var n = soHat || 130;
   var parts = [];
-  for (var i = 0; i < 130; i++) parts.push({ x: Math.random() * cv.width, y: -20 - Math.random() * cv.height * 0.4, w: 6 + Math.random() * 6, h: 8 + Math.random() * 8, c: colors[i % colors.length], vy: 2 + Math.random() * 3, vx: -1 + Math.random() * 2, r: Math.random() * Math.PI, vr: -0.1 + Math.random() * 0.2 });
+  for (var i = 0; i < n; i++) parts.push({ x: Math.random() * cv.width, y: -20 - Math.random() * cv.height * 0.4, w: 6 + Math.random() * 6, h: 8 + Math.random() * 8, c: colors[i % colors.length], vy: 2 + Math.random() * 3, vx: -1 + Math.random() * 2, r: Math.random() * Math.PI, vr: -0.1 + Math.random() * 0.2 });
   var t0 = Date.now();
+  var thoiLuong = n > 150 ? 3500 : 3000;
   (function frame(){
     var el = Date.now() - t0;
     ctx.clearRect(0, 0, cv.width, cv.height);
@@ -2191,7 +2226,7 @@ function confetti(){
       p.y += p.vy; p.x += p.vx; p.r += p.vr;
       ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.r); ctx.fillStyle = p.c; ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h); ctx.restore();
     });
-    if (el < 3000) requestAnimationFrame(frame);
+    if (el < thoiLuong) requestAnimationFrame(frame);
     else { cv.style.display = "none"; ctx.clearRect(0, 0, cv.width, cv.height); }
   })();
 }
@@ -2354,6 +2389,7 @@ function finRunStep(st){
   } else if (st.k === "hit") {
     finStartHit(st);
   } else if (st.k === "boss-intro") {
+    datChuDeNhac("hoi-hop");
     $("hp-wrap").classList.add("show");
     finUpdateHP();
     finSetFog(0.45);
@@ -2544,10 +2580,9 @@ function finFinish(){
   $("sum-title").textContent = "Đêm Chung Kết — Lớp " + FIN.lop;
   var sh = ""; for (var i = 1; i <= 3; i++) sh += '<span class="' + (i <= sao ? "on" : "") + '" style="display:inline-flex;">' + ICON.star(i <= sao) + '</span>';
   $("sum-stars").innerHTML = sh;
-  sfx("star");
+  for (var si = 0; si < sao; si++) (function(i){ setTimeout(function(){ sfx("star"); }, 150 + i * 300); })(si);
   $("sum-verdict").textContent = "Bình minh đã lên trên Thư viện Ánh Sao! Sương Mù Quên Lãng bị đẩy lui hoàn toàn — cả " + FIN.worlds.length + " Cổng Thế Giới cùng bừng sáng và trùm cuối đã tan trong nắng sớm. Biệt đội giành " + sao + " sao trong Đêm Chung Kết.";
   $("sum-item").innerHTML = '<div class="item-earned">' + ICON.gem + '<div><div class="ie-t">Nhận vật phẩm: Huy Hiệu Ánh Sao</div><div style="font-size:14px; color:var(--muted);">Vật phẩm đặc biệt của Đêm Chung Kết đã được cất vào Album hành trình của lớp (+30 điểm).</div></div></div>';
-  sfx("badge");
   $("sum-m1").textContent = st.theoMucDo["1"].dung + "/" + st.theoMucDo["1"].tong + " câu đúng";
   $("sum-m2").textContent = st.theoMucDo["2"].dung + "/" + st.theoMucDo["2"].tong + " câu đúng";
   $("sum-m3").textContent = st.theoMucDo["3"].dung + "/" + st.theoMucDo["3"].tong + " câu đúng";
@@ -2562,6 +2597,11 @@ function finFinish(){
   $("sum-teams").innerHTML = "";
   FIN = null;
   showScreen("scr-summary");
+  /* Ăn mừng CẤP 3 — lớn nhất và duy nhất của Đêm Chung Kết (v2.2): nhạc finaleWin riêng + pháo hai đợt + tiếng huy hiệu */
+  sfx("finaleWin");
+  confetti(240);
+  setTimeout(function(){ confetti(120); }, 700);
+  setTimeout(function(){ sfx("badge"); }, 900);
 }
 
 /* ================= ALBUM ================= */
