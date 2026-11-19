@@ -100,7 +100,9 @@ input,select,textarea{font-family:inherit;}
 .book-card .bk-note{font-size:13px; color:var(--muted);}
 .book-card .bk-badge{position:absolute; top:10px; right:10px; font-size:11px; font-weight:700; padding:3px 8px; border-radius:999px; background:var(--gold-soft); color:var(--gold); border:1.5px solid var(--gold);}
 .book-card.locked{opacity:.78;}
-.book-card:not(.locked):active{transform:translateY(1px);}
+.book-card.khoa-khoi{opacity:.55; filter:grayscale(.6); cursor:not-allowed;}
+.book-card.khoa-khoi .bk-badge{background:var(--surface2); color:var(--muted); border-color:var(--line);}
+.book-card:not(.locked):not(.khoa-khoi):active{transform:translateY(1px);}
 .panel{background:var(--surface); border:2px solid var(--line); border-radius:14px; padding:16px; margin-top:18px;}
 .panel h3{margin:0 0 8px; font-size:19px; color:var(--ink);}
 .class-row{display:flex; flex-wrap:wrap; gap:8px; align-items:center;}
@@ -327,6 +329,9 @@ input,select,textarea{font-family:inherit;}
 
 /* ---------- Seasons (sảnh theo lớp) ---------- */
 .khoi-row{display:flex; flex-wrap:wrap; gap:8px; margin:4px 0 16px;}
+.chip.khoa{opacity:.55; cursor:not-allowed;}
+.chip .khoa-ic{display:inline-flex; vertical-align:-2px; margin-right:5px;}
+.chip .khoa-ic svg{width:15px; height:15px;}
 .mua-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px;}
 @media (max-width:400px){ .mua-grid{grid-template-columns:1fr;} }
 .mua-card{border:2px solid var(--line); border-radius:14px; background:var(--surface); overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column; text-align:left; padding:0; width:100%; color:var(--text);}
@@ -669,8 +674,8 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
         <p><b>Dữ liệu truyện:</b> Thư viện Ánh Sao gồm các thế giới truyện của 7 môn học, 315 mùa truyện và 1.330 tập truyện, cùng các tập đấu trùm ở cuối mỗi chủ đề và sự kiện Đêm Chung Kết. Mỗi mùa truyện bám theo một chủ đề, mỗi tập truyện bám theo một bài học trong sách giáo khoa, để học sinh vừa phiêu lưu cùng Biệt đội Ánh Sao vừa ôn luyện đúng kiến thức của bài. Cốt truyện, lời thoại và thử thách được soạn riêng cho từng bài; câu hỏi trong thử thách được rút từ ngân hàng câu hỏi của đúng bài học đó.</p>
         <p><b>Ảnh minh họa:</b> ảnh được nạp từ thư mục “anh” đặt cạnh tệp của sản phẩm; mở tập nào app mới nạp ảnh của tập đó. Khi thư mục ảnh chưa có (ví dụ mở bản xem trước), truyện vẫn chơi trọn vẹn với nền cảnh dự phòng.</p>
         <p><b>Sự kiện Đêm Chung Kết:</b> ở Sảnh thư viện, mọi lớp đều dự được (không khóa tuần, không cần hoàn thành mùa nào trước). Cả lớp lần lượt thắp sáng các Cổng Thế Giới của khối lớp mình — mỗi cổng 2 đòn tri thức mức Kết nối/Vận dụng rút từ chính thế giới đó, trả lời sai có câu cứu viện mức Nhận biết của nhân vật dẫn đường — rồi đối mặt trùm cuối Sương Mù Quên Lãng với 6 đòn tổng hợp. Hoàn thành đêm, lớp nhận Huy Hiệu Ánh Sao trong Album hành trình.</p>
-        <p><b>Cập nhật v2.6.2:</b> sửa lỗi nhãn lượt chơi ở chế độ Đối kháng tổ che mất phương án trả lời đầu tiên — nhãn nay nằm ngoài vùng phương án để mọi lựa chọn luôn hiện rõ và bấm được.</p>
-        <p><b>Phiên bản:</b> v2.6.2 — xây trên bản chính thức v2.0 Đêm Chung Kết (Final Release), bản chính thức đầu tiên của sản phẩm. Thư viện Ánh Sao đã đủ trọn 6 thế giới với 315 mùa truyện, 1.330 tập, và mở thêm sự kiện đặc biệt Đêm Chung Kết — trận quyết chiến cuối cùng với Sương Mù Quên Lãng dành cho mọi lớp.</p>
+        <p><b>Cập nhật v2.7:</b> các cuốn sách nay khóa theo khối của lớp hành trình đang chọn — môn chưa có ở khối đó sẽ mờ và khóa ở Sảnh, bên trong mỗi cuốn sách chỉ mở đúng khối của lớp, các khối khác vẫn hiển thị nhưng không bấm được, để học sinh không chọn nhầm nội dung của khối khác.</p>
+        <p><b>Phiên bản:</b> v2.7 — xây trên bản chính thức v2.0 Đêm Chung Kết (Final Release), bản chính thức đầu tiên của sản phẩm. Thư viện Ánh Sao đã đủ trọn 6 thế giới với 315 mùa truyện, 1.330 tập, và mở thêm sự kiện đặc biệt Đêm Chung Kết — trận quyết chiến cuối cùng với Sương Mù Quên Lãng dành cho mọi lớp.</p>
       </div>
     </div>
   </div>
@@ -836,7 +841,7 @@ var CAU_TIENG_ANH_THEO_LOP = {};
 var CAU_KHOA_HOC_THEO_LOP = {};
 var CAU_CONG_NGHE_THEO_LOP = {};
 var CAU_LICH_SU_DIA_LI_THEO_LOP = {};
-var PHIEN_BAN = "v2.6.2";
+var PHIEN_BAN = "v2.7";
 var NHAN_VAT_TO = ["Minh Anh", "Tuấn Kiệt", "Thảo Nguyên", "Đức Trí", "Thủ thư Số", "Người đọc dũng cảm"];
 
 /* ================= TRUY CẬP DỮ LIỆU (307 mùa truyện + ngân hàng câu hỏi) ================= */
@@ -1064,6 +1069,7 @@ var ICON = {
   book: ic('<path d="M12 5.5C10 3.8 7 3.2 4 3.5v14c3-.3 6 .3 8 2 2-1.7 5-2.3 8-2v-14c-3-.3-6 .3-8 2z"/><path d="M12 5.5v14"/>'),
   bookDone: ic('<path d="M12 5.5C10 3.8 7 3.2 4 3.5v14c3-.3 6 .3 8 2 2-1.7 5-2.3 8-2v-14c-3-.3-6 .3-8 2z"/><path d="M12 5.5v14"/><path d="M8.2 12.2l1.6 1.6 2.6-3"/>'),
   key: ic('<circle cx="8" cy="14" r="4.2"/><path d="M11.2 10.8L20 2"/><path d="M16.5 5.5l3 3"/><path d="M13.8 8.2l2.4 2.4"/>'),
+  lock: ic('<rect x="5" y="10.5" width="14" height="9.5" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.3" r="1.2"/>'),
   map: ic('<path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14"/><path d="M15 6v14"/>'),
   torch: ic('<path d="M12 2.5c1.8 2.2 3 3.9 3 5.8a3 3 0 1 1-6 0c0-1.9 1.2-3.6 3-5.8z"/><path d="M10.5 13.5h3L13 21a1 1 0 0 1-2 0l-.5-7.5z"/>'),
   fog: ic('<path d="M4 10h13a3.5 3.5 0 1 0-.6-6.95A5.5 5.5 0 0 0 5.7 5.6 3.8 3.8 0 0 0 4 10z"/><path d="M3 14.5h18"/><path d="M6 18.5h13"/>'),
@@ -1725,22 +1731,34 @@ var MON_THE_GIOI = [
   { ten: "Khoa học", mau: "#2f8b8b", mo: true, ghi: "Trạm Khám Phá Xanh — lớp 4 trọn năm (10 mùa truyện, 42 tập) và lớp 5 trọn năm (11 mùa truyện, 41 tập); Robot Hạt Đậu dẫn đường. Thế giới Trạm Khám Phá Xanh đã hoàn thiện trọn hai lớp." },
   { ten: "Lịch sử và Địa lí", nhan: "Lịch sử & Địa lí", mau: "#96613a", mo: true, ghi: "Dòng Sông Thời Gian — lớp 4 trọn năm (10 mùa truyện, 39 tập) và lớp 5 trọn năm (8 mùa truyện, 36 tập); thế giới Dòng Sông Thời Gian hoàn thiện. Cụ Đồ Nho dẫn đường." }
 ];
-function renderLobby(){
-  document.body.classList.remove("world-toan");
+/* Khối của lớp hành trình đang chọn (null = chưa chọn lớp hoặc tên lớp không suy ra được khối → không khóa gì cả) */
+function khoiHanhTrinh(){ return khoiTuTenLop(state.lopHienTai); }
+/* Một môn có dữ liệu cho một khối khi chỉ mục mùa nhẹ CAC_MUA có ít nhất một mùa của môn đó ở khối đó */
+function monCoDuLieuKhoi(tenMon, khoi){
+  return CAC_MUA.some(function(m){ return m.mon === tenMon && m.lop === khoi; });
+}
+function renderBookGrid(){
   var g = $("book-grid"); g.innerHTML = "";
+  var K = khoiHanhTrinh();
   MON_THE_GIOI.forEach(function(m){
+    var khoaKhoi = !!(m.mo && K !== null && !monCoDuLieuKhoi(m.ten, K));
     var b = document.createElement("button");
     b.type = "button";
-    b.className = "book-card" + (m.mo ? "" : " locked");
+    b.className = "book-card" + (m.mo ? (khoaKhoi ? " khoa-khoi" : "") : " locked");
     b.style.setProperty("--bc", m.mau);
     b.innerHTML = ICON.book + '<span class="bk-name">' + esc(m.nhan || m.ten) + '</span><span class="bk-note">' + esc(m.ghi) + '</span>' +
-      (m.mo ? '<span class="bk-badge">Đang mở</span>' : '<span class="bk-badge">Đang biên soạn</span>');
+      (khoaKhoi ? '<span class="bk-badge">Chưa mở cho Lớp ' + K + '</span>' : (m.mo ? '<span class="bk-badge">Đang mở</span>' : '<span class="bk-badge">Đang biên soạn</span>'));
     b.addEventListener("click", function(){
-      if (m.mo) { vaoSanhMua(m.ten); }
+      if (khoaKhoi) { toast("Môn " + m.ten + " chưa có truyện cho khối " + K + " của lớp " + state.lopHienTai + " — muốn mở môn này, thầy đổi lớp ở mục Hành trình theo lớp nhé."); }
+      else if (m.mo) { vaoSanhMua(m.ten); }
       else toast("Mùa truyện môn " + m.ten + " đang biên soạn — hẹn cả lớp ở mùa sau!");
     });
     g.appendChild(b);
   });
+}
+function renderLobby(){
+  document.body.classList.remove("world-toan");
+  renderBookGrid();
   renderFinaleCard();
   renderClassChips();
   updateLobbyStatus();
@@ -1752,11 +1770,16 @@ function vaoSanhMua(mon){
   var chon = state.muaChon ? muaById(state.muaChon) : null;
   if (chon && chon.mon === monDangXem) khoiDangXem = chon.lop;
   else { var first = CAC_MUA.filter(function(x){ return x.mon === monDangXem; })[0]; if (first) khoiDangXem = first.lop; }
+  var K0 = khoiHanhTrinh();
+  if (K0 !== null) khoiDangXem = K0;
   renderSeasons();
   showScreen("scr-seasons");
 }
 function renderSeasons(){
   apDungTheGioi(monDangXem);
+  /* Đang theo hành trình của một lớp có khối rõ ràng: màn mùa luôn mở đúng khối của lớp đó */
+  var K = khoiHanhTrinh();
+  if (K !== null) khoiDangXem = K;
   /* Vào danh sách mùa của một lớp là nạp gói dữ liệu của lớp đó (nếu lớp có tệp gói);
      nạp xong thì vẽ lại màn này bằng dữ liệu đầy đủ. */
   var khoaHT = khoaGoi(monDangXem, khoiDangXem);
@@ -1787,17 +1810,37 @@ function renderSeasons(){
               ? "Cụ Đồ Nho dẫn Biệt đội Ánh Sao xuôi Dòng Sông Thời Gian — chuyến thuyền ngược dòng về quá khứ và khắp các vùng đất quê hương, nơi mỗi bến sông, mỗi miền đất đang bị Sương Mù phủ mờ. Lớp 4 trọn năm gồm 10 mùa truyện, 39 tập; Lớp 5 trọn năm gồm 8 mùa truyện, 36 tập. Chọn một mùa truyện để mở bản đồ các tập."
               : "Mỗi khối lớp là một chặng đường khôi phục Thư viện Ánh Sao, gồm các cụm truyện nối tiếp theo chương trình học. Chọn khối lớp, rồi chọn một cụm truyện để mở bản đồ các tập.")))));
   var kr = $("khoi-row"); kr.innerHTML = "";
-  var cacKhoi = [];
-  CAC_MUA.forEach(function(m){ if (m.mon === monDangXem && cacKhoi.indexOf(m.lop) < 0) cacKhoi.push(m.lop); });
-  cacKhoi.sort(function(a, b){ return a - b; });
-  cacKhoi.forEach(function(k){
-    var c = document.createElement("button");
-    c.type = "button";
-    c.className = "chip" + (k === khoiDangXem ? " sel" : "");
-    c.textContent = "Lớp " + k;
-    c.addEventListener("click", function(){ khoiDangXem = k; renderSeasons(); });
-    kr.appendChild(c);
-  });
+  if (K !== null) {
+    /* Khóa theo khối của lớp hành trình: vẽ đủ 5 thẻ Lớp 1–5, chỉ thẻ đúng khối K sáng và bấm được */
+    for (var kk = 1; kk <= 5; kk++) {
+      var ck = document.createElement("button");
+      ck.type = "button";
+      if (kk === K) {
+        ck.className = "chip sel";
+        ck.textContent = "Lớp " + kk;
+        ck.addEventListener("click", function(){ renderSeasons(); });
+      } else {
+        ck.className = "chip khoa";
+        ck.innerHTML = '<span class="khoa-ic">' + ICON.lock + '</span>Lớp ' + kk;
+        ck.addEventListener("click", function(){
+          toast("Đang theo hành trình của lớp " + state.lopHienTai + " (khối " + K + ") — muốn xem khối khác, thầy đổi lớp ở mục Hành trình theo lớp ngoài Sảnh nhé.");
+        });
+      }
+      kr.appendChild(ck);
+    }
+  } else {
+    var cacKhoi = [];
+    CAC_MUA.forEach(function(m){ if (m.mon === monDangXem && cacKhoi.indexOf(m.lop) < 0) cacKhoi.push(m.lop); });
+    cacKhoi.sort(function(a, b){ return a - b; });
+    cacKhoi.forEach(function(k){
+      var c = document.createElement("button");
+      c.type = "button";
+      c.className = "chip" + (k === khoiDangXem ? " sel" : "");
+      c.textContent = "Lớp " + k;
+      c.addEventListener("click", function(){ khoiDangXem = k; renderSeasons(); });
+      kr.appendChild(c);
+    });
+  }
   var lop = state.lopHienTai;
   var g = $("mua-grid"); g.innerHTML = "";
   if (khoaHT && goiState[khoaHT] !== "loaded") {
@@ -1845,9 +1888,11 @@ function renderSeasons(){
   if (!soCard && !g.children.length) {
     g.innerHTML = '<p class="sec-desc" style="grid-column:1/-1; margin:10px 0;">Mùa truyện môn ' + esc(monDangXem) + " cho lớp " + khoiDangXem + " đang biên soạn — hẹn cả lớp ở mùa sau!</p>";
   }
-  $("seasons-note").textContent = lop
-    ? "Đang xem cụm truyện " + monDangXem + " lớp " + khoiDangXem + " — tiến trình hiển thị là của lớp " + lop + "."
-    : "Thầy chưa chọn lớp: vẫn xem và chiếu thử được các tập, nhưng tiến trình chỉ lưu khi đã chọn lớp ở Sảnh thư viện.";
+  $("seasons-note").textContent = (K !== null)
+    ? "Đang theo hành trình của lớp " + lop + " — cuốn sách đang mở đúng khối " + K + " của lớp. Muốn xem khối khác, thầy đổi lớp ở mục Hành trình theo lớp ngoài Sảnh thư viện nhé."
+    : (lop
+      ? "Đang xem cụm truyện " + monDangXem + " lớp " + khoiDangXem + " — tiến trình hiển thị là của lớp " + lop + "."
+      : "Thầy chưa chọn lớp: vẫn xem và chiếu thử được các tập, nhưng tiến trình chỉ lưu khi đã chọn lớp ở Sảnh thư viện.");
 }
 function openSeason(muaId){
   var m = muaById(muaId);
@@ -1880,7 +1925,7 @@ function renderClassChips(){
     var c = document.createElement("button");
     c.type = "button"; c.className = "chip" + (n === state.lopHienTai ? " sel" : "");
     c.textContent = "Lớp " + n;
-    c.addEventListener("click", function(){ state.lopHienTai = n; saveState(); renderClassChips(); updateLobbyStatus(); });
+    c.addEventListener("click", function(){ state.lopHienTai = n; saveState(); renderClassChips(); updateLobbyStatus(); renderBookGrid(); });
     box.appendChild(c);
   });
 }
@@ -1900,7 +1945,7 @@ function addClass(){
   if (!state.classes[name]) { classProg(name); }
   state.lopHienTai = name; saveState();
   inp.value = "";
-  renderClassChips(); updateLobbyStatus();
+  renderClassChips(); updateLobbyStatus(); renderBookGrid();
   toast("Đã chọn hành trình của lớp " + name + ".");
 }
 function nextTapInSeason(lop, m){
