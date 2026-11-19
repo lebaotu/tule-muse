@@ -179,7 +179,7 @@ input,select,textarea{font-family:inherit;}
 .hp .hp-track{height:12px; background:#2a3852; border-radius:99px; margin-top:5px; overflow:hidden;}
 .hp .hp-fill{height:100%; background:#e9bc3f; transition:width .6s;}
 .hp.enemy .hp-fill{background:#8fa3c0;}
-.team-banner{position:absolute; left:10px; bottom:10px; display:none; z-index:6; background:rgba(10,16,30,.85); color:#f2e7c3; border:2px solid #e9bc3f; border-radius:999px; padding:7px 16px; font-weight:800; font-size:15px;}
+.team-banner{display:none; width:fit-content; max-width:min(1060px, calc(100% - 20px)); margin:8px auto 0; background:rgba(10,16,30,.85); color:#f2e7c3; border:2px solid #e9bc3f; border-radius:999px; padding:7px 16px; font-weight:800; font-size:15px; text-align:center;}
 .team-banner.show{display:block;}
 .timer-wrap{position:absolute; top:64px; right:10px; display:none; align-items:center; gap:8px; z-index:6; background:rgba(10,16,30,.85); border:2px solid #e9bc3f; border-radius:999px; padding:6px 14px; color:#f2e7c3; font-weight:800; font-family:"Baloo 2",sans-serif; font-size:17px;}
 .timer-wrap.show{display:flex;}
@@ -221,7 +221,6 @@ input,select,textarea{font-family:inherit;}
   .set-objects{gap:8px; padding:8px 10px 12px; background:transparent;}
   .obj-tag{font-size:13.5px; min-height:40px; padding:5px 7px;}
   .set-signs{position:relative; inset:auto; background:#101a30; padding:18px 4% 16px;}
-  .team-banner.show{display:none;}
 }
 .obj-btn:disabled{cursor:default;}
 .light-burst{position:absolute; inset:0; pointer-events:none; opacity:0; background:radial-gradient(circle at 50% 42%, rgba(255,236,170,.95) 0%, rgba(255,214,90,.45) 32%, transparent 68%);}
@@ -520,6 +519,7 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
     <button class="icon-btn" id="play-mute" type="button" aria-label="Bật / tắt âm thanh"></button>
   </div>
   <div class="team-score-strip" id="team-strip"></div>
+  <div class="team-banner" id="team-banner"></div>
   <div class="stage" id="stage">
     <img class="scene-img" id="scene-img" alt="Ảnh cảnh truyện">
     <div class="scene-fallback" id="scene-fallback"><span id="scene-fallback-ic"></span></div>
@@ -537,7 +537,6 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
     <div class="stage-set" id="stage-set"></div>
     <div class="set-signs" id="set-signs"></div>
     <div class="light-burst" id="light-burst"></div>
-    <div class="team-banner" id="team-banner"></div>
     <div class="timer-wrap" id="timer-wrap"><span id="timer-num">0</span></div>
   </div>
   <div class="dlg-zone">
@@ -670,8 +669,8 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
         <p><b>Dữ liệu truyện:</b> Thư viện Ánh Sao gồm các thế giới truyện của 7 môn học, 315 mùa truyện và 1.330 tập truyện, cùng các tập đấu trùm ở cuối mỗi chủ đề và sự kiện Đêm Chung Kết. Mỗi mùa truyện bám theo một chủ đề, mỗi tập truyện bám theo một bài học trong sách giáo khoa, để học sinh vừa phiêu lưu cùng Biệt đội Ánh Sao vừa ôn luyện đúng kiến thức của bài. Cốt truyện, lời thoại và thử thách được soạn riêng cho từng bài; câu hỏi trong thử thách được rút từ ngân hàng câu hỏi của đúng bài học đó.</p>
         <p><b>Ảnh minh họa:</b> ảnh được nạp từ thư mục “anh” đặt cạnh tệp của sản phẩm; mở tập nào app mới nạp ảnh của tập đó. Khi thư mục ảnh chưa có (ví dụ mở bản xem trước), truyện vẫn chơi trọn vẹn với nền cảnh dự phòng.</p>
         <p><b>Sự kiện Đêm Chung Kết:</b> ở Sảnh thư viện, mọi lớp đều dự được (không khóa tuần, không cần hoàn thành mùa nào trước). Cả lớp lần lượt thắp sáng các Cổng Thế Giới của khối lớp mình — mỗi cổng 2 đòn tri thức mức Kết nối/Vận dụng rút từ chính thế giới đó, trả lời sai có câu cứu viện mức Nhận biết của nhân vật dẫn đường — rồi đối mặt trùm cuối Sương Mù Quên Lãng với 6 đòn tổng hợp. Hoàn thành đêm, lớp nhận Huy Hiệu Ánh Sao trong Album hành trình.</p>
-        <p><b>Cập nhật v2.6.1:</b> Bản trau chuốt dự thi — thẻ tác giả nổi bật với viền sáng ở màn hình chào; mục Nguồn dữ liệu viết gọn cho trọn kho học liệu số đa môn gồm 7 môn; mục Dữ liệu truyện khái quát thư viện 315 mùa — 1.330 tập; nhạc nền phát theo bể ngẫu nhiên không trùng lặp, mỗi thế giới một nhạc cụ riêng.</p>
-        <p><b>Phiên bản:</b> v2.6.1 — xây trên bản chính thức v2.0 Đêm Chung Kết (Final Release), bản chính thức đầu tiên của sản phẩm. Thư viện Ánh Sao đã đủ trọn 6 thế giới với 315 mùa truyện, 1.330 tập, và mở thêm sự kiện đặc biệt Đêm Chung Kết — trận quyết chiến cuối cùng với Sương Mù Quên Lãng dành cho mọi lớp.</p>
+        <p><b>Cập nhật v2.6.2:</b> sửa lỗi nhãn lượt chơi ở chế độ Đối kháng tổ che mất phương án trả lời đầu tiên — nhãn nay nằm ngoài vùng phương án để mọi lựa chọn luôn hiện rõ và bấm được.</p>
+        <p><b>Phiên bản:</b> v2.6.2 — xây trên bản chính thức v2.0 Đêm Chung Kết (Final Release), bản chính thức đầu tiên của sản phẩm. Thư viện Ánh Sao đã đủ trọn 6 thế giới với 315 mùa truyện, 1.330 tập, và mở thêm sự kiện đặc biệt Đêm Chung Kết — trận quyết chiến cuối cùng với Sương Mù Quên Lãng dành cho mọi lớp.</p>
       </div>
     </div>
   </div>
@@ -837,7 +836,7 @@ var CAU_TIENG_ANH_THEO_LOP = {};
 var CAU_KHOA_HOC_THEO_LOP = {};
 var CAU_CONG_NGHE_THEO_LOP = {};
 var CAU_LICH_SU_DIA_LI_THEO_LOP = {};
-var PHIEN_BAN = "v2.6.1";
+var PHIEN_BAN = "v2.6.2";
 var NHAN_VAT_TO = ["Minh Anh", "Tuấn Kiệt", "Thảo Nguyên", "Đức Trí", "Thủ thư Số", "Người đọc dũng cảm"];
 
 /* ================= TRUY CẬP DỮ LIỆU (307 mùa truyện + ngân hàng câu hỏi) ================= */
