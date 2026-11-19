@@ -391,6 +391,10 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
 .finale-panel h3.finale-title{font-family:"Baloo 2",sans-serif; font-weight:800; font-size:26px; letter-spacing:.6px; margin:0 0 2px;}
 .finale-sub{font-weight:700; color:var(--gold); font-size:16px; margin:0 0 8px;}
 .finale-status{font-size:15px; color:var(--text); margin:10px 0 0;}
+.finale-meta{font-size:15px; color:var(--text); margin:4px 0 0;}
+.tai-dem{animation:taiDemPulse 1.6s ease-in-out infinite;}
+@keyframes taiDemPulse{0%,100%{opacity:1;}50%{opacity:.45;}}
+@media (prefers-reduced-motion: reduce){.tai-dem{animation:none;}}
 .finale-khoi-row{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:12px;}
 </style>
 </head>
@@ -710,8 +714,8 @@ body.world-toan .mua-card-cover{ background:linear-gradient(160deg,#1e6fb8 0%,#0
         <p><b>Dữ liệu truyện:</b> Thư viện Ánh Sao gồm các thế giới truyện của 7 môn học, 315 mùa truyện và 1.330 tập truyện, cùng các tập đấu trùm ở cuối mỗi chủ đề và sự kiện Đêm Chung Kết. Mỗi mùa truyện bám theo một chủ đề, mỗi tập truyện bám theo một bài học trong sách giáo khoa, để học sinh vừa phiêu lưu cùng Biệt đội Ánh Sao vừa ôn luyện đúng kiến thức của bài. Cốt truyện, lời thoại và thử thách được soạn riêng cho từng bài; câu hỏi trong thử thách được rút từ ngân hàng câu hỏi của đúng bài học đó.</p>
         <p><b>Ảnh minh họa:</b> ảnh được nạp từ thư mục “anh” đặt cạnh tệp của sản phẩm; mở tập nào app mới nạp ảnh của tập đó. Khi thư mục ảnh chưa có (ví dụ mở bản xem trước), truyện vẫn chơi trọn vẹn với nền cảnh dự phòng.</p>
         <p><b>Sự kiện Đêm Chung Kết:</b> ở Sảnh thư viện, mọi lớp đều dự được (không khóa tuần, không cần hoàn thành mùa nào trước). Cả lớp lần lượt thắp sáng các Cổng Thế Giới của khối lớp mình — mỗi cổng 2 đòn tri thức mức Kết nối/Vận dụng rút từ chính thế giới đó, trả lời sai có câu cứu viện mức Nhận biết của nhân vật dẫn đường — rồi đối mặt trùm cuối Sương Mù Quên Lãng với 6 đòn tổng hợp. Hoàn thành đêm, lớp nhận Huy Hiệu Ánh Sao trong Album hành trình.</p>
-        <p><b>Cập nhật v2.8:</b> thêm khóa mã truy cập ở màn hình chào — mỗi lần mở thư viện đều phải nhập mã mới vào được; lưới Bảy cuốn sách được thiết kế lại với ảnh bìa riêng cho từng thế giới, bố cục 4 cuốn trên, 3 cuốn dưới; sửa nhãn nút thoát trong Đêm Chung Kết cho đúng điểm đến.</p>
-        <p><b>Phiên bản:</b> v2.8 — xây trên bản chính thức v2.0 Đêm Chung Kết (Final Release), bản chính thức đầu tiên của sản phẩm. Thư viện Ánh Sao đã đủ trọn 6 thế giới với 315 mùa truyện, 1.330 tập, và mở thêm sự kiện đặc biệt Đêm Chung Kết — trận quyết chiến cuối cùng với Sương Mù Quên Lãng dành cho mọi lớp.</p>
+        <p><b>Cập nhật v3.0:</b> toàn bộ dữ liệu truyện và câu hỏi chuyển sang cấp phát từ kho Google của thầy qua dịch vụ dữ liệu riêng — nhập mã xong app tự xin dữ liệu; gói đã tải được lưu đệm trên máy để mở lại nhanh và chịu được mạng yếu. Bản USB offline ở phòng Tin vẫn tự chứa đầy đủ như cũ.</p>
+        <p><b>Phiên bản:</b> v3.0 — xây trên bản chính thức v2.0 Đêm Chung Kết (Final Release), bản chính thức đầu tiên của sản phẩm. Thư viện Ánh Sao đã đủ trọn 6 thế giới với 315 mùa truyện, 1.330 tập, và mở thêm sự kiện đặc biệt Đêm Chung Kết — trận quyết chiến cuối cùng với Sương Mù Quên Lãng dành cho mọi lớp.</p>
       </div>
     </div>
   </div>
@@ -877,7 +881,9 @@ var CAU_TIENG_ANH_THEO_LOP = {};
 var CAU_KHOA_HOC_THEO_LOP = {};
 var CAU_CONG_NGHE_THEO_LOP = {};
 var CAU_LICH_SU_DIA_LI_THEO_LOP = {};
-var PHIEN_BAN = "v2.8";
+var PHIEN_BAN = "v3.0";
+var DICH_VU_DL_URL = "https://script.google.com/macros/s/AKfycbyzLjsUUtfUBXK3LZXBNtQfy36dX0EMtXVBQspmpRipNAE3QSI8yopI0zzS8EFMiS0gcw/exec";
+var PB_DULIEU = "v3.0";
 var NHAN_VAT_TO = ["Minh Anh", "Tuấn Kiệt", "Thảo Nguyên", "Đức Trí", "Thủ thư Số", "Người đọc dũng cảm"];
 
 /* ================= KHÓA MÃ TRUY CẬP Ở MÀN HÌNH CHÀO (v2.8) =================
@@ -890,6 +896,7 @@ var NHAN_VAT_TO = ["Minh Anh", "Tuấn Kiệt", "Thảo Nguyên", "Đức Trí",
      hàm SHA-256 thuần JS dự phòng ngay dưới đây (cùng một thuật toán, kết quả khớp nhau). */
 var MA_BAM_TRUY_CAP = "daa3054cfe02d8526d336e56deb6d095975d43ef1fa81b3afdfbe3def4a8efd4";
 var daMoKhoa = false;
+var chiaDuLieu = null; /* Chìa xin dữ liệu từ Dịch vụ dữ liệu (v3.0): chính là chuỗi băm của mã truy cập vừa nhập đúng. CHỈ giữ trong bộ nhớ phiên như daMoKhoa — TUYỆT ĐỐI không ghi xuống localStorage/sessionStorage/cookie. */
 function sha256ThuanJS(ascii){
   if (/[^\x00-\x7f]/.test(ascii)) ascii = unescape(encodeURIComponent(ascii));
   function rr(v, a){ return (v >>> a) | (v << (32 - a)); }
@@ -958,6 +965,7 @@ function thuMoKhoa(){
   bamSHA256(ma).then(function(h){
     if (h === MA_BAM_TRUY_CAP){
       daMoKhoa = true;
+      chiaDuLieu = h;
       $("gate-err").textContent = "";
       sfx("page");
       renderLobby(); showScreen("scr-lobby");
@@ -965,6 +973,18 @@ function thuMoKhoa(){
       $("gate-err").textContent = "Mã chưa đúng, thử lại nhé";
     }
   });
+}
+/* Dịch vụ dữ liệu từ chối cấp gói (v3.0): khóa lại toàn bộ về cổng nhập mã.
+   Trạng thái mở khóa và chìa dữ liệu chỉ sống trong bộ nhớ phiên nên chỉ cần
+   xóa hai biến này; người dùng nhập lại mã đúng ở cổng là vào lại bình thường. */
+function khoaLaiViDichVu(loi){
+  daMoKhoa = false;
+  chiaDuLieu = null;
+  moBangNhapMa();
+  var el = $("gate-err");
+  if (el) el.textContent = (loi === "dang-tat")
+    ? "Thư viện đang tạm khóa từ phía nhà trường, quay lại sau nhé."
+    : "Mã truy cập có thể đã thay đổi, nhập lại mã mới nhé.";
 }
 
 /* ================= TRUY CẬP DỮ LIỆU (307 mùa truyện + ngân hàng câu hỏi) ================= */
@@ -1157,6 +1177,123 @@ function dienGoi(khoa, goi){
   if (!daChen) goi.cacMua.forEach(function(nm){ out.push(nm); });
   CAC_MUA = out;
 }
+function hoanTatNapGoi(khoa, ok){
+  if (ok) { dienGoi(khoa, window.__GOI007[khoa]); goiState[khoa] = "loaded"; }
+  else goiState[khoa] = "error"; /* Không chốt chết: lần gọi napGoi sau thử lại từ đầu */
+  var ws = goiWaiters[khoa] || []; delete goiWaiters[khoa];
+  ws.forEach(function(f){ try { f(ok); } catch (e) {} });
+}
+/* Thực thi văn bản gói JS trong phạm vi toàn cục để nó đăng ký window.__GOI007[khoa]:
+   ưu tiên thẻ script từ Blob URL, dự phòng thẻ script nội tuyến khi Blob bị chặn. */
+function thucThiGoi(khoa, vanBan, xong){
+  var xongRoi = false;
+  var bomHen = setTimeout(function(){ ketQua(); }, 15000); /* Treo quá lâu thì chốt theo trạng thái đăng ký hiện tại, không kẹt luồng */
+  function ketQua(){ if (xongRoi) return; xongRoi = true; clearTimeout(bomHen); try { xong(!!window.__GOI007[khoa]); } catch (e) {} }
+  try {
+    var blob = new Blob([vanBan], { type: "text/javascript" });
+    var url = URL.createObjectURL(blob);
+    var sc = document.createElement("script");
+    sc.src = url;
+    sc.onload = function(){ try { URL.revokeObjectURL(url); } catch (e) {} ketQua(); };
+    sc.onerror = function(){
+      try { URL.revokeObjectURL(url); } catch (e) {}
+      try {
+        var sc2 = document.createElement("script");
+        sc2.textContent = vanBan;
+        document.head.appendChild(sc2);
+      } catch (e2) {}
+      ketQua();
+    };
+    document.head.appendChild(sc);
+  } catch (e) {
+    try {
+      var sc3 = document.createElement("script");
+      sc3.textContent = vanBan;
+      document.head.appendChild(sc3);
+    } catch (e3) {}
+    ketQua();
+  }
+}
+/* Đệm gói trên máy bằng IndexedDB (cơ sở "ttt007-dem-goi", kho "goi",
+   khóa "<khoa>|<PB_DULIEU>"). Mọi lỗi đệm đều được nuốt êm: đệm chỉ là đường
+   tăng tốc, hỏng đệm thì luồng nạp vẫn đi tiếp các đường khác. */
+function demDoc(khoa, cb){
+  var xongRoi = false;
+  var bomHen = setTimeout(function(){ xong(null); }, 4000); /* Đệm bị treo (môi trường chặn IndexedDB) thì bỏ qua sau 4 giây, không kẹt luồng */
+  function xong(v){ if (xongRoi) return; xongRoi = true; clearTimeout(bomHen); cb(v); }
+  try {
+    if (!window.indexedDB) { xong(null); return; }
+    var req = indexedDB.open("ttt007-dem-goi", 1);
+    req.onupgradeneeded = function(){ try { req.result.createObjectStore("goi"); } catch (e) {} };
+    req.onerror = function(){ xong(null); };
+    req.onsuccess = function(){
+      try {
+        var db = req.result;
+        var getReq = db.transaction("goi", "readonly").objectStore("goi").get(khoa + "|" + PB_DULIEU);
+        getReq.onsuccess = function(){ var v = getReq.result; try { db.close(); } catch (e) {} xong(typeof v === "string" && v ? v : null); };
+        getReq.onerror = function(){ try { db.close(); } catch (e) {} xong(null); };
+      } catch (e) { xong(null); }
+    };
+  } catch (e) { xong(null); }
+}
+function demGhi(khoa, vanBan){
+  try {
+    if (!window.indexedDB) return;
+    var req = indexedDB.open("ttt007-dem-goi", 1);
+    req.onupgradeneeded = function(){ try { req.result.createObjectStore("goi"); } catch (e) {} };
+    req.onerror = function(){};
+    req.onsuccess = function(){
+      try {
+        var db = req.result;
+        var tx = db.transaction("goi", "readwrite");
+        tx.objectStore("goi").put(vanBan, khoa + "|" + PB_DULIEU);
+        tx.oncomplete = function(){ try { db.close(); } catch (e) {} };
+        tx.onerror = function(){ try { db.close(); } catch (e) {} };
+      } catch (e) {}
+    };
+  } catch (e) {}
+}
+/* Đường dự phòng khi tệp gói cạnh app không nạp được:
+   (a) đệm IndexedDB trên máy -> (b) Dịch vụ dữ liệu Google của thầy. */
+function napGoiDuPhong(khoa){
+  demDoc(khoa, function(vanBan){
+    if (vanBan) {
+      thucThiGoi(khoa, vanBan, function(ok){
+        if (ok) hoanTatNapGoi(khoa, true);
+        else napGoiTuDichVu(khoa);
+      });
+    } else napGoiTuDichVu(khoa);
+  });
+}
+function napGoiTuDichVu(khoa){
+  if (!chiaDuLieu) { hoanTatNapGoi(khoa, false); return; }
+  var hetGio = null, ctrl = null, opts = {};
+  try {
+    if (window.AbortController) {
+      ctrl = new AbortController();
+      opts.signal = ctrl.signal;
+      hetGio = setTimeout(function(){ try { ctrl.abort(); } catch (e) {} }, 30000);
+    }
+  } catch (e) {}
+  var url = DICH_VU_DL_URL + "?goi=" + encodeURIComponent(khoa) + "&chia=" + encodeURIComponent(chiaDuLieu);
+  fetch(url, opts).then(function(res){ return res.text(); }).then(function(text){
+    if (hetGio) clearTimeout(hetGio);
+    var loiJson = null;
+    try { var j = JSON.parse(text); if (j && j.ok === false) loiJson = j; } catch (e) {}
+    if (loiJson) {
+      if (loiJson.loi === "sai-chia" || loiJson.loi === "dang-tat") {
+        khoaLaiViDichVu(loiJson.loi);
+        hoanTatNapGoi(khoa, false);
+      } else hoanTatNapGoi(khoa, false);
+      return;
+    }
+    demGhi(khoa, text);
+    thucThiGoi(khoa, text, function(ok){ hoanTatNapGoi(khoa, ok); });
+  }).catch(function(){
+    if (hetGio) clearTimeout(hetGio);
+    hoanTatNapGoi(khoa, false);
+  });
+}
 function napGoi(mon, lop, cb){
   var khoa = khoaGoi(mon, lop);
   if (!khoa) { if (cb) cb(true); return; }
@@ -1165,21 +1302,17 @@ function napGoi(mon, lop, cb){
   if (cb) (goiWaiters[khoa] = goiWaiters[khoa] || []).push(cb);
   if (goiState[khoa] === "loading") return;
   goiState[khoa] = "loading";
+  /* Đường 1 (ưu tiên): tệp gói đặt cạnh app — bản USB offline chạy nguyên như cũ. */
   var sc = document.createElement("script");
   sc.src = "goi/goi-" + khoa + ".js?v=" + encodeURIComponent(PHIEN_BAN);
   sc.onload = function(){
-    var ok = !!window.__GOI007[khoa];
-    if (ok) { dienGoi(khoa, window.__GOI007[khoa]); goiState[khoa] = "loaded"; }
-    else goiState[khoa] = "error";
-    var ws = goiWaiters[khoa] || []; delete goiWaiters[khoa];
-    ws.forEach(function(f){ try { f(ok); } catch (e) {} });
+    if (window.__GOI007[khoa]) hoanTatNapGoi(khoa, true);
+    else napGoiDuPhong(khoa); /* onload nhưng không đăng ký được khóa: chưa kết luận lỗi */
   };
   sc.onerror = function(){
-    /* Không chốt chết trạng thái lỗi: lần yêu cầu sau phải được nạp lại từ đầu,
-       đúng bài học của bộ nạp ảnh. */
-    goiState[khoa] = "error";
-    var ws = goiWaiters[khoa] || []; delete goiWaiters[khoa];
-    ws.forEach(function(f){ try { f(false); } catch (e) {} });
+    /* Không kết luận lỗi ngay: giữ trạng thái "loading" (waiter vẫn xếp hàng)
+       và chạy đường dự phòng — đệm IndexedDB rồi tới Dịch vụ dữ liệu. */
+    napGoiDuPhong(khoa);
   };
   document.head.appendChild(sc);
 }
@@ -1978,7 +2111,7 @@ function renderSeasons(){
     var gst = document.createElement("div");
     gst.style.cssText = "grid-column:1/-1;";
     if (goiState[khoaHT] === "error") {
-      gst.innerHTML = '<p class="sec-desc" style="margin:10px 0;">Chưa tải được gói truyện và câu hỏi của ' + esc(monDangXem) + " lớp " + khoiDangXem + ' (tệp goi/goi-' + khoaHT + '.js đặt cạnh tệp của sản phẩm). Thầy kiểm tra lại thư mục “goi” rồi bấm thử lại nhé.</p>';
+      gst.innerHTML = '<p class="sec-desc" style="margin:10px 0;">Chưa tải được dữ liệu truyện. Kiểm tra kết nối mạng rồi thử lại nhé.</p>';
       var rb = document.createElement("button");
       rb.type = "button"; rb.className = "btn btn-gold"; rb.textContent = "Thử lại";
       rb.addEventListener("click", function(){
@@ -1987,7 +2120,7 @@ function renderSeasons(){
       });
       gst.appendChild(rb);
     } else {
-      gst.innerHTML = '<p class="sec-desc" style="margin:10px 0;">Đang tải gói truyện và câu hỏi của ' + esc(monDangXem) + " lớp " + khoiDangXem + "…</p>";
+      gst.innerHTML = '<p class="sec-desc tai-dem" style="margin:10px 0;">Đang tải dữ liệu từ thư viện…</p>';
     }
     g.appendChild(gst);
   }
@@ -2827,11 +2960,20 @@ function renderFinaleCard(){
       status = "Lớp " + lop + " đã hoàn thành Đêm Chung Kết · " + dc.sao + " sao · " + (dc.dungTichLuy * 10 + dc.sao * 5 + 30) + " điểm — chơi lại để nâng sao nhé!";
     } else status = "Lớp " + lop + " chưa tham dự Đêm Chung Kết.";
   }
+  /* Dòng meta động theo khối của lớp hành trình đang chọn: số cổng tính bằng đúng
+     công thức startFinale dùng để dựng lượt chơi (nguồn sự thật duy nhất). */
+  var khoiFin = khoiTuTenLop(state.lopHienTai);
+  var metaFin;
+  if (khoiFin) {
+    var soCongFin = FIN_MON_ORDER.filter(function(mon){ return khoaGoi(mon, khoiFin) !== null; }).length;
+    metaFin = soCongFin + " cổng thế giới · Sự kiện cuối hành trình — đấu trùm Sương Mù Quên Lãng";
+  } else metaFin = "Sự kiện cuối hành trình — đấu trùm Sương Mù Quên Lãng";
   slot.innerHTML =
     '<div class="panel finale-panel">' +
       '<div class="finale-cover"><span class="art-frame-ic">' + ICON.book + '</span><img alt="Ảnh bìa Đêm Chung Kết" style="display:none;"></div>' +
       '<h3 class="finale-title">ĐÊM CHUNG KẾT</h3>' +
       '<p class="finale-sub">Trận quyết chiến với Sương Mù Quên Lãng</p>' +
+      '<p class="finale-meta">' + esc(metaFin) + '</p>' +
       '<p class="sec-desc" style="margin-bottom:0;">Sự kiện đặc biệt khép lại Thư viện Ánh Sao: thắp sáng các Cổng Thế Giới của khối lớp mình rồi đối mặt trùm cuối Sương Mù. Mở cho mọi lớp — không khóa tuần, không cần hoàn thành mùa nào trước.</p>' +
       '<p class="finale-status">' + esc(status) + '</p>' +
       '<div id="finale-khoi-slot"></div>' +
